@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="com.iccbot.withFragCtx.Des2WithFragCtx" type="Activity"/>
+  <source name="com.iccbot.withCtx.Source3WithCtx" type="Activity">
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des1WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source3WithCtx$1: void onClick(android.view.View)&gt;" instructionId="2" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" action="action.first.ctx" category="category.ctx" extras="" flags=""/>
+  </source>
+  <source name="com.iccbot.withCtx.Source1WithCtx" type="Activity">
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des2WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)" category="category.ctx" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des1WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)" category="category.ctx" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des1WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;" instructionId="5" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)" action="action.first.ctx" category="category.ctx" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des2WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;" instructionId="5" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)" action="action.second.ctx" category="category.ctx" extras="" flags=""/>
+  </source>
+  <source name="com.iccbot.withCtx.Source2WithCtx" type="Activity">
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des1WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)" category="category.ctx" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des2WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)" category="category.ctx" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des2WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;" instructionId="5" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)" action="action.second.ctx" category="category.ctx" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des1WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;" instructionId="5" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)" action="action.first.ctx" category="category.ctx" extras="" flags=""/>
+  </source>
+  <source name="com.iccbot.withCtx.Source4WithCtx" type="Activity">
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des2WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source4WithCtx$1: void onClick(android.view.View)&gt;" instructionId="2" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" action="action.second.ctx" category="category.ctx" extras="" flags=""/>
+  </source>
+  <source name="com.iccbot.withFrag.Des1WithFrag" type="Activity"/>
+  <source name="com.iccbot.withCtx.Des2WithCtx" type="Activity"/>
+  <source name="com.iccbot.withCtx.Source5WithCtx" type="Activity">
+    <destination ICCType="implicit" name="com.iccbot.withCtx.Des1WithCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;" instructionId="2" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" action="action.first.ctx" category="category.ctx" extras="" flags=""/>
+  </source>
+  <source name="com.iccbot.withCtx.Des1WithCtx" type="Activity"/>
+  <source name="com.iccbot.withFrag.Source1WithFrag" type="Activity">
+    <destination ICCType="explicit" name="com.iccbot.withFrag.Des1WithFrag" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)&gt;" instructionId="7" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)" extras="" flags=""/>
+  </source>
+  <source name="com.iccbot.withFragCtx.Des1WithFragCtx" type="Activity"/>
+  <source name="com.iccbot.withFrag.Source2WithFrag" type="Activity">
+    <destination ICCType="explicit" name="com.iccbot.withFrag.Des2WithFrag" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)&gt;" instructionId="8" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)" extras="" flags=""/>
+  </source>
+  <source name="com.iccbot.withFrag.Des2WithFrag" type="Activity"/>
+  <source name="com.iccbot.withFragCtx.SourceWithFragCtx" type="Activity">
+    <destination ICCType="implicit" name="com.iccbot.withFragCtx.Des1WithFragCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;" instructionId="6" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)" category="category.fragctx" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.iccbot.withFragCtx.Des2WithFragCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;" instructionId="6" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)" category="category.fragctx" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.iccbot.withFragCtx.Des1WithFragCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;" instructionId="6" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)" action="action.first.fragctx" category="category.fragctx" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.iccbot.withFragCtx.Des2WithFragCtx" desType="Activity" edgeType="Act2Act" method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;" instructionId="6" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)" action="action.second.fragctx" category="category.fragctx" extras="" flags=""/>
+  </source>
+</root>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="com.iccbot.withFragCtx.FragWithFragCtx">
+    <intentSummary>
+      <source name="com.iccbot.withFragCtx.FragWithFragCtx"/>
+      <sendICCInfo category="category.fragctx"/>
+      <method value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="FragWithFragCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="FragWithFragCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withFragCtx.FragWithFragCtx">
+    <intentSummary>
+      <source name="com.iccbot.withFragCtx.FragWithFragCtx"/>
+      <sendICCInfo category="category.fragctx"/>
+      <method value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;,&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"/>
+        <node method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="FragWithFragCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="FragWithFragCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withFragCtx.FragWithFragCtx"/>
+      <destination name="com.iccbot.withFragCtx.Des2WithFragCtx, com.iccbot.withFragCtx.Des1WithFragCtx"/>
+      <sendICCInfo category="category.fragctx">
+        <info unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;" instructionId="6"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;,void doWithAction(java.lang.String), &lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"/>
+        <node method="FragWithFragCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="FragWithFragCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="FragWithFragCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="FragWithFragCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"/>
+        <node method="FragWithFragCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source1WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source1WithCtx"/>
+      <sendICCInfo category="category.ctx"/>
+      <method value="&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="Source1WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source1WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source5WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source5WithCtx"/>
+      <sendICCInfo category="category.ctx"/>
+      <method value="&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="Source5WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source5WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source2WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source2WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des2WithCtx, com.iccbot.withCtx.Des1WithCtx"/>
+      <sendICCInfo category="category.ctx">
+        <info unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;,void doWithAction(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;"/>
+        <node method="Source2WithCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+        <node method="Source2WithCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source4WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source4WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des2WithCtx"/>
+      <sendICCInfo action="action.second.ctx" category="category.ctx">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" methodSig="&lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;" instructionId="2"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source4WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source4WithCtx$1: void onClick(android.view.View)&gt;,void onClick(android.view.View), &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source4WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="Source4WithCtx$1 onClick" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source4WithCtx$1 onClick" type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>
+        <node method="Source4WithCtx$1 onClick" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;action.second.ctx&quot;)"/>
+        <node method="Source4WithCtx$1 onClick" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+        <node method="Utils startIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>
+        <node method="Utils startIntent" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source5WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source5WithCtx"/>
+      <sendICCInfo category="category.ctx"/>
+      <method value="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;,&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;"/>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="Source5WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source5WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source5WithCtx"/>
+      <sendICCInfo category="category.ctx"/>
+      <method value="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;,void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent), &lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;"/>
+        <node method="Source5WithCtx access$0" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>
+        <node method="Source5WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source5WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withFragCtx.FragWithFragCtx">
+    <intentSummary>
+      <source name="com.iccbot.withFragCtx.FragWithFragCtx"/>
+      <sendICCInfo category="category.fragctx"/>
+      <method value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;,&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;"/>
+        <node method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="FragWithFragCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="FragWithFragCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withFragCtx.FragWithFragCtx"/>
+      <destination name="com.iccbot.withFragCtx.Des2WithFragCtx"/>
+      <sendICCInfo action="action.second.fragctx" category="category.fragctx">
+        <info unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;" instructionId="6"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;,void onAttach(android.app.Activity), &lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;"/>
+        <node method="FragWithFragCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="FragWithFragCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="FragWithFragCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="FragWithFragCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"/>
+        <node method="FragWithFragCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="FragWithFragCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withFragCtx.FragWithFragCtx"/>
+      <destination name="com.iccbot.withFragCtx.Des1WithFragCtx"/>
+      <sendICCInfo action="action.first.fragctx" category="category.fragctx">
+        <info unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;" instructionId="6"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;,void onAttach(android.app.Activity), &lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;"/>
+        <node method="FragWithFragCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="FragWithFragCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="FragWithFragCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="FragWithFragCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"/>
+        <node method="FragWithFragCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="FragWithFragCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source5WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source5WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des1WithCtx"/>
+      <sendICCInfo action="action.first.ctx" category="category.ctx">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" methodSig="&lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;" instructionId="2"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;,void onClick(android.view.View), &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;, &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="Source5WithCtx$1 onClick" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source5WithCtx$1 onClick" type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>
+        <node method="Source5WithCtx$1 onClick" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;action.first.ctx&quot;)"/>
+        <node method="Source5WithCtx access$0" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>
+        <node method="Utils startIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>
+        <node method="Utils startIntent" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"/>
+        <node method="Source5WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source5WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source5WithCtx"/>
+      <sendICCInfo category="category.ctx"/>
+      <method value="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;,&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;,&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;"/>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="Source5WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source5WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source5WithCtx"/>
+      <sendICCInfo category="category.ctx"/>
+      <method value="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;,&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;,void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent), &lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;"/>
+        <node method="Source5WithCtx access$0" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>
+        <node method="Source5WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source5WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source1WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source1WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des2WithCtx, com.iccbot.withCtx.Des1WithCtx"/>
+      <sendICCInfo category="category.ctx">
+        <info unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;,void doWithAction(java.lang.String), &lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;"/>
+        <node method="Source1WithCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source1WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source1WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source1WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+        <node method="Source1WithCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source1WithCtx"/>
+      <sendICCInfo category="category.ctx"/>
+      <method value="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;,&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;"/>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="Source1WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source1WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source3WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source3WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des1WithCtx"/>
+      <sendICCInfo action="action.first.ctx" category="category.ctx">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" methodSig="&lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;" instructionId="2"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source3WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source3WithCtx$1: void onClick(android.view.View)&gt;,void onClick(android.view.View), &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source3WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="Source3WithCtx$1 onClick" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source3WithCtx$1 onClick" type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>
+        <node method="Source3WithCtx$1 onClick" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;action.first.ctx&quot;)"/>
+        <node method="Source3WithCtx$1 onClick" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+        <node method="Utils startIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>
+        <node method="Utils startIntent" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source2WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source2WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des2WithCtx, com.iccbot.withCtx.Des1WithCtx"/>
+      <sendICCInfo category="category.ctx">
+        <info unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;,void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String), &lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;"/>
+        <node method="Source2WithCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+        <node method="Source2WithCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source1WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source1WithCtx"/>
+      <sendICCInfo category="category.ctx"/>
+      <method value="&lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;,&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;"/>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="Source1WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source1WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source2WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source2WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des2WithCtx, com.iccbot.withCtx.Des1WithCtx"/>
+      <sendICCInfo category="category.ctx">
+        <info unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;,&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;,void doWithAction(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;"/>
+        <node method="Source2WithCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+        <node method="Source2WithCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source2WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des2WithCtx"/>
+      <sendICCInfo action="action.second.ctx" category="category.ctx">
+        <info unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;,void onClick(android.view.View), &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source2WithCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+        <node method="Source2WithCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source2WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des1WithCtx"/>
+      <sendICCInfo action="action.first.ctx" category="category.ctx">
+        <info unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;,void onClick(android.view.View), &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source2WithCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source2WithCtx doWithAction" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+        <node method="Source2WithCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.iccbot.withCtx.Source1WithCtx">
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source1WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des2WithCtx, com.iccbot.withCtx.Des1WithCtx"/>
+      <sendICCInfo category="category.ctx">
+        <info unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;,&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;,void doWithAction(java.lang.String), &lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;"/>
+        <node method="Source1WithCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source1WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source1WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source1WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+        <node method="Source1WithCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source1WithCtx"/>
+      <sendICCInfo category="category.ctx"/>
+      <method value="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;,&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;,void addCategory(android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"/>
+        <node method="Source1WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source1WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source1WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des1WithCtx"/>
+      <sendICCInfo action="action.first.ctx" category="category.ctx">
+        <info unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;,void onClick(android.view.View), &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="Source1WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source1WithCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source1WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source1WithCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/>
+        <node method="Source1WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source1WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.iccbot.withCtx.Source1WithCtx"/>
+      <destination name="com.iccbot.withCtx.Des2WithCtx"/>
+      <sendICCInfo action="action.second.ctx" category="category.ctx">
+        <info unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)" methodSig="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;" instructionId="5"/>
+      </sendICCInfo>
+      <method value="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;,void onClick(android.view.View), &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;"/>
+      <nodes>
+        <node method="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"/>
+        <node method="Source1WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source1WithCtx doWithAction" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="Source1WithCtx doWithAction" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>
+        <node method="Source1WithCtx doWithAction" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/>
+        <node method="Source1WithCtx addCategory" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+        <node method="Source1WithCtx addCategory" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>
