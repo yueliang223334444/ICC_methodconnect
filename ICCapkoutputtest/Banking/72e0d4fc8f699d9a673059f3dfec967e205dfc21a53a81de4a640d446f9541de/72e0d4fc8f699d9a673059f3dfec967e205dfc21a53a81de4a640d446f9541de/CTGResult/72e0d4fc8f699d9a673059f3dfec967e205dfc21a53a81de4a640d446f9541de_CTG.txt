@@ -1,0 +1,7 @@
+
+com.red.tube.AnfortActivity -> com.red.tube.MyService
+
+com.red.tube.MyService -> com.red.tube.MyService
+
+com.red.tube.BootBroadcastReceiver -> com.red.tube.MyService
+

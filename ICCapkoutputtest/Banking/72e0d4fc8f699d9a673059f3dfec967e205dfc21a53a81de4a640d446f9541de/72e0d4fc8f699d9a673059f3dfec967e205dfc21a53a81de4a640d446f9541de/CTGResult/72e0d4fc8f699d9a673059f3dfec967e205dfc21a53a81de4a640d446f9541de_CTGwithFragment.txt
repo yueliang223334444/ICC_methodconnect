@@ -1,0 +1,10 @@
+
+com.red.tube.AnfortActivity -> com.red.tube.MyService
+com.red.tube.AnfortActivity -> interICC_android.app.action.ADD_DEVICE_ADMIN, 
+
+com.red.tube.MyService -> com.red.tube.MyService
+
+com.red.tube.BootBroadcastReceiver -> com.red.tube.MyService
+
+com.red.tube.f -> com.red.tube.MyService
+

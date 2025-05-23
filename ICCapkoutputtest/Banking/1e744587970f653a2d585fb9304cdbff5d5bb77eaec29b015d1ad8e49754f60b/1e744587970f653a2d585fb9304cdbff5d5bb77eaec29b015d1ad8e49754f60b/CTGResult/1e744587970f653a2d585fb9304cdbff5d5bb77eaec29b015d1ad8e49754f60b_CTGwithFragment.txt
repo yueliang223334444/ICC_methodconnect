@@ -1,0 +1,29 @@
+
+me.jingqian.mix.JingqianMainActivity -> me.jingqian.mix.service.JingqianCoreService
+me.jingqian.mix.JingqianMainActivity -> me.jingqian.mix.service.JingqianCoreService
+me.jingqian.mix.JingqianMainActivity -> interICC_android.app.action.ADD_DEVICE_ADMIN, 
+
+me.jingqian.mix.receiver.JingqianBootBroadcastReceiver -> me.jingqian.mix.service.JingqianCoreService
+me.jingqian.mix.receiver.JingqianBootBroadcastReceiver -> me.jingqian.mix.service.JingqianCoreService
+me.jingqian.mix.receiver.JingqianBootBroadcastReceiver -> interICC_android.intent.action.DELETE, 
+me.jingqian.mix.receiver.JingqianBootBroadcastReceiver -> interICC_android.intent.action.VIEW, 
+
+me.jingqian.mix.JingqianSMS -> interICC_SMS_SEND_ACTIOIN, 
+me.jingqian.mix.JingqianSMS -> interICC_SMS_DELIVERED_ACTION, 
+
+me.jingqian.mix.httptool.HttpDownLoad -> interICC_android.intent.action.VIEW, 
+
+me.jingqian.mix.service.JingqianCoreService -> me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver
+me.jingqian.mix.service.JingqianCoreService -> interICC_SMS_SEND_ACTIOIN, 
+me.jingqian.mix.service.JingqianCoreService -> interICC_SMS_DELIVERED_ACTION, 
+me.jingqian.mix.service.JingqianCoreService -> me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver
+me.jingqian.mix.service.JingqianCoreService -> me.jingqian.mix.receiver.JingqianBootBroadcastReceiver
+me.jingqian.mix.service.JingqianCoreService -> interICC_android.intent.action.DELETE, 
+me.jingqian.mix.service.JingqianCoreService -> me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver
+
+me.jingqian.mix.util.Global -> me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver
+me.jingqian.mix.util.Global -> me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver
+
+me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver -> me.jingqian.mix.receiver.JingqianBootBroadcastReceiver
+me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver -> interICC_android.intent.action.DELETE, 
+

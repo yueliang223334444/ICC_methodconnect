@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="u">
+    <intentSummary>
+      <source name="u"/>
+      <destination name="ssxodv.jdipue.wltter.MAC"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)" methodSig="&lt;u: void g(android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;u: void g(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;u: void g(android.content.Context)&gt;,void g(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;u: void g(android.content.Context)&gt;"/>
+        <node method="u g" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="u g" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lssxodv/jdipue/wltter/MAC;&quot;)"/>
+        <node method="u g" type="SetAttribute" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="u g" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="u">
+    <intentSummary>
+      <source name="u"/>
+      <destination name="ssxodv.jdipue.wltter.ActivityCard"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" methodSig="&lt;u: void h(android.content.Context)&gt;" instructionId="4"/>
+      </sendICCInfo>
+      <method value="&lt;u: void h(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;u: void h(android.content.Context)&gt;,void h(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;u: void h(android.content.Context)&gt;"/>
+        <node method="u h" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="u h" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lssxodv/jdipue/wltter/ActivityCard;&quot;)"/>
+        <node method="u h" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="u h" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ac">
+    <intentSummary>
+      <source name="ac"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="u">
+    <intentSummary>
+      <source name="u"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="m">
+    <intentSummary>
+      <source name="m"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="m"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="m">
+    <intentSummary>
+      <source name="m"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;m: void d(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="m"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;m: void d(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="m">
+    <intentSummary>
+      <source name="m"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;m: void run()&gt;"/>
+      <methodtrace value="&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="m"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;m: void run()&gt;"/>
+      <methodtrace value="&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="m">
+    <intentSummary>
+      <source name="m"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;m: void c(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;m: void c(java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;m: void c(java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="m"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;m: void c(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;m: void c(java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;m: void c(java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="u">
+    <intentSummary>
+      <source name="u"/>
+      <destination name="ssxodv.jdipue.wltter.MAC"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)" methodSig="&lt;u: void g(android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;u: void a(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;u: void a(android.content.Context)&gt;,&lt;u: void g(android.content.Context)&gt;,void g(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;u: void a(android.content.Context)&gt;"/>
+        <node method="&lt;u: void g(android.content.Context)&gt;"/>
+        <node method="u g" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="u g" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lssxodv/jdipue/wltter/MAC;&quot;)"/>
+        <node method="u g" type="SetAttribute" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="u g" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="g">
+    <intentSummary>
+      <source name="g"/>
+      <destination name="ssxodv.jdipue.wltter.MAC"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)" methodSig="&lt;u: void g(android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;g: void onTick(long)&gt;"/>
+      <methodtrace value="&lt;g: void onTick(long)&gt;,&lt;u: void a(android.content.Context)&gt;,&lt;u: void g(android.content.Context)&gt;,void g(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;g: void onTick(long)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context)&gt;"/>
+        <node method="&lt;u: void g(android.content.Context)&gt;"/>
+        <node method="u g" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="u g" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lssxodv/jdipue/wltter/MAC;&quot;)"/>
+        <node method="u g" type="SetAttribute" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="u g" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ab">
+    <intentSummary>
+      <source name="ab"/>
+      <destination name="interICC_android.provider.Telephony.ACTION_CHANGE_DEFAULT, "/>
+      <sendICCInfo action="android.provider.Telephony.ACTION_CHANGE_DEFAULT" extras="String-package" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)" methodSig="&lt;ab: void a(android.content.Context)&gt;" instructionId="25"/>
+      </sendICCInfo>
+      <method value="&lt;ab: void a(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;ab: void a(android.content.Context)&gt;,void a(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;ab: void a(android.content.Context)&gt;"/>
+        <node method="ab a" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="ab a" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.provider.Telephony.ACTION_CHANGE_DEFAULT&quot;)"/>
+        <node method="ab a" type="SetIntentExtra" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;package&quot;, $r6)"/>
+        <node method="ab a" type="SetAttribute" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="ab a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="i">
+    <intentSummary>
+      <source name="i"/>
+      <destination name="interICC_android.provider.Telephony.ACTION_CHANGE_DEFAULT, "/>
+      <sendICCInfo action="android.provider.Telephony.ACTION_CHANGE_DEFAULT" extras="String-package" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)" methodSig="&lt;ab: void a(android.content.Context)&gt;" instructionId="25"/>
+      </sendICCInfo>
+      <method value="&lt;i: void onTick(long)&gt;"/>
+      <methodtrace value="&lt;i: void onTick(long)&gt;,&lt;ab: void a(android.content.Context)&gt;,void a(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;i: void onTick(long)&gt;"/>
+        <node method="&lt;ab: void a(android.content.Context)&gt;"/>
+        <node method="ab a" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="ab a" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.provider.Telephony.ACTION_CHANGE_DEFAULT&quot;)"/>
+        <node method="ab a" type="SetIntentExtra" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;package&quot;, $r6)"/>
+        <node method="ab a" type="SetAttribute" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="ab a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="u">
+    <intentSummary>
+      <source name="u"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="u"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="h">
+    <intentSummary>
+      <source name="h"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;h: void onTick(long)&gt;"/>
+      <methodtrace value="&lt;h: void onTick(long)&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;h: void onTick(long)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="h"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;h: void onTick(long)&gt;"/>
+      <methodtrace value="&lt;h: void onTick(long)&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;h: void onTick(long)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.SmsReceiver">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.SmsReceiver"/>
+      <destination name="ssxodv.jdipue.wltter.IMService"/>
+      <sendICCInfo extras="String-">
+        <info unit="virtualinvoke $r2.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r12)" methodSig="&lt;ssxodv.jdipue.wltter.SmsReceiver: void a(android.os.Bundle,android.content.Context)&gt;" instructionId="50"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.SmsReceiver: void a(android.os.Bundle,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.SmsReceiver: void a(android.os.Bundle,android.content.Context)&gt;,void a(android.os.Bundle,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.SmsReceiver: void a(android.os.Bundle,android.content.Context)&gt;"/>
+        <node method="SmsReceiver a" type="CreateMethod" unit="$r12 = new android.content.Intent"/>
+        <node method="SmsReceiver a" type="SetAttribute" unit="specialinvoke $r12.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lssxodv/jdipue/wltter/IMService;&quot;)"/>
+        <node method="SmsReceiver a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="SmsReceiver a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="SmsReceiver a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="SmsReceiver a" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r12)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.SmsReceiver">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.SmsReceiver"/>
+      <destination name="ssxodv.jdipue.wltter.IMService"/>
+      <sendICCInfo extras="String-">
+        <info unit="virtualinvoke $r2.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r12)" methodSig="&lt;ssxodv.jdipue.wltter.SmsReceiver: void a(android.os.Bundle,android.content.Context)&gt;" instructionId="50"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;ssxodv.jdipue.wltter.SmsReceiver: void a(android.os.Bundle,android.content.Context)&gt;,void a(android.os.Bundle,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;ssxodv.jdipue.wltter.SmsReceiver: void a(android.os.Bundle,android.content.Context)&gt;"/>
+        <node method="SmsReceiver a" type="CreateMethod" unit="$r12 = new android.content.Intent"/>
+        <node method="SmsReceiver a" type="SetAttribute" unit="specialinvoke $r12.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lssxodv/jdipue/wltter/IMService;&quot;)"/>
+        <node method="SmsReceiver a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="SmsReceiver a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="SmsReceiver a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="SmsReceiver a" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r12)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="s">
+    <intentSummary>
+      <source name="s"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;s: void run()&gt;"/>
+      <methodtrace value="&lt;s: void run()&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;s: void run()&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="s"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;s: void run()&gt;"/>
+      <methodtrace value="&lt;s: void run()&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;s: void run()&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.IMService">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.IMService"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.IMService"/>
+      <receiveICCInfo extras="String-">
+        <info unit="$r6 = virtualinvoke $r5.&lt;android.os.Bundle: java.lang.String getString(java.lang.String)&gt;($r6)" methodSig="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;" instructionId="10" key="" value="null"/>
+        <info unit="$r7 = virtualinvoke $r5.&lt;android.os.Bundle: java.lang.String getString(java.lang.String)&gt;($r7)" methodSig="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;" instructionId="13" key="" value="null"/>
+        <info unit="$r8 = virtualinvoke $r5.&lt;android.os.Bundle: java.lang.String getString(java.lang.String)&gt;($r8)" methodSig="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;" instructionId="16" key="" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;,int onStartCommand(android.content.Intent,int,int)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;"/>
+        <node method="IMService onStartCommand" type="ReceiveIntentFromRetValue" unit="$r1 = virtualinvoke r0.&lt;ssxodv.jdipue.wltter.IMService: android.content.Intent getIntent()&gt;()"/>
+        <node method="IMService onStartCommand" type="GetIntentExtra" unit="$r5 = virtualinvoke $r1.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="IMService onStartCommand" type="GetIntentExtra" unit="$r5 = virtualinvoke $r1.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="IMService onStartCommand" type="GetIntentExtra" unit="$r5 = virtualinvoke $r1.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.IMService"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.IMService: int onStartCommand(android.content.Intent,int,int)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="r">
+    <intentSummary>
+      <source name="r"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;r: void run()&gt;"/>
+      <methodtrace value="&lt;r: void run()&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;r: void run()&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="r"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;r: void run()&gt;"/>
+      <methodtrace value="&lt;r: void run()&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;r: void run()&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.AlarmReceiverKnock">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.AlarmReceiverKnock"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.AlarmReceiverKnock: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.AlarmReceiverKnock: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.AlarmReceiverKnock: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.AlarmReceiverKnock"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.AlarmReceiverKnock: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.AlarmReceiverKnock: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.AlarmReceiverKnock: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.MAC">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.MAC"/>
+      <destination name="interICC_android.app.action.ADD_DEVICE_ADMIN, "/>
+      <sendICCInfo action="android.app.action.ADD_DEVICE_ADMIN" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN">
+        <info unit="virtualinvoke r0.&lt;ssxodv.jdipue.wltter.MAC: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;ssxodv.jdipue.wltter.MAC: void onCreate(android.os.Bundle)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.MAC: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.MAC: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.MAC: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MAC onCreate" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="MAC onCreate" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.app.action.ADD_DEVICE_ADMIN&quot;)"/>
+        <node method="MAC onCreate" type="SetIntentExtra" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.app.extra.DEVICE_ADMIN&quot;, $r4)"/>
+        <node method="MAC onCreate" type="SetIntentExtra" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.app.extra.ADD_EXPLANATION&quot;, $r6)"/>
+        <node method="MAC onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;ssxodv.jdipue.wltter.MAC: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.IMMon">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.IMMon"/>
+      <destination name="ssxodv.jdipue.wltter.IMService"/>
+      <sendICCInfo extras="Serializable-,String-">
+        <info unit="virtualinvoke $r2.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r12)" methodSig="&lt;ssxodv.jdipue.wltter.IMMon: void a(android.os.Bundle,android.content.Context)&gt;" instructionId="48"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.IMMon: void a(android.os.Bundle,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.IMMon: void a(android.os.Bundle,android.content.Context)&gt;,void a(android.os.Bundle,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.IMMon: void a(android.os.Bundle,android.content.Context)&gt;"/>
+        <node method="IMMon a" type="CreateMethod" unit="$r12 = new android.content.Intent"/>
+        <node method="IMMon a" type="SetAttribute" unit="specialinvoke $r12.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lssxodv/jdipue/wltter/IMService;&quot;)"/>
+        <node method="IMMon a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="IMMon a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="IMMon a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.io.Serializable)&gt;($r5, $r11)"/>
+        <node method="IMMon a" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r12)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.IMMon">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.IMMon"/>
+      <destination name="ssxodv.jdipue.wltter.IMService"/>
+      <sendICCInfo extras="Serializable-,String-">
+        <info unit="virtualinvoke $r2.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r12)" methodSig="&lt;ssxodv.jdipue.wltter.IMMon: void a(android.os.Bundle,android.content.Context)&gt;" instructionId="48"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.IMMon: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.IMMon: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;ssxodv.jdipue.wltter.IMMon: void a(android.os.Bundle,android.content.Context)&gt;,void a(android.os.Bundle,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.IMMon: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;ssxodv.jdipue.wltter.IMMon: void a(android.os.Bundle,android.content.Context)&gt;"/>
+        <node method="IMMon a" type="CreateMethod" unit="$r12 = new android.content.Intent"/>
+        <node method="IMMon a" type="SetAttribute" unit="specialinvoke $r12.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lssxodv/jdipue/wltter/IMService;&quot;)"/>
+        <node method="IMMon a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="IMMon a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r5, $r10)"/>
+        <node method="IMMon a" type="SetIntentExtra" unit="virtualinvoke $r12.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.io.Serializable)&gt;($r5, $r11)"/>
+        <node method="IMMon a" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r12)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.Activity1">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.Activity1"/>
+      <destination name="ssxodv.jdipue.wltter.ActivityMMS"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;ssxodv.jdipue.wltter.Activity1: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;ssxodv.jdipue.wltter.Activity1: void onCreate(android.os.Bundle)&gt;" instructionId="30"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.Activity1: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.Activity1: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.Activity1: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="Activity1 onCreate" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="Activity1 onCreate" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r3, class &quot;Lssxodv/jdipue/wltter/ActivityMMS;&quot;)"/>
+        <node method="Activity1 onCreate" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="Activity1 onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;ssxodv.jdipue.wltter.Activity1: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="q">
+    <intentSummary>
+      <source name="q"/>
+      <destination name="ssxodv.jdipue.wltter.MAC"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)" methodSig="&lt;u: void g(android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;q: void run()&gt;"/>
+      <methodtrace value="&lt;q: void run()&gt;,&lt;u: void a(android.content.Context)&gt;,&lt;u: void g(android.content.Context)&gt;,void g(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;q: void run()&gt;"/>
+        <node method="&lt;u: void a(android.content.Context)&gt;"/>
+        <node method="&lt;u: void g(android.content.Context)&gt;"/>
+        <node method="u g" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="u g" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lssxodv/jdipue/wltter/MAC;&quot;)"/>
+        <node method="u g" type="SetAttribute" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="u g" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="e">
+    <intentSummary>
+      <source name="e"/>
+      <destination name="interICC_android.intent.action.VIEW, "/>
+      <sendICCInfo action="android.intent.action.VIEW" type="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;e: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;e: void onClick(android.view.View)&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;e: void onClick(android.view.View)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;u: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="u a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="u a" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r2, $r1)"/>
+        <node method="u a" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="u a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="e"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;" instructionId="16"/>
+      </sendICCInfo>
+      <method value="&lt;e: void onClick(android.view.View)&gt;"/>
+      <methodtrace value="&lt;e: void onClick(android.view.View)&gt;,&lt;u: void a(android.content.Context,java.lang.String)&gt;,&lt;m: void run()&gt;,&lt;m: void d(java.lang.String)&gt;,&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;,&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;,java.lang.String a(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;e: void onClick(android.view.View)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="&lt;m: void run()&gt;"/>
+        <node method="&lt;m: void d(java.lang.String)&gt;"/>
+        <node method="&lt;m: java.lang.String a(java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+        <node method="&lt;ac: java.lang.String a(android.content.Context,java.lang.String)&gt;"/>
+        <node method="ac a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ac a" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r5)"/>
+        <node method="ac a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="ac a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.AlarmReceiverAdm">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.AlarmReceiverAdm"/>
+      <destination name="ssxodv.jdipue.wltter.MAC"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)" methodSig="&lt;u: void g(android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.AlarmReceiverAdm: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.AlarmReceiverAdm: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;u: void a(android.content.Context)&gt;,&lt;u: void g(android.content.Context)&gt;,void g(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.AlarmReceiverAdm: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;u: void a(android.content.Context)&gt;"/>
+        <node method="&lt;u: void g(android.content.Context)&gt;"/>
+        <node method="u g" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="u g" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lssxodv/jdipue/wltter/MAC;&quot;)"/>
+        <node method="u g" type="SetAttribute" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="u g" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="ssxodv.jdipue.wltter.AlarmReceiverSmsMan">
+    <intentSummary>
+      <source name="ssxodv.jdipue.wltter.AlarmReceiverSmsMan"/>
+      <destination name="interICC_android.provider.Telephony.ACTION_CHANGE_DEFAULT, "/>
+      <sendICCInfo action="android.provider.Telephony.ACTION_CHANGE_DEFAULT" extras="String-package" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)" methodSig="&lt;ab: void a(android.content.Context)&gt;" instructionId="25"/>
+      </sendICCInfo>
+      <method value="&lt;ssxodv.jdipue.wltter.AlarmReceiverSmsMan: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;ssxodv.jdipue.wltter.AlarmReceiverSmsMan: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;ab: void a(android.content.Context)&gt;,void a(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;ssxodv.jdipue.wltter.AlarmReceiverSmsMan: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;ab: void a(android.content.Context)&gt;"/>
+        <node method="ab a" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="ab a" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.provider.Telephony.ACTION_CHANGE_DEFAULT&quot;)"/>
+        <node method="ab a" type="SetIntentExtra" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;package&quot;, $r6)"/>
+        <node method="ab a" type="SetAttribute" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="ab a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="t">
+    <intentSummary>
+      <source name="t"/>
+      <destination name="ssxodv.jdipue.wltter.ActivityCard"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" methodSig="&lt;u: void h(android.content.Context)&gt;" instructionId="4"/>
+      </sendICCInfo>
+      <method value="&lt;t: void run()&gt;"/>
+      <methodtrace value="&lt;t: void run()&gt;,&lt;u: void h(android.content.Context)&gt;,void h(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;t: void run()&gt;"/>
+        <node method="&lt;u: void h(android.content.Context)&gt;"/>
+        <node method="u h" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="u h" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lssxodv/jdipue/wltter/ActivityCard;&quot;)"/>
+        <node method="u h" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="u h" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

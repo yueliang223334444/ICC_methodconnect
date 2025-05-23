@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;com.google.scc.LicenseActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="LicenseActivity onCreate" unit="virtualinvoke r0.&lt;com.google.scc.LicenseActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="179885734" predsStr="1964925738" succsStr="" context=""/>
+        <baseNodePointTo value="179885734" context=""/>
+        <nodeSetPointToMe value="179885734," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;com.google.scc.MainActivity$LoadingActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity$LoadingActivity onCreate" unit="virtualinvoke r0.&lt;com.google.scc.MainActivity$LoadingActivity: void setContentView(int)&gt;(2130903042)">
+        <nodeInfo nodeId="1903243860" predsStr="961307083" succsStr="1636826234" context=""/>
+        <baseNodePointTo value="1903243860" context=""/>
+        <nodeSetPointToMe value="1903243860," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;com.google.scc.PayDetailActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="PayDetailActivity onCreate" unit="virtualinvoke r0.&lt;com.google.scc.PayDetailActivity: void setContentView(int)&gt;(2130903041)">
+        <nodeInfo nodeId="3725437" predsStr="1214557610" succsStr="" context=""/>
+        <baseNodePointTo value="3725437" context=""/>
+        <nodeSetPointToMe value="3725437," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;com.google.scc.DismissActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="DismissActivity onCreate" unit="virtualinvoke r0.&lt;com.google.scc.DismissActivity: void setContentView(int)&gt;(2130903044)">
+        <nodeInfo nodeId="1542187282" predsStr="27144530" succsStr="" context=""/>
+        <baseNodePointTo value="1542187282" context=""/>
+        <nodeSetPointToMe value="1542187282," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+</root>

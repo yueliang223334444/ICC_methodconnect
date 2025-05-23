@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.note.donote.activities.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.DEFAULT, android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="o.\u217d, com.note.donote.receivers.AlarmReceiver, interICC_android.intent.action.MAIN, android.intent.category.HOME, o.\ufb5d, o.\ufb86" action="android.intent.action.MAIN, MainActivity.AlarmAction" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.note.donote.receivers.BootReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED, android.intent.action.QUICKBOOT_POWERON"/>
+    </manifest>
+    <sender destination="o.\u217d, com.note.donote.receivers.AlarmReceiver, o.\ufb27, o.\ufb5d, o.\ufb86, o.\u012a" action="MainActivity.AlarmAction"/>
+  </component>
+  <component name="o.ﺀ" type="Service">
+    <sender destination="o.\ufe80, o.ﺀ$if" action="MainService.AlarmAction"/>
+  </component>
+  <component name="o.ﺀ$if" type="Receiver">
+    <manifest>
+      <intent_filter action="MainService.AlarmAction"/>
+    </manifest>
+    <sender destination="o.ﺀ$if" action="MainService.AlarmAction"/>
+  </component>
+  <component name="com.note.donote.activities.sms.ComposeSmsActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.SENDTO, android.intent.action.SEND" category="android.intent.category.BROWSABLE, android.intent.category.DEFAULT" scheme="sms"/>
+    </manifest>
+  </component>
+  <component name="o.ﮆ" type="Service">
+    <sender destination="o.\ufb86" flags="FLAG_ACTIVITY_NEW_TASK " extras="String-url_scheme_for_dialog"/>
+  </component>
+  <component name="o.ỉ" type="Activity">
+    <sender destination="interICC_android.provider.Telephony.ACTION_CHANGE_DEFAULT, " action="android.provider.Telephony.ACTION_CHANGE_DEFAULT" extras="String-package"/>
+  </component>
+  <component name="o.ῑ" type="Activity">
+    <sender destination="o.\u2054"/>
+  </component>
+  <component name="o.⁔" type="Activity"/>
+  <component name="com.note.donote.services.sms.HeadlessSmsSendService" type="Service" exported="true" permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+    <manifest>
+      <intent_filter action="android.intent.action.RESPOND_VIA_MESSAGE" category="android.intent.category.DEFAULT" scheme="mms"/>
+    </manifest>
+  </component>
+  <component name="o.ﭝ" type="Service">
+    <sender destination="o.\u1ec9, o.\ufb5d, o.\u1fd1" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="o.ṛ" type="Activity">
+    <sender destination="interICC_android.app.action.ADD_DEVICE_ADMIN, , interICC_android.intent.action.MAIN, android.intent.category.HOME" action="android.intent.action.MAIN, android.app.action.ADD_DEVICE_ADMIN" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_NEW_TASK " extras="Parcelable-android.app.extra.DEVICE_ADMIN,String-android.app.extra.ADD_EXPLANATION"/>
+  </component>
+  <component name="com.note.donote.receivers.ServiceDestroyReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="com.KHLCert.fdservice, com.KHLCert.gpservice"/>
+    </manifest>
+    <sender destination="o.\ufb5d, o.\ufb86"/>
+  </component>
+  <component name="com.note.donote.receivers.sms.MmsReceiver" type="Receiver" permission="android.permission.BROADCAST_SMS">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.SMS_DELIVER"/>
+    </manifest>
+  </component>
+  <component name="o.Ī" type="Service">
+    <sender destination="o.\u012a"/>
+  </component>
+  <component name="o.ﬧ" type="Service">
+    <sender destination="o.\ufb27"/>
+  </component>
+  <component name="com.note.donote.receivers.sms.SmsReceiver_" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.SMS_RECEIVED"/>
+    </manifest>
+    <receive extras="String-pdus"/>
+  </component>
+  <component name="com.note.donote.receivers.AdminReceiver" type="Receiver" permission="android.permission.BIND_DEVICE_ADMIN">
+    <manifest>
+      <intent_filter action="android.app.action.DEVICE_ADMIN_ENABLED"/>
+    </manifest>
+    <sender destination="interICC_android.intent.action.MAIN, android.intent.category.HOME" action="android.intent.action.MAIN" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="o.灬" type="Activity">
+    <receive extras="String-url_scheme_for_dialog"/>
+  </component>
+  <component name="com.note.donote.receivers.AlarmReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="MainActivity.AlarmAction"/>
+    </manifest>
+  </component>
+  <component name="o.ὶ" type="Activity">
+    <sender destination="o.\u2054"/>
+  </component>
+  <component name="com.note.donote.services.USSDService" type="Service" exported="true">
+    <manifest>
+      <intent_filter action="com.android.ussd.IExtendedNetworkService"/>
+    </manifest>
+  </component>
+  <component name="com.note.donote.receivers.sms.PushServiceReciever" type="Receiver" permission="android.permission.BROADCAST_WAP_PUSH">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.WAP_PUSH_DELIVER"/>
+    </manifest>
+  </component>
+  <component name="o.ﹽ" type="Activity">
+    <receive extras="String-url_scheme_for_dialog"/>
+  </component>
+  <component name="o.ⅽ" type="Service">
+    <sender destination="o.\u217d, o.\u1e5b" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+</root>

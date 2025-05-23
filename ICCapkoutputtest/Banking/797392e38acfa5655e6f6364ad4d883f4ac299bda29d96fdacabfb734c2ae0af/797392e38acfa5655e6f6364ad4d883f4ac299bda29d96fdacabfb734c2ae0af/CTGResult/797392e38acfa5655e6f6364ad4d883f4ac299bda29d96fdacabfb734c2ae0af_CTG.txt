@@ -1,0 +1,10 @@
+
+com.admv3.listener.OnBootReceiver -> com.admv.service.MainService
+com.admv3.listener.OnBootReceiver -> com.admv.service.MainService
+
+com.admv3.listener.TickReceiver -> com.admv.service.MainService
+
+com.admv.service.MainService -> com.admv.service.AdvService
+
+com.aizd.entry.MainActivity -> com.admv.service.MainService
+

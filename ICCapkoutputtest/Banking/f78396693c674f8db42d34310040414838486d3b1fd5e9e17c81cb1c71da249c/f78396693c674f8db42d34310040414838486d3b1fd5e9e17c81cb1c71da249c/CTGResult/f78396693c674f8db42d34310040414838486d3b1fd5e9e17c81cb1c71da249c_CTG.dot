@@ -1,0 +1,43 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+subgraph cluster_component{ 
+MainActivity[style=filled, fillcolor=orange, color = red];
+ῑ[color = red];
+⁔[color = red];
+ComposeSmsActivity[style=filled, fillcolor=pink, color = red];
+ὶ[color = red];
+ỉ[color = red];
+ﹽ[color = red];
+ṛ[color = red];
+灬[color = red];
+ﺀ[color = royalblue];
+ﮆ[color = royalblue];
+HeadlessSmsSendService[style=filled, fillcolor=pink, color = royalblue];
+USSDService[style=filled, fillcolor=pink, color = royalblue];
+Ī[color = royalblue];
+ﬧ[color = royalblue];
+ﭝ[color = royalblue];
+ⅽ[color = royalblue];
+BootReceiver[style=filled, fillcolor=pink, color = peru];
+ﺀ[color = peru];
+ServiceDestroyReceiver[style=filled, fillcolor=pink, color = peru];
+AlarmReceiver[style=filled, fillcolor=pink, color = peru];
+MmsReceiver[style=filled, fillcolor=pink, color = peru];
+PushServiceReciever[style=filled, fillcolor=pink, color = peru];
+SmsReceiver_[style=filled, fillcolor=pink, color = peru];
+AdminReceiver[style=filled, fillcolor=pink, color = peru];
+MainActivity->AlarmReceiver;
+BootReceiver->AlarmReceiver;
+ﺀ->ﺀ;
+}
+}

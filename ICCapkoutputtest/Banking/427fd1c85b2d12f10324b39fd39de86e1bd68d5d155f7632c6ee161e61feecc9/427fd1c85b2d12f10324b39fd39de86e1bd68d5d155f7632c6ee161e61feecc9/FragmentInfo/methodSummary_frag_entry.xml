@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;antivirus.pro.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;antivirus.pro.MainActivity: void setContentView(int)&gt;(2130903040)"/>
+  </methodSummary>
+  <methodSummary source="&lt;com.orangeery.babbleharbor.MainActivity: void b()&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.orangeery.babbleharbor.MainActivity: void setContentView(int)&gt;(2130903042)"/>
+  </methodSummary>
+  <methodSummary source="&lt;com.orangeery.babbleharbor.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <node unit="virtualinvoke r0.&lt;com.orangeery.babbleharbor.MainActivity: void b()&gt;()"/>
+  </methodSummary>
+  <methodSummary source="&lt;roijf.sdfqlkj.sfakjdfa.DialogActivity: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;roijf.sdfqlkj.sfakjdfa.DialogActivity: void setContentView(int)&gt;($i0)"/>
+  </methodSummary>
+</root>

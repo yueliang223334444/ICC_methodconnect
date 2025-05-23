@@ -1,0 +1,1188 @@
+manifest
+- package: com.hellotalk
+- platformBuildVersionName: 5.1.1-1819727
+- versionName: 2.3.0
+- platformBuildVersionCode: 22
+- versionCode: 182
+	uses-sdk
+	- minSdkVersion: 14
+	- targetSdkVersion: 22
+	permission
+	- name: com.hellotalk.permission.C2D_MESSAGE
+	- protectionLevel: 2
+	uses-permission
+	- name: com.hellotalk.permission.C2D_MESSAGE
+	uses-permission
+	- name: com.google.android.c2dm.permission.RECEIVE
+	permission
+	- name: com.hellotalk.app.NIHAOTALK_SERVICE
+	- label: NihaotalkService
+	- permissionGroup: android.permission-group.NETWORK
+	uses-permission
+	- name: android.permission.WAKE_LOCK
+	uses-permission
+	- name: android.permission.USE_CREDENTIALS
+	uses-permission
+	- name: android.permission.GET_ACCOUNTS
+	uses-permission
+	- name: com.android.vending.BILLING
+	uses-permission
+	- name: android.permission.INTERNET
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	uses-permission
+	- name: android.permission.CHANGE_CONFIGURATION
+	uses-permission
+	- name: android.permission.ACCESS_WIFI_STATE
+	uses-permission
+	- name: android.permission.RECEIVE_BOOT_COMPLETED
+	uses-permission
+	- name: android.permission.VIBRATE
+	uses-permission
+	- name: android.permission.RECORD_AUDIO
+	uses-permission
+	- name: android.permission.CHANGE_WIFI_STATE
+	uses-permission
+	- name: android.permission.ACCESS_NETWORK_STATE
+	uses-permission
+	- name: android.permission.BROADCAST_STICKY
+	uses-permission
+	- name: android.permission.RECEIVE_USER_PRESENT
+	uses-permission
+	- name: android.permission.WRITE_EXTERNAL_STORAGE
+	uses-permission
+	- name: android.permission.KILL_BACKGROUND_PROCESSES
+	uses-permission
+	- name: android.permission.CAMERA
+	uses-permission
+	- name: android.permission.UPDATE_APP_OPS_STATS
+	uses-permission
+	- name: com.android.launcher.permission.INSTALL_SHORTCUT
+	uses-permission
+	- name: com.android.launcher.permission.READ_SETTINGS
+	uses-permission
+	- name: com.android.launcher.permission.UNINSTALL_SHORTCUT
+	uses-permission
+	- name: android.permission.MODIFY_AUDIO_SETTINGS
+	uses-permission
+	- name: android.permission.BLUETOOTH
+	uses-permission
+	- name: android.permission.BATTERY_STATS
+	permission
+	- name: com.hellotalk.permission.MAPS_RECEIVE
+	- protectionLevel: 2
+	uses-permission
+	- name: com.hellotalk.permission.MAPS_RECEIVE
+	uses-permission
+	- name: com.google.android.providers.gsf.permission.READ_GSERVICES
+	uses-permission
+	- name: android.permission.ACCESS_COARSE_LOCATION
+	uses-permission
+	- name: android.permission.ACCESS_FINE_LOCATION
+	uses-permission
+	- name: com.android.launcher.permission.INSTALL_SHORTCUT
+	uses-permission
+	- name: com.android.launcher.permission.READ_SETTINGS
+	uses-permission
+	- name: com.android.launcher.permission.UNINSTALL_SHORTCUT
+	uses-permission
+	- name: android.permission.WRITE_SETTINGS
+	uses-permission
+	- name: android.permission.SYSTEM_ALERT_WINDOW
+	uses-permission
+	- name: android.permission.SYSTEM_OVERLAY_WINDOW
+	uses-permission
+	- name: android.permission.READ_EXTERNAL_STORAGE
+	uses-permission
+	- name: android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+	uses-feature
+	- required: true
+	- glEsVersion: 131072
+	uses-feature
+	- name: android.hardware.location
+	uses-feature
+	- name: android.hardware.location.network
+	uses-feature
+	- name: android.hardware.location.gps
+	application
+	- allowBackup: false
+	- hardwareAccelerated: true
+	- icon: 2130839465
+	- name: com.hellotalk.core.app.NihaotalkApplication
+	- theme: 2131230927
+	- label: 2131100038
+	- largeHeap: true
+		activity
+		- name: com.hellotalk.ui.LoginAnim
+		- launchMode: 2
+		- theme: 2131230926
+		- label: 2131100038
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+			intent-filter
+				data
+				- scheme: growing.8fd50150fbccd575
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				category
+				- name: android.intent.category.BROWSABLE
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				category
+				- name: android.intent.category.BROWSABLE
+				data
+				- scheme: hellotalk
+				- host: open
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.WalkthroughActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.search.customsearch.CustomSearchActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.search.customsearch.CustomSearchResultActivity
+		activity
+		- name: com.hellotalk.ui.stream.PublishStreamActivity
+		- windowSoftInputMode: 18
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.stream.MomentDetailActivity
+		- configChanges: 1184
+		- alwaysRetainTaskState: true
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.stream.StreamNotificationActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.stream.StreamLikesActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.search.typesearch.TypeSearchActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.translate.Embedded_Translate
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.WellcomeLogo
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.LangueListActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.TakePicture
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.create.BranchUser
+		activity
+		- name: com.hellotalk.ui.ShowLogout
+		- theme: 2131230957
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.WellCome
+		- launchMode: 2
+		- theme: 2131230933
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+		activity
+		- name: com.hellotalk.ui.ImageSend
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chatroom.CreateRoomActivity
+		- windowSoftInputMode: 34
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chatroom.SelectAtUserList
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.translate.FavoriteReading_Text
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.translate.FavoriteReading_Voice
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.translate.LanguageSwitchActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.translate.ShowOneTranslate
+		activity
+		- name: com.hellotalk.translate.Plugin_Translate
+		- launchMode: 2
+		- windowSoftInputMode: 18
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.translate.TranslatorActivity
+		- windowSoftInputMode: 16
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.translate.Edit_TranstionText
+		- windowSoftInputMode: 16
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.setting.BlackInfo
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.setting.OhterSetting
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.TeachActivity
+		activity
+		- name: com.hellotalk.ui.setting.Disturb
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.CropImageShow
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.graffiti.CropImageShowTY
+		activity
+		- name: com.hellotalk.ui.profile.EditProfile
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: edit
+		activity
+		- name: com.hellotalk.ui.profile.ProfileLanguageListActivity
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.profile.ReportBlock
+		activity
+		- name: com.hellotalk.ui.setting.Settings
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.profile.FriendRemarkActivity
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.profile.Edit_Name
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.profile.BlockOtherContent
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.profile.BlockOtherMessages
+		- windowSoftInputMode: 16
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.profile.Edit_Bio
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.profile.TagsActivity
+		activity
+		- name: com.hellotalk.ui.profile.CreateNewTagsActivity
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.search.FilterCity
+		activity
+		- name: com.hellotalk.ui.main.MainTabActivity
+		- launchMode: 2
+		- windowSoftInputMode: 32
+		- configChanges: 160
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.setting.InviteFriends
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.setting.OrientationActivity
+		activity
+		- name: com.hellotalk.ui.LoginActivity
+		- launchMode: 2
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.CountryListActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.profile.ProfileRecomment
+		intent-filter
+			action
+			- name: android.intent.action.VIEW
+			category
+			- name: android.intent.category.DEFAULT
+			data
+			- scheme: edit
+		activity
+		- name: com.hellotalk.ui.profile.HelloTalk_Team
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.Chat
+		- windowSoftInputMode: 32
+		- configChanges: 1184
+		- alwaysRetainTaskState: true
+		activity
+		- name: com.hellotalk.ui.chat.ShareMessageActivity
+		- theme: 2131230920
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.MessageForwarding
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.Edit_Translate
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.MessageReading
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.UserSetting
+		- launchMode: 2
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.NoteSetting
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chatroom.RoomSetting
+		- launchMode: 2
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chatroom.Edit_RoomName
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chatroom.GroupChat
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chatroom.GroupChatList
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chatroom.SelectGroupChatList
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.TranslationTarget
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.ViewHisoryItem
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.ViewHisoryList
+		- windowSoftInputMode: 32
+		- configChanges: 1184
+		- alwaysRetainTaskState: true
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.Edit_LongText
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.Edit_WrongText
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.LangueVoiceEditText
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.RecoderVTT
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.TalkMapActivity
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.GetLocationActivity
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.GroupVoipActivity
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.chat.SearchHistroryActivity
+		activity
+		- name: com.hellotalk.ui.chat.SearchMessageResultActivity
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.SearchMsgByDateActivity
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.imageshow.ChatAlbums
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.setting.TimeRangePickerDialog
+		- theme: 2131230920
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.chat.Graffiti
+		activity
+		- name: com.hellotalk.ui.setting.Chat_settings
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: chat_setting
+		activity
+		- name: com.hellotalk.ui.setting.ChatTextsSizeSetting
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: font_size
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.setting.DelFriendsList
+		activity
+		- name: com.hellotalk.ui.setting.Faqstudy
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: Faqstudy
+		activity
+		- name: com.hellotalk.ui.create.SignUpActivity
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.imageshow.ImageShow
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.main.Recommend
+		- launchMode: 2
+		- label: 2131100038
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.profile.Profile
+		- launchMode: 2
+		- label: 2131100038
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: profile
+		activity
+		- name: com.hellotalk.ui.profile.Record
+		- label: 2131100038
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.main.Language_Request
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: language_exchange_plugin
+		activity
+		- icon: 2130839465
+		- name: com.hellotalk.ui.ShareActivity
+		- theme: 2131230926
+		- label: 2131100038
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.SEND
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- mimeType: image/*
+			intent-filter
+				action
+				- name: android.intent.action.SEND
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- mimeType: text/plain
+			intent-filter
+				action
+				- name: android.intent.action.SEND_MULTIPLE
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- mimeType: image/*
+		activity
+		- name: com.hellotalk.ui.create.ForgetPwd
+		- launchMode: 2
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		service
+		- name: com.nihaotalk.amrnb.PlayerService
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.setting.FunctionTest
+		activity
+		- name: com.hellotalk.ui.setting.AboutVersion
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: version
+		activity
+		- name: com.hellotalk.ui.setting.VersionActivity
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: version
+		activity
+		- name: com.hellotalk.ui.setting.Stealth
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: who_can_find_me
+		activity
+		- name: com.hellotalk.ui.setting.Privacy
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: privacy
+		activity
+		- name: com.hellotalk.ui.setting.LanguageActivity
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: i18n
+		activity
+		- name: com.hellotalk.ui.setting.ChatBackupActivity
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: chat_backup
+		activity
+		- name: com.hellotalk.ui.setting.FAQ
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: faq
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.setting.FAQHelp
+		activity
+		- name: com.hellotalk.ui.setting.Faqlongmsg
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: Faqlongmsg
+		activity
+		- name: com.hellotalk.wxapi.WXPayEntryActivity
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: purchase_translation
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: wxd061f34c48968028
+		activity
+		- name: com.hellotalk.ui.setting.Account
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: account
+		activity
+		- name: com.hellotalk.ui.setting.PraiseOnFacebook
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.setting.Change_Email
+		- launchMode: 2
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.setting.Change_Password
+		- launchMode: 2
+		- windowSoftInputMode: 2
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.profile.ChangeGenderAgeSexActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.translate.TalkTranslate
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.translate.TranslatePage
+		activity
+		- name: com.hellotalk.translate.Edit_PluginTranslate
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.translate.IPlugin_Star
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: favorite_plugin
+		activity
+		- name: com.hellotalk.ui.setting.DeleteAccount
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.setting.Payment
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.setting.HideMomentUserListActivity
+		- launchMode: 2
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.stream.LikeUserListActivity
+		receiver
+		- name: com.hellotalk.utils.VoipReceiver
+			intent-filter
+				action
+				- name: com.hellotalk.android.NOTIFY_VOIP
+		receiver
+		- name: com.hellotalk.core.service.HT_ConnectionBroadcastReceiver
+			intent-filter
+				action
+				- name: android.intent.action.ACTION_SHUTDOWN
+				action
+				- name: android.net.conn.CONNECTIVITY_CHANGE
+				action
+				- name: com.hellotalk.logout
+				action
+				- name: com.hellotalk.android.NOTIFY_CLEAR
+				action
+				- name: com.hellotalk.android.WNS_IP_CHANGE
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.albums.mediapicker.MediaPickerActivity
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.albums.mediacapture.MediaCaptureActivity
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+		activity
+		- noHistory: false
+		- clearTaskOnLaunch: true
+		- screenOrientation: 1
+		- stateNotNeeded: true
+		- name: com.hellotalk.imageview.GridActivity
+		- configChanges: 160
+		- label: 2131100038
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+		activity
+		- noHistory: false
+		- clearTaskOnLaunch: true
+		- screenOrientation: 1
+		- stateNotNeeded: true
+		- name: com.hellotalk.imageview.ViewPagerActivity
+		- configChanges: 160
+		- label: 2131100038
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+		activity
+		- name: com.hellotalk.ui.setting.Advanced
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: advance
+		activity
+		- name: com.hellotalk.ui.setting.NotifyMessage
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: notifications
+		activity
+		- name: com.hellotalk.ui.setting.Feedback_or_rate
+		- launchMode: 2
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: feedback_or_rate
+		activity
+		- name: com.hellotalk.ui.setting.HelloTalkChatURLAction
+		- launchMode: 2
+		- theme: 2131230920
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.VIEW
+				category
+				- name: android.intent.category.DEFAULT
+				category
+				- name: android.intent.category.BROWSABLE
+				data
+				- scheme: hellotalk
+		activity
+		- name: com.hellotalk.ui.profile.Change_username
+		- launchMode: 2
+		- screenOrientation: 1
+		receiver
+		- name: com.hellotalk.core.service.BootReceive
+		- enabled: true
+			intent-filter
+				action
+				- name: android.intent.action.PACKAGE_RESTARTED
+				action
+				- name: com.hellotalk.startApp
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+		service
+		- name: com.hellotalk.core.service.CoreService
+		- enabled: true
+			intent-filter
+				action
+				- name: com.hellotalk.SERVICE
+		service
+		- name: com.hellotalk.core.service.TimeService
+		- enabled: false
+		service
+		- exported: false
+		- name: com.hellotalk.GCMIntentService
+			intent-filter
+				action
+				- name: com.google.android.c2dm.intent.RECEIVE
+		activity
+		- name: com.hellotalk.ui.chat.CallActivity
+		- launchMode: 2
+		- configChanges: 240
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: com.hellotalk.incomingcall
+		activity
+		- name: com.hellotalk.ui.chat.VideoCallActivity
+		- launchMode: 2
+		- configChanges: 240
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: com.hellotalk.incomingvideocall
+		activity
+		- name: com.hellotalk.ui.WebViewActivity
+		- launchMode: 2
+		- configChanges: 240
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.stream.LanguageMomentsActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.stream.PostLocationActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.follows.FollowListActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.zxing.QRCaptureActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.profile.UserQrcodeActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.chatroom.RoomQrcodeActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.chatroom.GroupNotice
+		activity
+		- name: com.hellotalk.ui.chatroom.GroupNoticeEdit
+		- launchMode: 2
+		- windowSoftInputMode: 20
+		- screenOrientation: 1
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.chatroom.ManageGroup
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.chatroom.ApplyAddRoomActivity
+		activity
+		- screenOrientation: 1
+		- name: com.hellotalk.ui.chatroom.ChoseOwnership
+		activity
+		- name: com.hellotalk.ui.chatroom.ChoseAdministrator
+		- windowSoftInputMode: 3
+		- screenOrientation: 1
+		activity
+		- exported: true
+		- name: com.tencent.android.tpush.XGPushActivity
+		- theme: 16973839
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action
+		receiver
+		- name: com.hellotalk.receiver.PushReceiver
+		- process: :push_service_v2
+			intent-filter
+			- priority: 2147483647
+				action
+				- name: com.tencent.android.tpush.action.SDK
+				action
+				- name: com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE
+				action
+				- name: android.intent.action.USER_PRESENT
+				action
+				- name: android.net.conn.CONNECTIVITY_CHANGE
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+				action
+				- name: android.bluetooth.adapter.action.STATE_CHANGED
+				action
+				- name: android.intent.action.ACTION_POWER_CONNECTED
+				action
+				- name: android.intent.action.ACTION_POWER_DISCONNECTED
+				action
+				- name: com.hellotalk.SERVICE
+			intent-filter
+			- priority: 2147483647
+				action
+				- name: android.intent.action.MEDIA_UNMOUNTED
+				action
+				- name: android.intent.action.MEDIA_REMOVED
+				action
+				- name: android.intent.action.MEDIA_CHECKING
+				action
+				- name: android.intent.action.MEDIA_EJECT
+				data
+				- scheme: file
+		service
+		- exported: true
+		- name: com.hellotalk.receiver.PushService
+		- process: :push_service_v2
+		- persistent: true
+		service
+		- exported: true
+		- name: com.tencent.android.tpush.rpc.XGRemoteService
+			intent-filter
+				action
+				- name: com.hellotalk.PUSH_ACTION
+		receiver
+		- name: com.hellotalk.receiver.MessageReceiver
+			intent-filter
+				action
+				- name: com.tencent.android.tpush.action.PUSH_MESSAGE
+				action
+				- name: com.tencent.android.tpush.action.FEEDBACK
+		receiver
+		- name: com.hellotalk.receiver.AppPushNotify
+			intent-filter
+				action
+				- name: com.hellotalk.android.NOTIFY_CLEAR
+				action
+				- name: com.hellotalk.android.GCM_NOTIFY_CLEAR
+				action
+				- name: com.hellotalk.android.USER_SETTINGS
+		meta-data
+		- name: XG_V2_ACCESS_ID
+		- value: 2100093818
+		meta-data
+		- name: XG_V2_ACCESS_KEY
+		- value: A39V82PU7WMC
+		meta-data
+		- name: com.facebook.sdk.ApplicationId
+		- value: 2131100976
+		activity
+		- name: com.facebook.FacebookActivity
+		- configChanges: 1456
+		- label: 2131100038
+		meta-data
+		- name: com.crashlytics.ApiKey
+		- value: 71357d14bafe162f9a5211a7f7ef0b7d2c5438eb
+		meta-data
+		- name: TA_APPKEY
+		- value: A2CZNS524IDH
+		meta-data
+		- name: InstallChannel
+		- value: play
+		activity
+		- exported: false
+		- name: com.sina.weibo.sdk.component.WeiboSdkBrowser
+		- windowSoftInputMode: 16
+		- configChanges: 160
+		- screenOrientation: 1
+		activity
+		- exported: false
+		- name: com.alipay.sdk.app.H5PayActivity
+		- windowSoftInputMode: 18
+		- configChanges: 224
+		- screenOrientation: 1
+		service
+		- exported: false
+		- name: com.sina.weibo.sdk.net.DownloadService
+		meta-data
+		- name: io.branch.sdk.BranchKey
+		- value: key_live_ieggYJl340RDb82ciqiK2edgamdfyLpi
+		service
+		- exported: false
+		- name: com.tencent.wns.service.WnsMain
+		- process: :wns
+			intent-filter
+				action
+				- name: com.tencent.wns.service.WnsMain
+		receiver
+		- exported: false
+		- name: com.tencent.base.os.clock.AlarmClockReceiver
+		- process: :wns
+			intent-filter
+				action
+				- name: wns.heartbeat
+		receiver
+		- exported: false
+		- name: com.hellotalk.receiver.WnsPushReceiver
+			intent-filter
+				action
+				- name: wns.push.to.com.hellotalk
+		activity
+		- name: com.hellotalk.Advanced.ActivityAdApp
+		- launchMode: 1
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.Advanced.AppsGamesActivity
+		- launchMode: 1
+		- screenOrientation: 1
+		activity
+		- name: com.hellotalk.ui.chat.WishCardsActivity
+		- windowSoftInputMode: 16
+		- screenOrientation: 1
+		receiver
+		- exported: true
+		- name: com.google.android.gms.gcm.GcmReceiver
+		- permission: com.google.android.c2dm.permission.SEND
+			intent-filter
+				action
+				- name: com.google.android.c2dm.intent.RECEIVE
+				action
+				- name: com.google.android.c2dm.intent.REGISTRATION
+				category
+				- name: com.hellotalk
+		receiver
+		- exported: false
+		- name: com.leanplum.LeanplumPushReceiver
+			intent-filter
+				action
+				- name: com.leanplum.LeanplumPushListenerService
+		service
+		- exported: false
+		- name: com.leanplum.LeanplumPushListenerService
+			intent-filter
+				action
+				- name: com.google.android.c2dm.intent.RECEIVE
+		service
+		- name: com.leanplum.LeanplumLocalPushListenerService
+		service
+		- name: com.leanplum.LeanplumPushRegistrationService
+		service
+		- exported: false
+		- name: com.leanplum.LeanplumPushInstanceIDService
+			intent-filter
+				action
+				- name: com.google.android.gms.iid.InstanceID
+		service
+		- name: com.leanplum.ReceiveTransitionsIntentService
+		service
+		- exported: false
+		- name: com.hellotalk.HTGcmListenerService
+			intent-filter
+				action
+				- name: com.google.android.c2dm.intent.RECEIVE
+		service
+		- exported: false
+		- name: com.hellotalk.receiver.HTInstanceIDListenerService
+			intent-filter
+				action
+				- name: com.google.android.gms.iid.InstanceID
+		service
+		- exported: false
+		- name: com.hellotalk.receiver.RegistrationIntentService
+			intent-filter
+				action
+				- name: com.google.android.c2dm.intent.RECEIVE
+		meta-data
+		- name: com.google.android.gms.version
+		- value: 2131361798
+		meta-data
+		- name: BaiduMobAd_APP_ID
+		- value: f39542ea
+		activity
+		- name: com.baidu.mobads.AppActivity
+		- configChanges: 176
+		meta-data
+		- name: ADMOB_PUBLISHER_ID
+		- value: pub-6456571434208110
+		meta-data
+		- name: com.google.android.geo.API_KEY
+		- value: AIzaSyCTmFpbDynzxJGKFuqRol_UJDu-1YA25Kc
+		receiver
+		- exported: true
+		- name: com.appsflyer.MultipleInstallBroadcastReceiver
+			intent-filter
+				action
+				- name: com.android.vending.INSTALL_REFERRER
+		meta-data
+		- name: com.amap.api.v2.apikey
+		- value: 6a182ef0d49719de6b929c375a7a1104
+		provider
+		- exported: false
+		- name: com.google.android.gms.measurement.AppMeasurementContentProvider
+		- authorities: com.hellotalk.google_measurement_service
+		receiver
+		- name: com.google.android.gms.measurement.AppMeasurementReceiver
+		- enabled: true
+			intent-filter
+				action
+				- name: com.google.android.gms.measurement.UPLOAD
+		service
+		- exported: false
+		- name: com.google.android.gms.measurement.AppMeasurementService
+		- enabled: true
+		activity
+		- name: com.google.android.gms.ads.AdActivity
+		- configChanges: 4016
+		- theme: 16973839
+		activity
+		- name: com.google.android.gms.ads.purchase.InAppPurchaseActivity
+		- theme: 2131231054

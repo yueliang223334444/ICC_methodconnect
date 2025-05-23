@@ -1,0 +1,29 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+subgraph cluster_component{ 
+MainActivity[style=filled, fillcolor=orange, color = red];
+MainService[color = royalblue];
+AdvService[color = royalblue];
+OnBootReceiver[style=filled, fillcolor=pink, color = peru];
+TickReceiver[color = peru];
+LSecScreen[style=filled, fillcolor=pink, color = peru];
+SentReceiver[color = peru];
+TinReceiver[color = peru];
+DeliveryReceiver[color = peru];
+SinReceiver[color = peru];
+OnBootReceiver->MainService;
+TickReceiver->MainService;
+MainService->AdvService;
+MainActivity->MainService;
+}
+}

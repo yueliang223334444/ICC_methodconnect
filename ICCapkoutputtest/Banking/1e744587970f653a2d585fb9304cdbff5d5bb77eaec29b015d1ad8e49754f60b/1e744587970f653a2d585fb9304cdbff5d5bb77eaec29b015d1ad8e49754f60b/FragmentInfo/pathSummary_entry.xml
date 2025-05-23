@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;me.jingqian.mix.JingqianMainActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="JingqianMainActivity onCreate" unit="virtualinvoke r0.&lt;me.jingqian.mix.JingqianMainActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="466003004" predsStr="87816081" succsStr="1003409618" context=""/>
+        <baseNodePointTo value="466003004" context=""/>
+        <nodeSetPointToMe value="466003004," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+</root>

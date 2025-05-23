@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;com.aizd.entry.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;com.aizd.entry.MainActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1986573567" predsStr="1344493292" succsStr="1710822397" context=""/>
+        <baseNodePointTo value="1986573567" context=""/>
+        <nodeSetPointToMe value="1986573567," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+</root>

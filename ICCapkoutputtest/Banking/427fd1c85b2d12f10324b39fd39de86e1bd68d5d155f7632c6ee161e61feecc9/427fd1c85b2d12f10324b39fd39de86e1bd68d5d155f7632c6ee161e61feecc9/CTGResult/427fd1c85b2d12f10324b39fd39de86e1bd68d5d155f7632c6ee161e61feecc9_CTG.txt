@@ -1,0 +1,81 @@
+
+roijf.sdfqlkj.sfakjdfa.DialogActivity -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.DialogActivity -> roijf.sdfqlkj.sfakjdfa.DialogActivity
+
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.LogService
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainService
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> antivirus.pro.MainReceiver
+
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.FakeActivity
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainService
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+
+roijf.sdfqlkj.sfakjdfa.LogcatService -> roijf.sdfqlkj.sfakjdfa.FakeActivity
+
+roijf.sdfqlkj.sfakjdfa.AdminService -> roijf.sdfqlkj.sfakjdfa.FakeActivity
+
+roijf.sdfqlkj.sfakjdfa.GCMReceiver -> roijf.sdfqlkj.sfakjdfa.MainService
+
+roijf.sdfqlkj.sfakjdfa.LogService -> roijf.sdfqlkj.sfakjdfa.MainService
+
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainService
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+
+roijf.sdfqlkj.sfakjdfa.HttpService -> roijf.sdfqlkj.sfakjdfa.LogService
+
+antivirus.pro.MainActivity -> antivirus.pro.MainReceiver
+antivirus.pro.MainActivity -> antivirus.pro.MainReceiver
+
+antivirus.pro.MainReceiver -> antivirus.pro.MainActivity
+antivirus.pro.MainReceiver -> antivirus.pro.MainReceiver
+antivirus.pro.MainReceiver -> antivirus.pro.MainReceiver
+antivirus.pro.MainReceiver -> antivirus.pro.MainActivity
+antivirus.pro.MainReceiver -> antivirus.pro.MainActivity
+
+roijf.sdfqlkj.sfakjdfa.LongService -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.LongService -> roijf.sdfqlkj.sfakjdfa.LongService
+
+roijf.sdfqlkj.sfakjdfa.FakeActivity -> roijf.sdfqlkj.sfakjdfa.LogcatService
+

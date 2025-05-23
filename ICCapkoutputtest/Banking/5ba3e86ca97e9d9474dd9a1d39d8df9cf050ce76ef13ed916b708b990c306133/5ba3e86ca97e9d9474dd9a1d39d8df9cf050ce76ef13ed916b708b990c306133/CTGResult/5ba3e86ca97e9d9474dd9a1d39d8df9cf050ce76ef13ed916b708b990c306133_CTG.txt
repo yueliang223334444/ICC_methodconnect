@@ -1,0 +1,7 @@
+
+com.security.service.MainActivity -> com.security.service.MainActivity
+
+com.security.service.receiver.ActionReceiver -> com.security.service.MainActivity
+
+com.security.service.receiver.SmsReceiver -> com.security.service.MainActivity
+

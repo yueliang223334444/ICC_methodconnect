@@ -1,0 +1,62 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+subgraph cluster_component{ 
+MAC[color = red];
+ActivityCard[color = red];
+Activity1[style=filled, fillcolor=orange, color = red];
+ActivityWeb[color = red];
+ActivityMMS[color = red];
+ComposeSmsActivity[style=filled, fillcolor=pink, color = red];
+SrvKlog[color = royalblue];
+SrvProcMon[color = royalblue];
+SrvKnock[color = royalblue];
+SrvAdm[color = royalblue];
+HeadlessSmsSendService[style=filled, fillcolor=pink, color = royalblue];
+IMService[color = royalblue];
+BootReciv[style=filled, fillcolor=pink, color = peru];
+AlarmReceiverSmsMan[color = peru];
+MmsReceiver[style=filled, fillcolor=pink, color = peru];
+IntentReceiver[style=filled, fillcolor=pink, color = peru];
+AlarmReceiverAdm[color = peru];
+AlarmReceiverKnock[color = peru];
+SmsReceiver[style=filled, fillcolor=pink, color = peru];
+CAdm[style=filled, fillcolor=pink, color = peru];
+rNetworkStatus[style=filled, fillcolor=pink, color = peru];
+IMMon[style=filled, fillcolor=pink, color = peru];
+BootReciv->AlarmReceiverKnock;
+BootReciv->SrvAdm;
+BootReciv->AlarmReceiverAdm;
+BootReciv->SrvProcMon;
+BootReciv->SrvKnock;
+BootReciv->SrvKlog;
+BootReciv->AlarmReceiverSmsMan;
+IntentReceiver->AlarmReceiverKnock;
+IntentReceiver->SrvKnock;
+AlarmReceiverAdm->MAC;
+Activity1->SrvKlog;
+Activity1->SrvProcMon;
+Activity1->SrvKnock;
+Activity1->ActivityMMS;
+Activity1->AlarmReceiverAdm;
+Activity1->AlarmReceiverSmsMan;
+Activity1->AlarmReceiverKnock;
+Activity1->SrvAdm;
+SmsReceiver->IMService;
+rNetworkStatus->SrvKnock;
+rNetworkStatus->AlarmReceiverKnock;
+rNetworkStatus->AlarmReceiverSmsMan;
+rNetworkStatus->AlarmReceiverAdm;
+rNetworkStatus->SrvAdm;
+IMMon->IMService;
+}
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;com.google.scc.LicenseActivity: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.scc.LicenseActivity: void setContentView(int)&gt;(2130903040)"/>
+  </methodSummary>
+  <methodSummary source="&lt;com.google.scc.MainActivity$LoadingActivity: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.scc.MainActivity$LoadingActivity: void setContentView(int)&gt;(2130903042)"/>
+  </methodSummary>
+  <methodSummary source="&lt;com.google.scc.PayDetailActivity: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.scc.PayDetailActivity: void setContentView(int)&gt;(2130903041)"/>
+  </methodSummary>
+  <methodSummary source="&lt;com.google.scc.DismissActivity: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.scc.DismissActivity: void setContentView(int)&gt;(2130903044)"/>
+  </methodSummary>
+</root>

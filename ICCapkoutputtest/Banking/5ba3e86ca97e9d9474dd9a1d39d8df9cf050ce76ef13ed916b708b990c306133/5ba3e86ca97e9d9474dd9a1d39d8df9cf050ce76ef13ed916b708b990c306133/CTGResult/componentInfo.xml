@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.security.service.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="com.security.service.MainActivity, interICC_SMS_DELIVERED, , interICC_SMS_SENT, " action="SMS_DELIVERED, SMS_SENT" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.security.service.receiver.ActionReceiver" type="Receiver" permission="android.permission.RECEIVE_BOOT_COMPLETED">
+    <manifest>
+      <intent_filter action="android.intent.action.USER_PRESENT, android.intent.action.BOOT_COMPLETED" category="android.intent.category.HOME"/>
+    </manifest>
+    <sender destination="com.security.service.MainActivity" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <receive action="android.intent.action.USER_PRESENT, android.intent.action.BOOT_COMPLETED"/>
+  </component>
+  <component name="com.security.service.receiver.SmsReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.SMS_RECEIVED"/>
+    </manifest>
+    <sender destination="com.security.service.MainActivity, interICC_SMS_DELIVERED, , interICC_SMS_SENT, " action="SMS_DELIVERED, SMS_SENT" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <receive action="android.provider.Telephony.SMS_RECEIVED" extras="String-pdus"/>
+  </component>
+  <component name="com.security.service.receiver.RebootReceiver" type="Receiver" permission="android.permission.REBOOT">
+    <manifest>
+      <intent_filter action="android.intent.action.ACTION_SHUTDOWN, android.intent.action.REBOOT"/>
+    </manifest>
+    <receive action="android.intent.action.ACTION_SHUTDOWN, android.intent.action.REBOOT"/>
+  </component>
+</root>

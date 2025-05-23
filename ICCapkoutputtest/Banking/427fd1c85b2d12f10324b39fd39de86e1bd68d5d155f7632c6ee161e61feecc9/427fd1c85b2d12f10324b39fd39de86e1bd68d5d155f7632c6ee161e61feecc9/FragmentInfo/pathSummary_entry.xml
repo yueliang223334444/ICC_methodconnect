@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;antivirus.pro.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;antivirus.pro.MainActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1043604041" predsStr="1551341824" succsStr="253456597" context=""/>
+        <baseNodePointTo value="1043604041" context=""/>
+        <nodeSetPointToMe value="1043604041," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;com.orangeery.babbleharbor.MainActivity: void b()&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void b()"/>
+      <node type="setContentView" method="MainActivity b" unit="virtualinvoke r0.&lt;com.orangeery.babbleharbor.MainActivity: void setContentView(int)&gt;(2130903042)">
+        <nodeInfo nodeId="1495247977" predsStr="821546759" succsStr="1470383853, 1503999273" context=""/>
+        <baseNodePointTo value="1495247977" context=""/>
+        <nodeSetPointToMe value="1495247977," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;roijf.sdfqlkj.sfakjdfa.DialogActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="DialogActivity onCreate" unit="virtualinvoke r0.&lt;roijf.sdfqlkj.sfakjdfa.DialogActivity: void setContentView(int)&gt;($i0)">
+        <nodeInfo nodeId="249377943" predsStr="1257205956" succsStr="552523790, 539904431, 301359621" context=""/>
+        <baseNodePointTo value="249377943" context=""/>
+        <nodeSetPointToMe value="249377943," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+</root>

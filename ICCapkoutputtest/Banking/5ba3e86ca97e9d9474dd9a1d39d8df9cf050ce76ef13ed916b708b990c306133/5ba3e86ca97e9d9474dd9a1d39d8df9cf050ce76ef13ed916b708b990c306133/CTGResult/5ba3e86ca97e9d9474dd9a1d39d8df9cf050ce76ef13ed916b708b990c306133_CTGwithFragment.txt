@@ -1,0 +1,11 @@
+
+com.security.service.MainActivity -> interICC_SMS_SENT, 
+com.security.service.MainActivity -> interICC_SMS_DELIVERED, 
+com.security.service.MainActivity -> com.security.service.MainActivity
+
+com.security.service.receiver.ActionReceiver -> com.security.service.MainActivity
+
+com.security.service.receiver.SmsReceiver -> interICC_SMS_SENT, 
+com.security.service.receiver.SmsReceiver -> interICC_SMS_DELIVERED, 
+com.security.service.receiver.SmsReceiver -> com.security.service.MainActivity
+

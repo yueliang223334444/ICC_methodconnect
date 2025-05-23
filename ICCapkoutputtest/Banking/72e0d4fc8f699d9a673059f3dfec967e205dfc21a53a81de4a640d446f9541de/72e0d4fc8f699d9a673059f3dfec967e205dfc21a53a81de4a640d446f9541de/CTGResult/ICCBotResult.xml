@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="com.red.tube.AnfortActivity">
+    <intentSummary>
+      <source name="com.red.tube.AnfortActivity"/>
+      <destination name="interICC_android.app.action.ADD_DEVICE_ADMIN, "/>
+      <sendICCInfo action="android.app.action.ADD_DEVICE_ADMIN" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN">
+        <info unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: void startActivityForResult(android.content.Intent,int)&gt;($r4, 10)" methodSig="&lt;com.red.tube.AnfortActivity: void a()&gt;" instructionId="11"/>
+      </sendICCInfo>
+      <method value="&lt;com.red.tube.AnfortActivity: void a()&gt;"/>
+      <methodtrace value="&lt;com.red.tube.AnfortActivity: void a()&gt;,void a()"/>
+      <nodes>
+        <node method="&lt;com.red.tube.AnfortActivity: void a()&gt;"/>
+        <node method="AnfortActivity a" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="AnfortActivity a" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.app.action.ADD_DEVICE_ADMIN&quot;)"/>
+        <node method="AnfortActivity a" type="SetIntentExtra" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.app.extra.DEVICE_ADMIN&quot;, $r3)"/>
+        <node method="AnfortActivity a" type="SetIntentExtra" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.app.extra.ADD_EXPLANATION&quot;, &quot;HD Codec Updater&quot;)"/>
+        <node method="AnfortActivity a" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: void startActivityForResult(android.content.Intent,int)&gt;($r4, 10)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.red.tube.AnfortActivity">
+    <intentSummary>
+      <source name="com.red.tube.AnfortActivity"/>
+      <destination name="interICC_android.app.action.ADD_DEVICE_ADMIN, "/>
+      <sendICCInfo action="android.app.action.ADD_DEVICE_ADMIN" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN">
+        <info unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: void startActivityForResult(android.content.Intent,int)&gt;($r4, 10)" methodSig="&lt;com.red.tube.AnfortActivity: void a()&gt;" instructionId="11"/>
+      </sendICCInfo>
+      <method value="&lt;com.red.tube.AnfortActivity: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.AnfortActivity: void onActivityResult(int,int,android.content.Intent)&gt;,&lt;com.red.tube.AnfortActivity: void a()&gt;,void a()"/>
+      <nodes>
+        <node method="&lt;com.red.tube.AnfortActivity: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+        <node method="&lt;com.red.tube.AnfortActivity: void a()&gt;"/>
+        <node method="AnfortActivity a" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="AnfortActivity a" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.app.action.ADD_DEVICE_ADMIN&quot;)"/>
+        <node method="AnfortActivity a" type="SetIntentExtra" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.app.extra.DEVICE_ADMIN&quot;, $r3)"/>
+        <node method="AnfortActivity a" type="SetIntentExtra" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.app.extra.ADD_EXPLANATION&quot;, &quot;HD Codec Updater&quot;)"/>
+        <node method="AnfortActivity a" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: void startActivityForResult(android.content.Intent,int)&gt;($r4, 10)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.red.tube.BootBroadcastReceiver">
+    <intentSummary>
+      <source name="com.red.tube.BootBroadcastReceiver"/>
+      <receiveICCInfo action="android.intent.action.BOOT_COMPLETED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="5" key="action" value="[android.intent.action.BOOT_COMPLETED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootBroadcastReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.BootBroadcastReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="BootBroadcastReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.BootBroadcastReceiver"/>
+      <receiveICCInfo action="android.intent.action.BOOT_COMPLETED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="5" key="action" value="[android.intent.action.BOOT_COMPLETED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootBroadcastReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.BootBroadcastReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="BootBroadcastReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.BootBroadcastReceiver"/>
+      <destination name="com.red.tube.MyService"/>
+      <sendICCInfo action=".MyService">
+        <info unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" methodSig="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="11"/>
+      </sendICCInfo>
+      <method value="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootBroadcastReceiver onReceive" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="BootBroadcastReceiver onReceive" type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>
+        <node method="BootBroadcastReceiver onReceive" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;.MyService&quot;)"/>
+        <node method="BootBroadcastReceiver onReceive" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.red.tube.MyService">
+    <intentSummary>
+      <source name="com.red.tube.MyService"/>
+      <sendICCInfo action="android.intent.action.DELETE" data="package:com.red.tube" flags="FLAG_ACTIVITY_NEW_TASK "/>
+      <method value="&lt;com.red.tube.MyService: void onCreate()&gt;"/>
+      <methodtrace value="&lt;com.red.tube.MyService: void onCreate()&gt;,void onCreate(), &lt;com.red.tube.f: void &lt;init&gt;(com.red.tube.MyService,android.widget.Toast,android.content.Intent)&gt;, void &lt;init&gt;(com.red.tube.MyService,android.widget.Toast,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.MyService: void onCreate()&gt;"/>
+        <node method="MyService onCreate" type="CreateMethod" unit="$r13 = new android.content.Intent"/>
+        <node method="MyService onCreate" type="InitIntent" unit="specialinvoke $r13.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.DELETE&quot;, $r12)"/>
+        <node method="MyService onCreate" type="SetAttribute" unit="virtualinvoke $r13.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="f &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r3 := @parameter2: android.content.Intent"/>
+        <node method="MyService onCreate" type="ReceiveIntentFromParatMethod" unit="$r3 := @parameter2: android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.red.tube.DeviceAdminReceiver">
+    <intentSummary>
+      <source name="com.red.tube.DeviceAdminReceiver"/>
+      <receiveICCInfo action="android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="DeviceAdminReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.DeviceAdminReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="DeviceAdminReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.DeviceAdminReceiver"/>
+      <receiveICCInfo action="android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="DeviceAdminReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.DeviceAdminReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="DeviceAdminReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.DeviceAdminReceiver"/>
+      <receiveICCInfo action="android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="DeviceAdminReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.DeviceAdminReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="DeviceAdminReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.DeviceAdminReceiver"/>
+      <receiveICCInfo action="android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="DeviceAdminReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.DeviceAdminReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="DeviceAdminReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.DeviceAdminReceiver"/>
+      <receiveICCInfo action="android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="DeviceAdminReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.DeviceAdminReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="DeviceAdminReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.DeviceAdminReceiver"/>
+      <receiveICCInfo action="android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="DeviceAdminReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.DeviceAdminReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="DeviceAdminReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.DeviceAdminReceiver"/>
+      <receiveICCInfo action="android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="DeviceAdminReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.DeviceAdminReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="DeviceAdminReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.DeviceAdminReceiver"/>
+      <receiveICCInfo action="android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.DeviceAdminReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="DeviceAdminReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.DeviceAdminReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="DeviceAdminReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.red.tube.AnfortActivity">
+    <intentSummary>
+      <source name="com.red.tube.AnfortActivity"/>
+      <destination name="com.red.tube.MyService"/>
+      <sendICCInfo action=".MyService">
+        <info unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r4)" methodSig="&lt;com.red.tube.AnfortActivity: void onCreate(android.os.Bundle)&gt;" instructionId="8"/>
+      </sendICCInfo>
+      <method value="&lt;com.red.tube.AnfortActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.AnfortActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.AnfortActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="AnfortActivity onCreate" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="AnfortActivity onCreate" type="InitIntent" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>
+        <node method="AnfortActivity onCreate" type="SetAttribute" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;.MyService&quot;)"/>
+        <node method="AnfortActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.AnfortActivity"/>
+      <destination name="interICC_android.app.action.ADD_DEVICE_ADMIN, "/>
+      <sendICCInfo action="android.app.action.ADD_DEVICE_ADMIN" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN">
+        <info unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: void startActivityForResult(android.content.Intent,int)&gt;($r4, 10)" methodSig="&lt;com.red.tube.AnfortActivity: void a()&gt;" instructionId="11"/>
+      </sendICCInfo>
+      <method value="&lt;com.red.tube.AnfortActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.AnfortActivity: void onCreate(android.os.Bundle)&gt;,&lt;com.red.tube.AnfortActivity: void a()&gt;,void a()"/>
+      <nodes>
+        <node method="&lt;com.red.tube.AnfortActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="&lt;com.red.tube.AnfortActivity: void a()&gt;"/>
+        <node method="AnfortActivity a" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="AnfortActivity a" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.app.action.ADD_DEVICE_ADMIN&quot;)"/>
+        <node method="AnfortActivity a" type="SetIntentExtra" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.app.extra.DEVICE_ADMIN&quot;, $r3)"/>
+        <node method="AnfortActivity a" type="SetIntentExtra" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.app.extra.ADD_EXPLANATION&quot;, &quot;HD Codec Updater&quot;)"/>
+        <node method="AnfortActivity a" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: void startActivityForResult(android.content.Intent,int)&gt;($r4, 10)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.red.tube.SmsHandler">
+    <intentSummary>
+      <source name="com.red.tube.SmsHandler"/>
+      <receiveICCInfo extras="String-pdus">
+        <info unit="$r5 = virtualinvoke $r4.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="15" key="pdus" value="null"/>
+        <info unit="$r5 = virtualinvoke $r4.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="15" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsHandler onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.SmsHandler: android.content.Intent getIntent()&gt;()"/>
+        <node method="SmsHandler onReceive" type="GetIntentExtra" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="SmsHandler onReceive" type="GetIntentExtra" unit="$r5 = virtualinvoke $r4.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.red.tube.SmsHandler"/>
+      <receiveICCInfo extras="String-pdus">
+        <info unit="$r5 = virtualinvoke $r4.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="15" key="pdus" value="null"/>
+        <info unit="$r5 = virtualinvoke $r4.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="15" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.red.tube.SmsHandler: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsHandler onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.red.tube.SmsHandler: android.content.Intent getIntent()&gt;()"/>
+        <node method="SmsHandler onReceive" type="GetIntentExtra" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="SmsHandler onReceive" type="GetIntentExtra" unit="$r5 = virtualinvoke $r4.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)"/>
+        <node method="SmsHandler onReceive" type="sendOutWrapperredIntent" unit="virtualinvoke $r20.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r10, null, $r8, null, null)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

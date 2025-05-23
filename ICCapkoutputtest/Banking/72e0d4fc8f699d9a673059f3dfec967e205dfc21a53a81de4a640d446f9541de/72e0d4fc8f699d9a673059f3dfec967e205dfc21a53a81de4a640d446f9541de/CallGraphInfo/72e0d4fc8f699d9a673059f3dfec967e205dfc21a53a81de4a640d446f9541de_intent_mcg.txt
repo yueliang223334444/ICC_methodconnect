@@ -1,0 +1,4 @@
+# Intent Method Call Graph
+<com.red.tube.MyService: void onCreate()> [com.red.tube.MyService@Service] -> <com.red.tube.f: void <init>(com.red.tube.MyService,android.widget.Toast,android.content.Intent)> [AppClass]
+<com.red.tube.f: void <init>(com.red.tube.MyService,android.widget.Toast,android.content.Intent)> [AppClass] -> <com.red.tube.f: void <init>(com.red.tube.MyService,android.widget.Toast,android.content.Intent)> [AppClass]
+写入完成

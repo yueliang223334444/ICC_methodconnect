@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="com.note.donote.activities.MainActivity" type="Activity">
+    <destination ICCType="implicit" name="com.note.donote.receivers.AlarmReceiver" desType="Receiver" edgeType="Act2NonAct" method="&lt;com.note.donote.activities.MainActivity: void onCreate(android.os.Bundle)&gt;" instructionId="61" unit="virtualinvoke $r12.&lt;android.app.AlarmManager: void setRepeating(int,long,long,android.app.PendingIntent)&gt;(0, $l0, 60000L, $r18)" action="MainActivity.AlarmAction" extras="" flags=""/>
+    <destination ICCType="implicit" name="android.intent.action.MAIN, android.intent.category.HOME" edgeType="Act2Class" method="&lt;o.ṛ: void ˊ(android.content.Context)&gt;" instructionId="5" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" action="android.intent.action.MAIN" category="android.intent.category.HOME" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="explicit" name="o.\ufb5d" edgeType="Act2Class" method="&lt;com.note.donote.activities.MainActivity: void onCreate(android.os.Bundle)&gt;" instructionId="67" unit="virtualinvoke r0.&lt;com.note.donote.activities.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r17)" extras="" flags=""/>
+    <destination ICCType="explicit" name="o.\u217d" edgeType="Act2Class" method="&lt;com.note.donote.activities.MainActivity: void onCreate(android.os.Bundle)&gt;" instructionId="92" unit="virtualinvoke r0.&lt;com.note.donote.activities.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r17)" extras="" flags=""/>
+    <destination ICCType="explicit" name="o.\ufb86" edgeType="Act2Class" method="&lt;com.note.donote.activities.MainActivity: void onCreate(android.os.Bundle)&gt;" instructionId="64" unit="virtualinvoke r0.&lt;com.note.donote.activities.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r17)" extras="" flags=""/>
+  </source>
+  <source name="com.note.donote.receivers.BootReceiver" type="Receiver">
+    <destination ICCType="explicit" name="o.\u012a" edgeType="NonAct2Class" method="&lt;com.note.donote.receivers.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="31" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+    <destination ICCType="explicit" name="o.\u217d" edgeType="NonAct2Class" method="&lt;com.note.donote.receivers.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="28" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+    <destination ICCType="explicit" name="o.\ufb86" edgeType="NonAct2Class" method="&lt;com.note.donote.receivers.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="25" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+    <destination ICCType="explicit" name="o.\ufb27" edgeType="NonAct2Class" method="&lt;com.note.donote.receivers.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="34" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+    <destination ICCType="explicit" name="o.\ufb5d" edgeType="NonAct2Class" method="&lt;com.note.donote.receivers.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="22" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+    <destination ICCType="implicit" name="com.note.donote.receivers.AlarmReceiver" desType="Receiver" edgeType="NonAct2NonAct" method="&lt;com.note.donote.receivers.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="19" unit="virtualinvoke $r4.&lt;android.app.AlarmManager: void setRepeating(int,long,long,android.app.PendingIntent)&gt;(0, $l0, 60000L, $r8)" action="MainActivity.AlarmAction" extras="" flags=""/>
+  </source>
+  <source name="o.ﺀ" type="Service">
+    <destination ICCType="implicit" name="o.ﺀ$if" desType="Receiver" edgeType="NonAct2NonAct" method="&lt;o.ﺭ: void run()&gt;" instructionId="15" unit="virtualinvoke $r1.&lt;android.app.AlarmManager: void set(int,long,android.app.PendingIntent)&gt;(0, $l0, $r3)" action="MainService.AlarmAction" extras="" flags=""/>
+    <destination ICCType="explicit" name="o.\ufe80" edgeType="NonAct2Class" method="&lt;o.ﺀ: void onDestroy()&gt;" instructionId="4" unit="virtualinvoke r0.&lt;o.ﺀ: android.content.ComponentName startService(android.content.Intent)&gt;($r1)" extras="" flags=""/>
+  </source>
+  <source name="o.ﺀ$if" type="Receiver">
+    <destination ICCType="implicit" name="o.ﺀ$if" desType="Receiver" edgeType="NonAct2NonAct" method="&lt;o.ﺭ: void run()&gt;" instructionId="15" unit="virtualinvoke $r1.&lt;android.app.AlarmManager: void set(int,long,android.app.PendingIntent)&gt;(0, $l0, $r3)" action="MainService.AlarmAction" extras="" flags=""/>
+  </source>
+  <source name="com.note.donote.activities.sms.ComposeSmsActivity" type="Activity"/>
+  <source name="o.ﮆ" type="Service">
+    <destination ICCType="explicit" name="o.\ufb86" edgeType="NonAct2Class" method="&lt;o.ﮆ: void onDestroy()&gt;" instructionId="5" unit="virtualinvoke r0.&lt;o.ﮆ: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+  </source>
+  <source name="o.ỉ" type="Activity">
+    <destination ICCType="implicit" name="android.provider.Telephony.ACTION_CHANGE_DEFAULT, " edgeType="Act2Class" method="&lt;o.ỉ: void onResume()&gt;" instructionId="12" unit="virtualinvoke r0.&lt;o.ỉ: void startActivity(android.content.Intent)&gt;($r3)" action="android.provider.Telephony.ACTION_CHANGE_DEFAULT" extras="String-package" flags=""/>
+  </source>
+  <source name="o.ῑ" type="Activity">
+    <destination ICCType="explicit" name="o.\u2054" edgeType="Act2Class" method="&lt;o.⁀: void onClick(android.view.View)&gt;" instructionId="61" unit="virtualinvoke $r3.&lt;o.ῑ: void startActivity(android.content.Intent)&gt;($r19)" extras="" flags=""/>
+  </source>
+  <source name="o.⁔" type="Activity"/>
+  <source name="com.note.donote.services.sms.HeadlessSmsSendService" type="Service"/>
+  <source name="o.ﭝ" type="Service">
+    <destination ICCType="explicit" name="o.\u1fd1" edgeType="NonAct2Class" method="&lt;o.ﭥ: void run()&gt;" instructionId="81" unit="virtualinvoke $r1.&lt;o.ﭝ: void startActivity(android.content.Intent)&gt;($r6)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="explicit" name="o.\u1ec9" edgeType="NonAct2Class" method="&lt;o.ﭥ: void run()&gt;" instructionId="22" unit="virtualinvoke $r1.&lt;o.ﭝ: void startActivity(android.content.Intent)&gt;($r6)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="explicit" name="o.\ufb5d" edgeType="NonAct2Class" method="&lt;o.ﭝ: void onDestroy()&gt;" instructionId="5" unit="virtualinvoke r0.&lt;o.ﭝ: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+  </source>
+  <source name="o.ṛ" type="Activity">
+    <destination ICCType="implicit" name="android.intent.action.MAIN, android.intent.category.HOME" edgeType="Act2Class" method="&lt;o.ṛ: void ˊ(android.content.Context)&gt;" instructionId="5" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" action="android.intent.action.MAIN" category="android.intent.category.HOME" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="implicit" name="android.app.action.ADD_DEVICE_ADMIN, " edgeType="Act2Class" method="&lt;o.ṛ: void onCreate(android.os.Bundle)&gt;" instructionId="19" unit="virtualinvoke r0.&lt;o.ṛ: void startActivityForResult(android.content.Intent,int)&gt;($r1, 100)" action="android.app.action.ADD_DEVICE_ADMIN" extras="Parcelable-android.app.extra.DEVICE_ADMIN,String-android.app.extra.ADD_EXPLANATION" flags=""/>
+  </source>
+  <source name="com.note.donote.receivers.ServiceDestroyReceiver" type="Receiver">
+    <destination ICCType="explicit" name="o.\ufb86" edgeType="NonAct2Class" method="&lt;com.note.donote.receivers.ServiceDestroyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="6" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+    <destination ICCType="explicit" name="o.\ufb5d" edgeType="NonAct2Class" method="&lt;com.note.donote.receivers.ServiceDestroyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="9" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+  </source>
+  <source name="com.note.donote.receivers.sms.MmsReceiver" type="Receiver"/>
+  <source name="o.Ī" type="Service">
+    <destination ICCType="explicit" name="o.\u012a" edgeType="NonAct2Class" method="&lt;o.Ī: void onDestroy()&gt;" instructionId="4" unit="virtualinvoke r0.&lt;o.Ī: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+  </source>
+  <source name="o.ﬧ" type="Service">
+    <destination ICCType="explicit" name="o.\ufb27" edgeType="NonAct2Class" method="&lt;o.ﬧ: void onDestroy()&gt;" instructionId="4" unit="virtualinvoke r0.&lt;o.ﬧ: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+  </source>
+  <source name="com.note.donote.receivers.sms.SmsReceiver_" type="Receiver"/>
+  <source name="com.note.donote.receivers.AdminReceiver" type="Receiver">
+    <destination ICCType="implicit" name="android.intent.action.MAIN, android.intent.category.HOME" edgeType="NonAct2Class" method="&lt;o.ṛ: void ˊ(android.content.Context)&gt;" instructionId="5" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)" action="android.intent.action.MAIN" category="android.intent.category.HOME" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="o.灬" type="Activity"/>
+  <source name="com.note.donote.receivers.AlarmReceiver" type="Receiver"/>
+  <source name="o.ὶ" type="Activity">
+    <destination ICCType="explicit" name="o.\u2054" edgeType="Act2Class" method="&lt;o.ῐ: void onClick(android.view.View)&gt;" instructionId="62" unit="virtualinvoke $r4.&lt;o.ὶ: void startActivity(android.content.Intent)&gt;($r13)" extras="" flags=""/>
+  </source>
+  <source name="com.note.donote.services.USSDService" type="Service"/>
+  <source name="com.note.donote.receivers.sms.PushServiceReciever" type="Receiver"/>
+  <source name="o.ﹽ" type="Activity"/>
+  <source name="o.ⅽ" type="Service">
+    <destination ICCType="explicit" name="o.\u1e5b" edgeType="NonAct2Class" method="&lt;o.ײַ: void run()&gt;" instructionId="26" unit="virtualinvoke $r1.&lt;o.ⅽ: void startActivity(android.content.Intent)&gt;($r7)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="explicit" name="o.\u217d" edgeType="NonAct2Class" method="&lt;o.ⅽ: void onDestroy()&gt;" instructionId="5" unit="virtualinvoke r0.&lt;o.ⅽ: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+  </source>
+  <source name="o.ᔿ" type="NotComponentSource">
+    <destination ICCType="explicit" name="o.\u012a" edgeType="Class2Any" method="&lt;o.ᔿ: void ˊ(android.content.Context,java.lang.String,java.lang.String)&gt;" instructionId="16" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r6)" extras="" flags=""/>
+  </source>
+  <source name="o.ڌ" type="NotComponentSource">
+    <destination ICCType="implicit" name="new o.ŗ, " edgeType="Class2Any" method="&lt;o.ڌ: boolean onKey(android.view.View,int,android.view.KeyEvent)&gt;" instructionId="4" unit="virtualinvoke $r3.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" action="new o.ŗ" extras="String-intent_extra_data_key,String-query,CharSequence-user_query" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="implicit" name="new o.ŗ, " edgeType="Class2Any" method="&lt;o.ڌ: boolean onKey(android.view.View,int,android.view.KeyEvent)&gt;" instructionId="4" unit="virtualinvoke $r3.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" action="new o.ŗ" extras="Bundle-app_data,(,),String-intent_extra_data_key,String-query,CharSequence-user_query" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="implicit" name="new o.ŗ, " edgeType="Class2Any" method="&lt;o.ڌ: boolean onKey(android.view.View,int,android.view.KeyEvent)&gt;" instructionId="4" unit="virtualinvoke $r3.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" action="new o.ŗ" extras="Bundle-app_data,(,),String-query,CharSequence-user_query" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="implicit" name="new o.ŗ, " edgeType="Class2Any" method="&lt;o.ڌ: boolean onKey(android.view.View,int,android.view.KeyEvent)&gt;" instructionId="4" unit="virtualinvoke $r3.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" action="new o.ŗ" extras="Bundle-app_data,(,),CharSequence-user_query" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="implicit" name="new o.ŗ, " edgeType="Class2Any" method="&lt;o.ڌ: boolean onKey(android.view.View,int,android.view.KeyEvent)&gt;" instructionId="4" unit="virtualinvoke $r3.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" action="new o.ŗ" extras="String-query,CharSequence-user_query" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="implicit" name="new o.ŗ, " edgeType="Class2Any" method="&lt;o.ڌ: boolean onKey(android.view.View,int,android.view.KeyEvent)&gt;" instructionId="4" unit="virtualinvoke $r3.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" action="new o.ŗ" extras="Bundle-app_data,(,),String-intent_extra_data_key,CharSequence-user_query" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="implicit" name="new o.ŗ, " edgeType="Class2Any" method="&lt;o.ڌ: boolean onKey(android.view.View,int,android.view.KeyEvent)&gt;" instructionId="4" unit="virtualinvoke $r3.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" action="new o.ŗ" extras="CharSequence-user_query" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="implicit" name="new o.ŗ, " edgeType="Class2Any" method="&lt;o.ڌ: boolean onKey(android.view.View,int,android.view.KeyEvent)&gt;" instructionId="4" unit="virtualinvoke $r3.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" action="new o.ŗ" extras="String-intent_extra_data_key,CharSequence-user_query" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="o.ڏ" type="NotComponentSource">
+    <destination ICCType="explicit" name="o.\ufb27" edgeType="Class2Any" method="&lt;o.ڏ: void ˊ(android.content.Context,java.lang.String,java.lang.String)&gt;" instructionId="10" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r6)" extras="" flags=""/>
+  </source>
+  <source name="o.ŗ" type="NotComponentSource">
+    <destination ICCType="implicit" name="android.speech.action.WEB_SEARCH, android.speech.action.RECOGNIZE_SPEECH, " edgeType="Class2Any" method="&lt;o.ŗ: void setSearchableInfo(android.app.SearchableInfo)&gt;" instructionId="81" unit="$r12 = virtualinvoke $r11.&lt;android.content.pm.PackageManager: android.content.pm.ResolveInfo resolveActivity(android.content.Intent,int)&gt;($r10, 65536)" action="android.speech.action.WEB_SEARCH, android.speech.action.RECOGNIZE_SPEECH" extras="" flags=""/>
+  </source>
+  <source name="o.ײַ" type="NotComponentSource">
+    <destination ICCType="explicit" name="o.\u1e5b" edgeType="Class2Any" method="&lt;o.ײַ: void run()&gt;" instructionId="26" unit="virtualinvoke $r1.&lt;o.ⅽ: void startActivity(android.content.Intent)&gt;($r7)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="o.ﭥ" type="NotComponentSource">
+    <destination ICCType="explicit" name="o.\u1ec9" edgeType="Class2Any" method="&lt;o.ﭥ: void run()&gt;" instructionId="22" unit="virtualinvoke $r1.&lt;o.ﭝ: void startActivity(android.content.Intent)&gt;($r6)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="explicit" name="o.\u1fd1" edgeType="Class2Any" method="&lt;o.ﭥ: void run()&gt;" instructionId="81" unit="virtualinvoke $r1.&lt;o.ﭝ: void startActivity(android.content.Intent)&gt;($r6)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="o.ﺭ" type="NotComponentSource">
+    <destination ICCType="implicit" name="o.ﺀ$if" desType="Receiver" edgeType="Class2Any" method="&lt;o.ﺭ: void run()&gt;" instructionId="15" unit="virtualinvoke $r1.&lt;android.app.AlarmManager: void set(int,long,android.app.PendingIntent)&gt;(0, $l0, $r3)" action="MainService.AlarmAction" extras="" flags=""/>
+  </source>
+  <source name="o.ｭ" type="NotComponentSource">
+    <destination ICCType="implicit" name="android.intent.action.GET_CONTENT, " edgeType="Class2Any" method="&lt;o.ｭ: java.lang.CharSequence ˊ(java.lang.CharSequence)&gt;" instructionId="32" unit="virtualinvoke $r5.&lt;com.note.donote.services.USSDService: void sendBroadcast(android.content.Intent)&gt;($r6)" action="android.intent.action.GET_CONTENT" extras="" flags=""/>
+  </source>
+  <source name="o.ر" type="NotComponentSource">
+    <destination ICCType="implicit" name="android.intent.action.CALL, " edgeType="Class2Any" method="&lt;o.ر: void ˊ(android.content.Context,java.lang.String,java.lang.String)&gt;" instructionId="16" unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r7)" action="android.intent.action.CALL" data="tel:" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="o.ᓵ" type="NotComponentSource">
+    <destination ICCType="explicit" name="o.\u012a" edgeType="Class2Any" method="&lt;o.ᓵ: void ˊ(android.content.Context,java.lang.String,java.lang.String)&gt;" instructionId="22" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r9)" extras="" flags=""/>
+  </source>
+</root>

@@ -1,0 +1,37 @@
+
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.AlarmReceiverKnock
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvAdm
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.AlarmReceiverAdm
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvProcMon
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvKnock
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvKlog
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvKlog
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvProcMon
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.AlarmReceiverSmsMan
+
+ssxodv.jdipue.wltter.IntentReceiver -> ssxodv.jdipue.wltter.AlarmReceiverKnock
+ssxodv.jdipue.wltter.IntentReceiver -> ssxodv.jdipue.wltter.SrvKnock
+
+ssxodv.jdipue.wltter.AlarmReceiverAdm -> ssxodv.jdipue.wltter.MAC
+
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvKlog
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvProcMon
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvKnock
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvProcMon
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvKlog
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.ActivityMMS
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.AlarmReceiverAdm
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.AlarmReceiverSmsMan
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.AlarmReceiverKnock
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvAdm
+
+ssxodv.jdipue.wltter.SmsReceiver -> ssxodv.jdipue.wltter.IMService
+
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.SrvKnock
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.AlarmReceiverKnock
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.AlarmReceiverSmsMan
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.AlarmReceiverAdm
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.SrvAdm
+
+ssxodv.jdipue.wltter.IMMon -> ssxodv.jdipue.wltter.IMService
+

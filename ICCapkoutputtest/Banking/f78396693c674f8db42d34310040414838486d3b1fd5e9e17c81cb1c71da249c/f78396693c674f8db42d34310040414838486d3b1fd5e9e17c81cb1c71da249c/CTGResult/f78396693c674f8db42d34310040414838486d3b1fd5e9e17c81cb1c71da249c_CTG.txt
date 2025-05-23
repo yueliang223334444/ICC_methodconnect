@@ -1,0 +1,9 @@
+
+com.note.donote.activities.MainActivity -> com.note.donote.receivers.AlarmReceiver
+
+com.note.donote.receivers.BootReceiver -> com.note.donote.receivers.AlarmReceiver
+
+o.ﺀ -> o.ﺀ$if
+
+o.ﺀ$if -> o.ﺀ$if
+

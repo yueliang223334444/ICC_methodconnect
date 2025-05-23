@@ -1,0 +1,4 @@
+# Intent Method Call Graph
+<me.jingqian.mix.JingqianSMS$2: void run()> [AppClass] -> <me.jingqian.mix.util.Global: void alertBroadCast(java.lang.String)> [AppClass]
+<me.jingqian.mix.util.Global: void alertBroadCast(java.lang.String)> [AppClass] -> <me.jingqian.mix.util.Global: void alertBroadCast(java.lang.String)> [AppClass]
+写入完成

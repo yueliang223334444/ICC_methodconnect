@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="com.security.service.receiver.SmsReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_SENT, "/>
+      <sendICCInfo action="SMS_SENT">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_SENT&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_DELIVERED, "/>
+      <sendICCInfo action="SMS_DELIVERED">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_DELIVERED&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.receiver.SmsReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_SENT, "/>
+      <sendICCInfo action="SMS_SENT">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_SENT&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_DELIVERED, "/>
+      <sendICCInfo action="SMS_DELIVERED">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_DELIVERED&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.receiver.SmsReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_SENT, "/>
+      <sendICCInfo action="SMS_SENT">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void setAdmin(java.lang.String,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void setAdmin(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void setAdmin(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_SENT&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_DELIVERED, "/>
+      <sendICCInfo action="SMS_DELIVERED">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void setAdmin(java.lang.String,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void setAdmin(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void setAdmin(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_DELIVERED&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.receiver.SmsReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_SENT, "/>
+      <sendICCInfo action="SMS_SENT">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void enableService(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void enableService(android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void enableService(android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_SENT&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_DELIVERED, "/>
+      <sendICCInfo action="SMS_DELIVERED">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void enableService(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void enableService(android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void enableService(android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_DELIVERED&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.receiver.SmsReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_SENT, "/>
+      <sendICCInfo action="SMS_SENT">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_SENT&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_DELIVERED, "/>
+      <sendICCInfo action="SMS_DELIVERED">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_DELIVERED&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.receiver.SmsReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_SENT, "/>
+      <sendICCInfo action="SMS_SENT">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void disableService(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void disableService(android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void disableService(android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_SENT&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_DELIVERED, "/>
+      <sendICCInfo action="SMS_DELIVERED">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void disableService(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void disableService(android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void disableService(android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsAnyway(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_DELIVERED&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.receiver.SmsReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_SENT, "/>
+      <sendICCInfo action="SMS_SENT">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_SENT&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_DELIVERED, "/>
+      <sendICCInfo action="SMS_DELIVERED">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_DELIVERED&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.MainActivity">
+    <intentSummary>
+      <source name="com.security.service.MainActivity"/>
+      <destination name="interICC_SMS_SENT, "/>
+      <sendICCInfo action="SMS_SENT">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;com.security.service.MainActivity: void onCreate(android.os.Bundle)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_SENT&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.MainActivity"/>
+      <destination name="interICC_SMS_DELIVERED, "/>
+      <sendICCInfo action="SMS_DELIVERED">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;com.security.service.MainActivity: void onCreate(android.os.Bundle)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendInintSms(android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_DELIVERED&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.MainActivity">
+    <intentSummary>
+      <source name="com.security.service.MainActivity"/>
+      <destination name="com.security.service.MainActivity"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r1)" methodSig="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;" instructionId="7"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;"/>
+      <methodtrace value="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;,void showActivityAndSendInit(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;"/>
+        <node method="MainActivity showActivityAndSendInit" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity showActivityAndSendInit" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lcom/security/service/MainActivity;&quot;)"/>
+        <node method="MainActivity showActivityAndSendInit" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="MainActivity showActivityAndSendInit" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.receiver.ActionReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.ActionReceiver"/>
+      <receiveICCInfo action="android.intent.action.BOOT_COMPLETED, android.intent.action.USER_PRESENT">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="5" key="action" value="[android.intent.action.BOOT_COMPLETED]"/>
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="9" key="action" value="[android.intent.action.USER_PRESENT]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="ActionReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.ActionReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="ActionReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="ActionReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.ActionReceiver"/>
+      <destination name="com.security.service.MainActivity"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r1)" methodSig="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;" instructionId="7"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;,void showActivityAndSendInit(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;"/>
+        <node method="MainActivity showActivityAndSendInit" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity showActivityAndSendInit" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lcom/security/service/MainActivity;&quot;)"/>
+        <node method="MainActivity showActivityAndSendInit" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="MainActivity showActivityAndSendInit" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.ActionReceiver"/>
+      <receiveICCInfo action="android.intent.action.BOOT_COMPLETED, android.intent.action.USER_PRESENT">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="5" key="action" value="[android.intent.action.BOOT_COMPLETED]"/>
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="9" key="action" value="[android.intent.action.USER_PRESENT]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="ActionReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.ActionReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="ActionReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="ActionReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.ActionReceiver"/>
+      <receiveICCInfo action="android.intent.action.BOOT_COMPLETED">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="5" key="action" value="[android.intent.action.BOOT_COMPLETED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="ActionReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.ActionReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="ActionReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.receiver.SmsReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_SENT, "/>
+      <sendICCInfo action="SMS_SENT">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_SENT&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <receiveICCInfo action="android.provider.Telephony.SMS_RECEIVED" extras="String-pdus">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.provider.Telephony.SMS_RECEIVED]"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.SmsReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r6 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <receiveICCInfo action="android.provider.Telephony.SMS_RECEIVED" extras="String-pdus">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.provider.Telephony.SMS_RECEIVED]"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.SmsReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r6 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <receiveICCInfo action="android.provider.Telephony.SMS_RECEIVED" extras="String-pdus">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.provider.Telephony.SMS_RECEIVED]"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.SmsReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r6 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <receiveICCInfo action="android.provider.Telephony.SMS_RECEIVED" extras="String-pdus">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.provider.Telephony.SMS_RECEIVED]"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.SmsReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r6 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <receiveICCInfo action="android.provider.Telephony.SMS_RECEIVED" extras="String-pdus">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.provider.Telephony.SMS_RECEIVED]"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.SmsReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r6 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="interICC_SMS_DELIVERED, "/>
+      <sendICCInfo action="SMS_DELIVERED">
+        <info unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;,&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;,void processSend(java.lang.String,java.lang.String,android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void sendSmsIfEnabled(java.lang.String,android.content.Context)&gt;"/>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;"/>
+        <node method="SmsReceiver processSend" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="SmsReceiver processSend" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;SMS_DELIVERED&quot;)"/>
+        <node method="SmsReceiver processSend" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <receiveICCInfo action="android.provider.Telephony.SMS_RECEIVED" extras="String-pdus">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.provider.Telephony.SMS_RECEIVED]"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+        <info unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="14" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.SmsReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r6 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r7 = virtualinvoke $r6.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <destination name="com.security.service.MainActivity"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r1)" methodSig="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;" instructionId="7"/>
+      </sendICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;,void showActivityAndSendInit(android.content.Context)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;"/>
+        <node method="MainActivity showActivityAndSendInit" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity showActivityAndSendInit" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lcom/security/service/MainActivity;&quot;)"/>
+        <node method="MainActivity showActivityAndSendInit" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="MainActivity showActivityAndSendInit" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.SmsReceiver"/>
+      <receiveICCInfo action="android.provider.Telephony.SMS_RECEIVED">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.provider.Telephony.SMS_RECEIVED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.SmsReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.security.service.receiver.RebootReceiver">
+    <intentSummary>
+      <source name="com.security.service.receiver.RebootReceiver"/>
+      <receiveICCInfo action="android.intent.action.REBOOT">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.RebootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="5" key="action" value="[android.intent.action.REBOOT]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.RebootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.RebootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.RebootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="RebootReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.RebootReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="RebootReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.security.service.receiver.RebootReceiver"/>
+      <receiveICCInfo action="android.intent.action.REBOOT, android.intent.action.ACTION_SHUTDOWN">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.RebootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="5" key="action" value="[android.intent.action.REBOOT]"/>
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.security.service.receiver.RebootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="9" key="action" value="[android.intent.action.ACTION_SHUTDOWN]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.security.service.receiver.RebootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.security.service.receiver.RebootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.security.service.receiver.RebootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="RebootReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.security.service.receiver.RebootReceiver: android.content.Intent getIntent()&gt;()"/>
+        <node method="RebootReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="RebootReceiver onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

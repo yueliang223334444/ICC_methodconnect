@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="com.red.tube.MyService" type="Service">
+    <destination ICCType="explicit" name="com.red.tube.MyService" desType="Service" edgeType="NonAct2NonAct" method="&lt;com.red.tube.MyService: void a(java.lang.String,java.lang.String)&gt;" instructionId="7" unit="virtualinvoke $r5.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, $r4, null)" extras="" flags=""/>
+  </source>
+  <source name="com.red.tube.AnfortActivity" type="Activity">
+    <destination ICCType="implicit" name="com.red.tube.MyService" desType="Service" edgeType="Act2NonAct" method="&lt;com.red.tube.AnfortActivity: void onCreate(android.os.Bundle)&gt;" instructionId="8" unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r4)" action=".MyService" extras="" flags=""/>
+    <destination ICCType="implicit" name="android.app.action.ADD_DEVICE_ADMIN, " edgeType="Act2Class" method="&lt;com.red.tube.AnfortActivity: void a()&gt;" instructionId="11" unit="virtualinvoke r0.&lt;com.red.tube.AnfortActivity: void startActivityForResult(android.content.Intent,int)&gt;($r4, 10)" action="android.app.action.ADD_DEVICE_ADMIN" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN" flags=""/>
+  </source>
+  <source name="com.red.tube.SmsHandler" type="Receiver"/>
+  <source name="com.red.tube.BootBroadcastReceiver" type="Receiver">
+    <destination ICCType="implicit" name="com.red.tube.MyService" desType="Service" edgeType="NonAct2NonAct" method="&lt;com.red.tube.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="11" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" action=".MyService" extras="" flags=""/>
+  </source>
+  <source name="com.red.tube.DeviceAdminReceiver" type="Receiver"/>
+  <source name="com.red.tube.f" type="NotComponentSource">
+    <destination ICCType="explicit" name="com.red.tube.MyService" desType="Service" edgeType="Class2Any" method="&lt;com.red.tube.MyService: void a(java.lang.String,java.lang.String)&gt;" instructionId="7" unit="virtualinvoke $r5.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, $r4, null)" extras="" flags=""/>
+  </source>
+</root>

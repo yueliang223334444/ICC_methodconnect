@@ -1,0 +1,14 @@
+
+me.jingqian.mix.JingqianMainActivity -> me.jingqian.mix.service.JingqianCoreService
+me.jingqian.mix.JingqianMainActivity -> me.jingqian.mix.service.JingqianCoreService
+
+me.jingqian.mix.receiver.JingqianBootBroadcastReceiver -> me.jingqian.mix.service.JingqianCoreService
+me.jingqian.mix.receiver.JingqianBootBroadcastReceiver -> me.jingqian.mix.service.JingqianCoreService
+
+me.jingqian.mix.service.JingqianCoreService -> me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver
+me.jingqian.mix.service.JingqianCoreService -> me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver
+me.jingqian.mix.service.JingqianCoreService -> me.jingqian.mix.receiver.JingqianBootBroadcastReceiver
+me.jingqian.mix.service.JingqianCoreService -> me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver
+
+me.jingqian.mix.service.JingqianCoreService$MyBroadcastReciver -> me.jingqian.mix.receiver.JingqianBootBroadcastReceiver
+

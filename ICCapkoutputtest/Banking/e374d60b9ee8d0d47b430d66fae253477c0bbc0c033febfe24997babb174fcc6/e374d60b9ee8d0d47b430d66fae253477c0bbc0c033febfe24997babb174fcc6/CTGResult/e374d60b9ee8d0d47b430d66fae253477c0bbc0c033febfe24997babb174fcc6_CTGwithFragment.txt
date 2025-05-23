@@ -1,0 +1,34 @@
+
+com.google.scc.DismissActivity -> interICC_android.intent.action.CALL, 
+com.google.scc.DismissActivity -> interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, 
+
+com.google.scc.DataService -> interICC_android.intent.action.CALL, 
+com.google.scc.DataService -> interICC_android.intent.action.DELETE, 
+
+com.google.scc.SuperActivity -> interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, 
+
+com.google.scc.LicenseActivity -> com.google.scc.PayDetailActivity
+com.google.scc.LicenseActivity -> interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, 
+com.google.scc.LicenseActivity -> com.google.scc.LicenseActivity
+
+com.google.scc.PayDetailActivity -> interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, 
+com.google.scc.PayDetailActivity -> com.google.scc.PayDetailActivity
+com.google.scc.PayDetailActivity -> interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, 
+
+com.google.scc.USSDDumbExtendedNetworkService -> interICC_android.intent.action.GET_CONTENT, 
+
+com.google.scc.MainActivity -> com.google.scc.DataService
+com.google.scc.MainActivity -> com.google.scc.LicenseActivity
+com.google.scc.MainActivity -> com.google.scc.MainActivity
+com.google.scc.MainActivity -> interICC_android.intent.action.CALL, 
+com.google.scc.MainActivity -> com.google.scc.DataService
+com.google.scc.MainActivity -> interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, 
+
+com.google.scc.LowLevel -> interICC_android.app.action.ADD_DEVICE_ADMIN, 
+com.google.scc.LowLevel -> com.google.scc.MainActivity
+
+com.google.scc.BootReceiver -> com.google.scc.MainActivity
+com.google.scc.BootReceiver -> com.google.scc.DataService
+com.google.scc.BootReceiver -> com.google.scc.MainActivity
+com.google.scc.BootReceiver -> com.google.scc.DataService
+

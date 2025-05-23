@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="com.admv3.listener.OnBootReceiver" type="Receiver">
+    <destination ICCType="explicit" name="com.admv.service.MainService" desType="Service" edgeType="NonAct2NonAct" method="&lt;com.admv3.listener.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="6" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination ICCType="explicit" name="com.admv.service.MainService" desType="Service" edgeType="NonAct2NonAct" method="&lt;com.admv3.listener.OnBootReceiver: void rdeEn(android.content.Context,android.content.Intent)&gt;" instructionId="6" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+  </source>
+  <source name="com.admv3.listener.TickReceiver" type="Receiver">
+    <destination ICCType="explicit" name="com.admv.service.MainService" desType="Service" edgeType="NonAct2NonAct" method="&lt;com.admv3.listener.TickReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="17" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+  </source>
+  <source name="com.aizd.entry.LSecScreen" type="Receiver"/>
+  <source name="com.admv3.listener.SentReceiver" type="Receiver"/>
+  <source name="com.admv3.listener.TinReceiver" type="Receiver"/>
+  <source name="com.admv.service.MainService" type="Service">
+    <destination ICCType="explicit" name="com.admv.service.AdvService" desType="Service" edgeType="NonAct2NonAct" method="&lt;com.admv.service.MainService: void HsVide(android.content.Context)&gt;" instructionId="5" unit="virtualinvoke r0.&lt;com.admv.service.MainService: android.content.ComponentName startService(android.content.Intent)&gt;($r2)" extras="" flags=""/>
+  </source>
+  <source name="com.admv3.listener.DeliveryReceiver" type="Receiver"/>
+  <source name="com.admv.service.AdvService" type="Service">
+    <destination ICCType="implicit" name="com.newage.thz.send, " edgeType="NonAct2Class" method="&lt;com.ejaob2.actionjob.AdvAction: void SmsAction_Send(java.lang.String,java.lang.String,int,int)&gt;" instructionId="20" unit="virtualinvoke $r9.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, $r6, $r8)" action="com.newage.thz.send" extras="int-task_id,int-phone_id" flags=""/>
+    <destination ICCType="implicit" name="com.newage.thz.send, com.newage.thz.delivery, " edgeType="NonAct2Class" method="&lt;com.admv.service.AdvService: boolean CommandProcess(byte[])&gt;" instructionId="20" unit="virtualinvoke $r9.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, $r6, $r8)" action="com.newage.thz.send, com.newage.thz.delivery" extras="int-task_id,int-phone_id" flags=""/>
+    <destination ICCType="implicit" name="com.newage.thz.delivery, " edgeType="NonAct2Class" method="&lt;com.ejaob2.actionjob.AdvAction: void SmsAction_Send(java.lang.String,java.lang.String,int,int)&gt;" instructionId="20" unit="virtualinvoke $r9.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, $r6, $r8)" action="com.newage.thz.delivery" extras="int-task_id,int-phone_id" flags=""/>
+  </source>
+  <source name="com.aizd.entry.MainActivity" type="Activity">
+    <destination ICCType="explicit" name="com.admv.service.MainService" desType="Service" edgeType="Act2NonAct" method="&lt;com.aizd.entry.MainActivity: void onCreate(android.os.Bundle)&gt;" instructionId="15" unit="virtualinvoke r0.&lt;com.aizd.entry.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r6)" extras="" flags=""/>
+    <destination ICCType="implicit" name="android.app.action.ADD_DEVICE_ADMIN, " edgeType="Act2Class" method="&lt;com.aizd.entry.MainActivity: void startAddDeviceAdminAty()&gt;" instructionId="6" unit="virtualinvoke r0.&lt;com.aizd.entry.MainActivity: void startActivity(android.content.Intent)&gt;(r1)" action="android.app.action.ADD_DEVICE_ADMIN" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN" flags=""/>
+  </source>
+  <source name="com.admv3.listener.SinReceiver" type="Receiver"/>
+  <source name="com.ejaob2.actionjob.AdvAction" type="NotComponentSource">
+    <destination ICCType="implicit" name="com.newage.thz.send, " edgeType="Class2Any" method="&lt;com.ejaob2.actionjob.AdvAction: void SmsAction_Send(java.lang.String,java.lang.String,int,int)&gt;" instructionId="20" unit="virtualinvoke $r9.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, $r6, $r8)" action="com.newage.thz.send" extras="int-task_id,int-phone_id" flags=""/>
+    <destination ICCType="implicit" name="com.newage.thz.delivery, " edgeType="Class2Any" method="&lt;com.ejaob2.actionjob.AdvAction: void SmsAction_Send(java.lang.String,java.lang.String,int,int)&gt;" instructionId="20" unit="virtualinvoke $r9.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, $r6, $r8)" action="com.newage.thz.delivery" extras="int-task_id,int-phone_id" flags=""/>
+    <destination ICCType="implicit" name="com.newage.thz.send, com.newage.thz.delivery, " edgeType="Class2Any" method="&lt;com.ejaob2.actionjob.AdvAction: void SmsAction(java.lang.String,int,java.util.Vector)&gt;" instructionId="20" unit="virtualinvoke $r9.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, $r6, $r8)" action="com.newage.thz.send, com.newage.thz.delivery" extras="int-task_id,int-phone_id" flags=""/>
+  </source>
+</root>

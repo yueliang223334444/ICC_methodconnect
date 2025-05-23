@@ -1,0 +1,180 @@
+
+roijf.sdfqlkj.sfakjdfa.WebActivity -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+
+com.orangeery.babbleharbor.d -> roijf.sdfqlkj.sfakjdfa.MainService
+
+com.orangeery.babbleharbor.f -> interICC_android.intent.action.VIEW, 
+com.orangeery.babbleharbor.f -> roijf.sdfqlkj.sfakjdfa.MainService
+com.orangeery.babbleharbor.f -> roijf.sdfqlkj.sfakjdfa.LogService
+com.orangeery.babbleharbor.f -> interICC_android.intent.action.DELETE, 
+
+a.b.a.a.a.a -> interICC_com.google.android.c2dm.intent.REGISTER, 
+a.b.a.a.a.a -> interICC_com.google.android.c2dm.intent.REGISTER, 
+
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.FakeActivity
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainService
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+
+com.orangeery.babbleharbor.i -> roijf.sdfqlkj.sfakjdfa.LogService
+
+com.orangeery.babbleharbor.k -> interICC_android.intent.action.CALL, 
+
+com.orangeery.babbleharbor.l -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+
+roijf.sdfqlkj.sfakjdfa.GCMReceiver -> roijf.sdfqlkj.sfakjdfa.MainService
+
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.MainService
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bf -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+
+antivirus.pro.MainActivity -> antivirus.pro.MainReceiver
+antivirus.pro.MainActivity -> antivirus.pro.MainReceiver
+antivirus.pro.MainActivity -> interICC_android.intent.action.DELETE, 
+
+roijf.sdfqlkj.sfakjdfa.LongService -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.LongService -> roijf.sdfqlkj.sfakjdfa.LongService
+
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.WebActivity
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_new java.lang.String, 
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_new java.lang.String, 
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.CALL, 
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_com.google.android.c2dm.intent.REGISTER, 
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainService
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_com.google.android.c2dm.intent.REGISTER, 
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.FakeActivity
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.DELETE, 
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainService
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.DialogActivity
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.bh -> roijf.sdfqlkj.sfakjdfa.WebActivity
+
+roijf.sdfqlkj.sfakjdfa.DialogActivity -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.DialogActivity -> roijf.sdfqlkj.sfakjdfa.DialogActivity
+roijf.sdfqlkj.sfakjdfa.DialogActivity -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.LogService
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainService
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> interICC_android.intent.action.VIEW, 
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> interICC_android.intent.action.DELETE, 
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+com.orangeery.babbleharbor.MainActivity -> antivirus.pro.MainReceiver
+
+roijf.sdfqlkj.sfakjdfa.bv -> roijf.sdfqlkj.sfakjdfa.LogService
+
+roijf.sdfqlkj.sfakjdfa.LogcatService -> roijf.sdfqlkj.sfakjdfa.FakeActivity
+
+roijf.sdfqlkj.sfakjdfa.AdminService -> roijf.sdfqlkj.sfakjdfa.FakeActivity
+roijf.sdfqlkj.sfakjdfa.AdminService -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+
+roijf.sdfqlkj.sfakjdfa.by -> roijf.sdfqlkj.sfakjdfa.LogService
+
+roijf.sdfqlkj.sfakjdfa.bw -> roijf.sdfqlkj.sfakjdfa.LogService
+
+com.orangeery.babbleharbor.m -> roijf.sdfqlkj.sfakjdfa.LogService
+com.orangeery.babbleharbor.m -> interICC_android.intent.action.VIEW, 
+com.orangeery.babbleharbor.m -> interICC_android.intent.action.DELETE, 
+com.orangeery.babbleharbor.m -> roijf.sdfqlkj.sfakjdfa.MainService
+
+roijf.sdfqlkj.sfakjdfa.LogService -> roijf.sdfqlkj.sfakjdfa.MainService
+
+antivirus.pro.d -> antivirus.pro.MainReceiver
+antivirus.pro.d -> antivirus.pro.MainReceiver
+
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_com.google.android.c2dm.intent.REGISTER, 
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainService
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_com.google.android.c2dm.intent.REGISTER, 
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_android.intent.action.VIEW, 
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.MainService -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+roijf.sdfqlkj.sfakjdfa.MainService -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.LogService
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+roijf.sdfqlkj.sfakjdfa.AdminReceiver -> roijf.sdfqlkj.sfakjdfa.MainReceiver
+
+roijf.sdfqlkj.sfakjdfa.cb -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+
+roijf.sdfqlkj.sfakjdfa.ca -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+
+roijf.sdfqlkj.sfakjdfa.HttpService -> roijf.sdfqlkj.sfakjdfa.LogService
+
+antivirus.pro.MainReceiver -> antivirus.pro.MainActivity
+antivirus.pro.MainReceiver -> antivirus.pro.MainReceiver
+antivirus.pro.MainReceiver -> antivirus.pro.MainReceiver
+antivirus.pro.MainReceiver -> antivirus.pro.MainActivity
+antivirus.pro.MainReceiver -> antivirus.pro.MainActivity
+
+com.orangeery.babbleharbor.MainApplication -> roijf.sdfqlkj.sfakjdfa.LogService
+
+roijf.sdfqlkj.sfakjdfa.FakeActivity -> roijf.sdfqlkj.sfakjdfa.LogcatService
+roijf.sdfqlkj.sfakjdfa.FakeActivity -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+

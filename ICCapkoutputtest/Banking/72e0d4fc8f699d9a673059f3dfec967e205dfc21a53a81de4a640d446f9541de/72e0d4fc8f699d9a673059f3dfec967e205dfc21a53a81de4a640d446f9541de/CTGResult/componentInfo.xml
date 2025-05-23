@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.red.tube.MyService" type="Service">
+    <manifest>
+      <intent_filter action=".MyService"/>
+    </manifest>
+    <sender destination="com.red.tube.MyService" action="android.intent.action.DELETE" data="package:com.red.tube" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.red.tube.AnfortActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="interICC_android.app.action.ADD_DEVICE_ADMIN, , com.red.tube.MyService" action="android.app.action.ADD_DEVICE_ADMIN, .MyService" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN"/>
+  </component>
+  <component name="com.red.tube.SmsHandler" type="Receiver">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.SMS_RECEIVED"/>
+    </manifest>
+    <receive extras="String-pdus"/>
+  </component>
+  <component name="com.red.tube.BootBroadcastReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED"/>
+    </manifest>
+    <sender destination="com.red.tube.MyService" action=".MyService"/>
+    <receive action="android.intent.action.BOOT_COMPLETED"/>
+  </component>
+  <component name="com.red.tube.DeviceAdminReceiver" type="Receiver" permission="android.permission.BIND_DEVICE_ADMIN">
+    <manifest>
+      <intent_filter action="android.app.action.DEVICE_ADMIN_ENABLED"/>
+    </manifest>
+    <receive action="android.app.action.ACTION_PASSWORD_FAILED, android.app.action.ACTION_PASSWORD_EXPIRING, android.app.action.ACTION_PASSWORD_CHANGED, android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.ACTION_PASSWORD_SUCCEEDED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"/>
+  </component>
+</root>

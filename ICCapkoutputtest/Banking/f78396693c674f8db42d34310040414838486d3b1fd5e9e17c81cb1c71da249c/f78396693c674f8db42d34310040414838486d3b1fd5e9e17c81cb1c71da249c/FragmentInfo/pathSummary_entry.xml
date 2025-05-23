@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;o.і: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="і onCreate" unit="virtualinvoke $r3.&lt;o.ᕐ: void setContentView(int)&gt;($i0)">
+        <nodeInfo nodeId="543150613" predsStr="26714244" succsStr="2066853392" context=""/>
+        <baseNodePointTo value="543150613" context=""/>
+        <nodeSetPointToMe value="543150613," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;o.ﹽ: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="ﹽ onCreate" unit="virtualinvoke r0.&lt;o.ﹽ: void setContentView(int)&gt;(2130903066)">
+        <nodeInfo nodeId="867807849" predsStr="2122958544" succsStr="159046670, 347275212" context=""/>
+        <baseNodePointTo value="867807849" context=""/>
+        <nodeSetPointToMe value="867807849," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;com.note.donote.activities.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;com.note.donote.activities.MainActivity: void setContentView(int)&gt;(2130903065)">
+        <nodeInfo nodeId="2127576798" predsStr="2137888911" succsStr="794258125" context=""/>
+        <baseNodePointTo value="2127576798" context=""/>
+        <nodeSetPointToMe value="2127576798," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+</root>

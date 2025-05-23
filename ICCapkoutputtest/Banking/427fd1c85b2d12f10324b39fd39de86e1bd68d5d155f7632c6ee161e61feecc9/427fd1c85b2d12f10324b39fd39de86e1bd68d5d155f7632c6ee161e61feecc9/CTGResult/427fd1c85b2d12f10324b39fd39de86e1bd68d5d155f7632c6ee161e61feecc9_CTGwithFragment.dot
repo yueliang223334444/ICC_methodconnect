@@ -1,0 +1,54 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+subgraph cluster_component{ 
+DialogActivity[style=filled, fillcolor=pink, color = red];
+WebActivity[color = red];
+MainActivity[style=filled, fillcolor=orange, color = red];
+MainActivity[color = red];
+FakeActivity[color = red];
+LogService[color = royalblue];
+MainService[color = royalblue];
+HttpService[color = royalblue];
+USSDService[style=filled, fillcolor=pink, color = royalblue];
+LogcatService[color = royalblue];
+AdminService[color = royalblue];
+LongService[color = royalblue];
+AdminReceiver[style=filled, fillcolor=pink, color = peru];
+MainReceiver[style=filled, fillcolor=pink, color = peru];
+MainReceiver[style=filled, fillcolor=pink, color = peru];
+GCMReceiver[style=filled, fillcolor=pink, color = peru];
+MainReceiver->MainReceiver;
+MainReceiver->FakeActivity;
+MainReceiver->LogService;
+MainReceiver->MainService;
+GCMReceiver->MainService;
+MainActivity->MainReceiver;
+LongService->LogService;
+LongService->LongService;
+DialogActivity->LogService;
+DialogActivity->DialogActivity;
+MainActivity->LogService;
+MainActivity->MainService;
+LogcatService->FakeActivity;
+AdminService->FakeActivity;
+LogService->MainService;
+MainService->LogService;
+MainService->MainReceiver;
+MainService->MainService;
+AdminReceiver->MainReceiver;
+AdminReceiver->LogService;
+HttpService->LogService;
+MainReceiver->MainActivity;
+FakeActivity->LogcatService;
+}
+}

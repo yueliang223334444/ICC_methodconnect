@@ -1,0 +1,23 @@
+
+com.trdos.cores.Ma -> com.trdos.cores.Sb
+com.trdos.cores.Ma -> interICC_, 
+
+com.trdos.cores.e -> interICC_, 
+
+com.trdos.cores.Dc -> com.trdos.cores.Dc
+
+com.trdos.cores.Sb -> com.trdos.cores.Sb
+
+com.trdos.cores.i -> interICC_, 
+
+com.trdos.cores.Db -> com.trdos.cores.Sb
+
+com.trdos.cores.MainActivity -> com.trdos.cores.Dc
+com.trdos.cores.MainActivity -> com.trdos.cores.Db
+com.trdos.cores.MainActivity -> com.trdos.cores.Sb
+com.trdos.cores.MainActivity -> com.trdos.cores.Dc
+
+com.trdos.cores.w -> interICC_, 
+
+com.trdos.cores.p -> interICC_, 
+

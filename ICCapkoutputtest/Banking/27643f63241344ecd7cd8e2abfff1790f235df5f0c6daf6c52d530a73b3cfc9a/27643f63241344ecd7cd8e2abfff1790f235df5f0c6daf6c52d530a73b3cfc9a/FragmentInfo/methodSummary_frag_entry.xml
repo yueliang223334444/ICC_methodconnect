@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;com.google.game.store.site.BKMain: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903046)"/>
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903044)"/>
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903043)"/>
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903042)"/>
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903045)"/>
+  </methodSummary>
+  <methodSummary source="&lt;com.google.game.store.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.google.game.store.MainActivity: void setContentView(int)&gt;(2130903040)"/>
+  </methodSummary>
+</root>

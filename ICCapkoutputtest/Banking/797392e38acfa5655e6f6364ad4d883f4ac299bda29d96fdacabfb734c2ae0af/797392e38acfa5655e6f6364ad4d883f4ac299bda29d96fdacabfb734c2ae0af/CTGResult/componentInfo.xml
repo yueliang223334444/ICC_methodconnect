@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.admv3.listener.OnBootReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="com.admv.service.MainService" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.admv3.listener.TickReceiver" type="Receiver">
+    <sender destination="com.admv.service.MainService"/>
+    <receive action="android.intent.action.TIME_TICK"/>
+  </component>
+  <component name="com.aizd.entry.LSecScreen" type="Receiver" permission="android.permission.BIND_DEVICE_ADMIN">
+    <manifest>
+      <intent_filter action="android.app.action.DEVICE_ADMIN_ENABLED"/>
+    </manifest>
+  </component>
+  <component name="com.admv3.listener.SentReceiver" type="Receiver">
+    <sender action="com.newage.thz.send" extras="int-task_id,int-phone_id"/>
+    <receive action="com.newage.thz.send" extras="int-task_id,int-phone_id"/>
+  </component>
+  <component name="com.admv3.listener.TinReceiver" type="Receiver">
+    <receive action="android.intent.action.PHONE_STATE" extras="String-state,String-incoming_number"/>
+  </component>
+  <component name="com.admv.service.MainService" type="Service">
+    <sender destination="com.admv.service.AdvService"/>
+  </component>
+  <component name="com.admv3.listener.DeliveryReceiver" type="Receiver">
+    <sender action="com.newage.thz.delivery" extras="int-task_id,int-phone_id"/>
+    <receive action="com.newage.thz.delivery" extras="int-task_id,int-phone_id"/>
+  </component>
+  <component name="com.admv.service.AdvService" type="Service">
+    <sender destination="interICC_com.newage.thz.delivery, , interICC_com.newage.thz.send, , interICC_com.newage.thz.send, com.newage.thz.delivery, " action="com.newage.thz.delivery, com.newage.thz.send" extras="int-task_id,int-phone_id"/>
+  </component>
+  <component name="com.aizd.entry.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="interICC_android.app.action.ADD_DEVICE_ADMIN, , com.admv.service.MainService" action="android.app.action.ADD_DEVICE_ADMIN" extras="String-android.app.extra.ADD_EXPLANATION,Parcelable-android.app.extra.DEVICE_ADMIN"/>
+  </component>
+  <component name="com.admv3.listener.SinReceiver" type="Receiver">
+    <receive extras="String-pdus"/>
+  </component>
+</root>

@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="com.google.scc.USSDDumbExtendedNetworkService">
+    <intentSummary>
+      <source name="com.google.scc.USSDDumbExtendedNetworkService"/>
+      <receiveICCInfo action="android.intent.action.INSERT">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.USSDDumbExtendedNetworkService$1: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.intent.action.INSERT]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.USSDDumbExtendedNetworkService$1: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.USSDDumbExtendedNetworkService$1: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.USSDDumbExtendedNetworkService$1: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="USSDDumbExtendedNetworkService$1 onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="USSDDumbExtendedNetworkService$1 onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.USSDDumbExtendedNetworkService"/>
+      <receiveICCInfo action="android.intent.action.INSERT, android.intent.action.DELETE">
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.USSDDumbExtendedNetworkService$1: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="4" key="action" value="[android.intent.action.INSERT]"/>
+        <info unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.USSDDumbExtendedNetworkService$1: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="18" key="action" value="[android.intent.action.DELETE]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.USSDDumbExtendedNetworkService$1: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.USSDDumbExtendedNetworkService$1: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.USSDDumbExtendedNetworkService$1: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="USSDDumbExtendedNetworkService$1 onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="USSDDumbExtendedNetworkService$1 onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="USSDDumbExtendedNetworkService$1 onReceive" type="GetAttribute" unit="$r4 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DismissActivity">
+    <intentSummary>
+      <source name="com.google.scc.DismissActivity"/>
+      <destination name="interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, "/>
+      <sendICCInfo action="android.intent.action.CLOSE_SYSTEM_DIALOGS">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DismissActivity: void sendBroadcast(android.content.Intent)&gt;($r1)" methodSig="&lt;com.google.scc.DismissActivity: void onWindowFocusChanged(boolean)&gt;" instructionId="6"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DismissActivity: void onWindowFocusChanged(boolean)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DismissActivity: void onWindowFocusChanged(boolean)&gt;,void onWindowFocusChanged(boolean)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DismissActivity: void onWindowFocusChanged(boolean)&gt;"/>
+        <node method="DismissActivity onWindowFocusChanged" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="DismissActivity onWindowFocusChanged" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CLOSE_SYSTEM_DIALOGS&quot;)"/>
+        <node method="DismissActivity onWindowFocusChanged" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DismissActivity: void sendBroadcast(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.MainActivity">
+    <intentSummary>
+      <source name="com.google.scc.MainActivity"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.MainActivity$LoadingActivity: void startActivityForResult(android.content.Intent,int)&gt;($r8, 101)" methodSig="&lt;com.google.scc.MainActivity$LoadingActivity: void sendUSSD2PhoneNumber(java.lang.String)&gt;" instructionId="14"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.MainActivity$LoadingActivity: void sendUSSD2PhoneNumber(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.MainActivity$LoadingActivity: void sendUSSD2PhoneNumber(java.lang.String)&gt;,void sendUSSD2PhoneNumber(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.MainActivity$LoadingActivity: void sendUSSD2PhoneNumber(java.lang.String)&gt;"/>
+        <node method="MainActivity$LoadingActivity sendUSSD2PhoneNumber" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="MainActivity$LoadingActivity sendUSSD2PhoneNumber" type="InitIntent" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r4)"/>
+        <node method="MainActivity$LoadingActivity sendUSSD2PhoneNumber" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.MainActivity$LoadingActivity: void startActivityForResult(android.content.Intent,int)&gt;($r8, 101)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;,void callforward(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;"/>
+        <node method="DataService callforward" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="DataService callforward" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CALL&quot;)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="DataService callforward" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;,&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;,void callforward(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;"/>
+        <node method="DataService callforward" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="DataService callforward" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CALL&quot;)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="DataService callforward" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService$2: void run()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService$2: void run()&gt;,&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;,&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;,void callforward(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService$2: void run()&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;"/>
+        <node method="DataService callforward" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="DataService callforward" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CALL&quot;)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="DataService callforward" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService: void checkRedirect()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService: void checkRedirect()&gt;,&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;,void callforward(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService: void checkRedirect()&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;"/>
+        <node method="DataService callforward" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="DataService callforward" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CALL&quot;)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="DataService callforward" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService: void onCreate()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService: void onCreate()&gt;,&lt;com.google.scc.DataService: void checkRedirect()&gt;,&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;,void callforward(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService: void onCreate()&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void checkRedirect()&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;"/>
+        <node method="DataService callforward" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="DataService callforward" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CALL&quot;)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="DataService callforward" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.SuperActivity">
+    <intentSummary>
+      <source name="com.google.scc.SuperActivity"/>
+      <destination name="interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, "/>
+      <sendICCInfo action="android.intent.action.CLOSE_SYSTEM_DIALOGS">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.SuperActivity: void sendBroadcast(android.content.Intent)&gt;($r1)" methodSig="&lt;com.google.scc.SuperActivity: void onWindowFocusChanged(boolean)&gt;" instructionId="6"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.SuperActivity: void onWindowFocusChanged(boolean)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.SuperActivity: void onWindowFocusChanged(boolean)&gt;,void onWindowFocusChanged(boolean)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.SuperActivity: void onWindowFocusChanged(boolean)&gt;"/>
+        <node method="SuperActivity onWindowFocusChanged" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="SuperActivity onWindowFocusChanged" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CLOSE_SYSTEM_DIALOGS&quot;)"/>
+        <node method="SuperActivity onWindowFocusChanged" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.SuperActivity: void sendBroadcast(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.BootReceiver">
+    <intentSummary>
+      <source name="com.google.scc.BootReceiver"/>
+      <receiveICCInfo action="android.intent.action.SCREEN_OFF, android.intent.action.SCREEN_ON, android.intent.action.BOOT_COMPLETED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="3" key="action" value="[android.intent.action.SCREEN_OFF]"/>
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="6" key="action" value="[android.intent.action.SCREEN_ON]"/>
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="21" key="action" value="[android.intent.action.BOOT_COMPLETED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootReceiver onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.BootReceiver"/>
+      <receiveICCInfo action="android.intent.action.SCREEN_OFF, android.intent.action.SCREEN_ON, android.intent.action.BOOT_COMPLETED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="3" key="action" value="[android.intent.action.SCREEN_OFF]"/>
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="6" key="action" value="[android.intent.action.SCREEN_ON]"/>
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="21" key="action" value="[android.intent.action.BOOT_COMPLETED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootReceiver onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.BootReceiver"/>
+      <receiveICCInfo action="android.intent.action.SCREEN_OFF, android.intent.action.SCREEN_ON, android.intent.action.BOOT_COMPLETED">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="3" key="action" value="[android.intent.action.SCREEN_OFF]"/>
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="6" key="action" value="[android.intent.action.SCREEN_ON]"/>
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="21" key="action" value="[android.intent.action.BOOT_COMPLETED]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootReceiver onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.BootReceiver"/>
+      <receiveICCInfo action="android.intent.action.SCREEN_OFF, android.intent.action.SCREEN_ON">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="3" key="action" value="[android.intent.action.SCREEN_OFF]"/>
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="6" key="action" value="[android.intent.action.SCREEN_ON]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootReceiver onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.BootReceiver"/>
+      <destination name="com.google.scc.MainActivity$LoadingActivity"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="30"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootReceiver onReceive" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="BootReceiver onReceive" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/google/scc/MainActivity$LoadingActivity;&quot;)"/>
+        <node method="BootReceiver onReceive" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="BootReceiver onReceive" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.BootReceiver"/>
+      <destination name="com.google.scc.MainActivity$LoadingActivity"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="15"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootReceiver onReceive" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="BootReceiver onReceive" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/google/scc/MainActivity$LoadingActivity;&quot;)"/>
+        <node method="BootReceiver onReceive" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="BootReceiver onReceive" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.BootReceiver"/>
+      <receiveICCInfo action="android.intent.action.SCREEN_OFF">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="3" key="action" value="[android.intent.action.SCREEN_OFF]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootReceiver onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.BootReceiver"/>
+      <receiveICCInfo action="android.intent.action.SCREEN_OFF, android.intent.action.SCREEN_ON">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="3" key="action" value="[android.intent.action.SCREEN_OFF]"/>
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="6" key="action" value="[android.intent.action.SCREEN_ON]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BootReceiver onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="BootReceiver onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.DELETE, "/>
+      <sendICCInfo action="android.intent.action.DELETE" data="package:com.google.scc">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;com.google.scc.DataService: void deleteAPP()&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService: void deleteAPP()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService: void deleteAPP()&gt;,void deleteAPP()"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService: void deleteAPP()&gt;"/>
+        <node method="DataService deleteAPP" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="DataService deleteAPP" type="InitIntent" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.DELETE&quot;, $r6)"/>
+        <node method="DataService deleteAPP" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.DELETE, "/>
+      <sendICCInfo action="android.intent.action.DELETE" data="package:com.google.scc">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;com.google.scc.DataService: void deleteAPP()&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService: void access$1(com.google.scc.DataService)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService: void access$1(com.google.scc.DataService)&gt;,&lt;com.google.scc.DataService: void deleteAPP()&gt;,void deleteAPP()"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService: void access$1(com.google.scc.DataService)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void deleteAPP()&gt;"/>
+        <node method="DataService deleteAPP" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="DataService deleteAPP" type="InitIntent" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.DELETE&quot;, $r6)"/>
+        <node method="DataService deleteAPP" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.LowLevel">
+    <intentSummary>
+      <source name="com.google.scc.LowLevel"/>
+      <sendICCInfo action="android.app.action.ADD_DEVICE_ADMIN" extras="Parcelable-android.app.extra.DEVICE_ADMIN,int-force-locked,String-android.app.extra.ADD_EXPLANATION"/>
+      <method value="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;,void setDeviceAdmin()"/>
+      <nodes>
+        <node method="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;"/>
+        <node method="LowLevel setDeviceAdmin" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="LowLevel setDeviceAdmin" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.app.action.ADD_DEVICE_ADMIN&quot;)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.app.extra.DEVICE_ADMIN&quot;, $r2)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.app.extra.ADD_EXPLANATION&quot;, &quot;To continue, you must activate the application. Click to activate / enable&quot;)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;force-locked&quot;, 3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.LowLevel"/>
+      <destination name="interICC_android.app.action.ADD_DEVICE_ADMIN, "/>
+      <sendICCInfo action="android.app.action.ADD_DEVICE_ADMIN" extras="Parcelable-android.app.extra.DEVICE_ADMIN,int-force-locked,String-android.app.extra.ADD_EXPLANATION">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.LowLevel: void startActivityForResult(android.content.Intent,int)&gt;($r1, 228)" methodSig="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;" instructionId="7"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;,void setDeviceAdmin()"/>
+      <nodes>
+        <node method="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;"/>
+        <node method="LowLevel setDeviceAdmin" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="LowLevel setDeviceAdmin" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.app.action.ADD_DEVICE_ADMIN&quot;)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.app.extra.DEVICE_ADMIN&quot;, $r2)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.app.extra.ADD_EXPLANATION&quot;, &quot;To continue, you must activate the application. Click to activate / enable&quot;)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;force-locked&quot;, 3)"/>
+        <node method="LowLevel setDeviceAdmin" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.LowLevel: void startActivityForResult(android.content.Intent,int)&gt;($r1, 228)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.PayDetailActivity">
+    <intentSummary>
+      <source name="com.google.scc.PayDetailActivity"/>
+      <destination name="interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, "/>
+      <sendICCInfo action="android.intent.action.CLOSE_SYSTEM_DIALOGS">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.SuperActivity: void sendBroadcast(android.content.Intent)&gt;($r1)" methodSig="&lt;com.google.scc.SuperActivity: void onWindowFocusChanged(boolean)&gt;" instructionId="6"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.PayDetailActivity: void onWindowFocusChanged(boolean)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.PayDetailActivity: void onWindowFocusChanged(boolean)&gt;,&lt;com.google.scc.SuperActivity: void onWindowFocusChanged(boolean)&gt;,void onWindowFocusChanged(boolean)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.PayDetailActivity: void onWindowFocusChanged(boolean)&gt;"/>
+        <node method="&lt;com.google.scc.SuperActivity: void onWindowFocusChanged(boolean)&gt;"/>
+        <node method="SuperActivity onWindowFocusChanged" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="SuperActivity onWindowFocusChanged" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CLOSE_SYSTEM_DIALOGS&quot;)"/>
+        <node method="SuperActivity onWindowFocusChanged" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.SuperActivity: void sendBroadcast(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.PayDetailActivity"/>
+      <destination name="interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, "/>
+      <sendICCInfo action="android.intent.action.CLOSE_SYSTEM_DIALOGS">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.PayDetailActivity: void sendBroadcast(android.content.Intent)&gt;($r1)" methodSig="&lt;com.google.scc.PayDetailActivity: void onWindowFocusChanged(boolean)&gt;" instructionId="6"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.PayDetailActivity: void onWindowFocusChanged(boolean)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.PayDetailActivity: void onWindowFocusChanged(boolean)&gt;,void onWindowFocusChanged(boolean)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.PayDetailActivity: void onWindowFocusChanged(boolean)&gt;"/>
+        <node method="PayDetailActivity onWindowFocusChanged" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="PayDetailActivity onWindowFocusChanged" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CLOSE_SYSTEM_DIALOGS&quot;)"/>
+        <node method="PayDetailActivity onWindowFocusChanged" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.PayDetailActivity: void sendBroadcast(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DismissActivity">
+    <intentSummary>
+      <source name="com.google.scc.DismissActivity"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" data="tel:">
+        <info unit="virtualinvoke $r5.&lt;com.google.scc.DismissActivity: void startActivityForResult(android.content.Intent,int)&gt;($r1, 101)" methodSig="&lt;com.google.scc.DismissActivity$1: void run()&gt;" instructionId="10"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DismissActivity$1: void run()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DismissActivity$1: void run()&gt;,void run()"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DismissActivity$1: void run()&gt;"/>
+        <node method="DismissActivity$1 run" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="DismissActivity$1 run" type="InitIntent" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.CALL&quot;, $r4)"/>
+        <node method="DismissActivity$1 run" type="SendIntent2ICC" unit="virtualinvoke $r5.&lt;com.google.scc.DismissActivity: void startActivityForResult(android.content.Intent,int)&gt;($r1, 101)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.SmsReceiver">
+    <intentSummary>
+      <source name="com.google.scc.SmsReceiver"/>
+      <receiveICCInfo extras="String-pdus">
+        <info unit="$r8 = virtualinvoke $r7.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.google.scc.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="20" key="pdus" value="null"/>
+        <info unit="$r8 = virtualinvoke $r7.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.google.scc.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="20" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsReceiver onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r7 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r8 = virtualinvoke $r7.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.SmsReceiver"/>
+      <receiveICCInfo extras="String-pdus">
+        <info unit="$r8 = virtualinvoke $r7.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;(&quot;pdus&quot;)" methodSig="&lt;com.google.scc.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="20" key="pdus" value="null"/>
+      </receiveICCInfo>
+      <method value="&lt;com.google.scc.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="SmsReceiver onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="SmsReceiver onReceive" type="GetIntentExtra" unit="$r7 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.USSDDumbExtendedNetworkService">
+    <intentSummary>
+      <source name="com.google.scc.USSDDumbExtendedNetworkService"/>
+      <destination name="interICC_android.intent.action.GET_CONTENT, "/>
+      <sendICCInfo action="android.intent.action.GET_CONTENT">
+        <info unit="virtualinvoke $r7.&lt;com.google.scc.USSDDumbExtendedNetworkService: void sendBroadcast(android.content.Intent)&gt;($r8)" methodSig="&lt;com.google.scc.USSDDumbExtendedNetworkService$2: java.lang.CharSequence getUserMessage(java.lang.CharSequence)&gt;" instructionId="41"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.USSDDumbExtendedNetworkService$2: java.lang.CharSequence getUserMessage(java.lang.CharSequence)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.USSDDumbExtendedNetworkService$2: java.lang.CharSequence getUserMessage(java.lang.CharSequence)&gt;,java.lang.CharSequence getUserMessage(java.lang.CharSequence)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.USSDDumbExtendedNetworkService$2: java.lang.CharSequence getUserMessage(java.lang.CharSequence)&gt;"/>
+        <node method="USSDDumbExtendedNetworkService$2 getUserMessage" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="USSDDumbExtendedNetworkService$2 getUserMessage" type="InitIntent" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.GET_CONTENT&quot;, $r6)"/>
+        <node method="USSDDumbExtendedNetworkService$2 getUserMessage" type="SendIntent2ICC" unit="virtualinvoke $r7.&lt;com.google.scc.USSDDumbExtendedNetworkService: void sendBroadcast(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService$1$1$1: void run()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService$1$1$1: void run()&gt;,&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;,&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;,void callforward(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService$1$1$1: void run()&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;"/>
+        <node method="DataService callforward" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="DataService callforward" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CALL&quot;)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="DataService callforward" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.LowLevel">
+    <intentSummary>
+      <source name="com.google.scc.LowLevel"/>
+      <sendICCInfo action="android.app.action.ADD_DEVICE_ADMIN" extras="Parcelable-android.app.extra.DEVICE_ADMIN,int-force-locked,String-android.app.extra.ADD_EXPLANATION"/>
+      <method value="&lt;com.google.scc.LowLevel: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.LowLevel: void onActivityResult(int,int,android.content.Intent)&gt;,&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;,void setDeviceAdmin()"/>
+      <nodes>
+        <node method="&lt;com.google.scc.LowLevel: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+        <node method="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;"/>
+        <node method="LowLevel setDeviceAdmin" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="LowLevel setDeviceAdmin" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.app.action.ADD_DEVICE_ADMIN&quot;)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.app.extra.DEVICE_ADMIN&quot;, $r2)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.app.extra.ADD_EXPLANATION&quot;, &quot;To continue, you must activate the application. Click to activate / enable&quot;)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;force-locked&quot;, 3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.LowLevel"/>
+      <destination name="interICC_android.app.action.ADD_DEVICE_ADMIN, "/>
+      <sendICCInfo action="android.app.action.ADD_DEVICE_ADMIN" extras="Parcelable-android.app.extra.DEVICE_ADMIN,int-force-locked,String-android.app.extra.ADD_EXPLANATION">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.LowLevel: void startActivityForResult(android.content.Intent,int)&gt;($r1, 228)" methodSig="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;" instructionId="7"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.LowLevel: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.LowLevel: void onActivityResult(int,int,android.content.Intent)&gt;,&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;,void setDeviceAdmin()"/>
+      <nodes>
+        <node method="&lt;com.google.scc.LowLevel: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+        <node method="&lt;com.google.scc.LowLevel: void setDeviceAdmin()&gt;"/>
+        <node method="LowLevel setDeviceAdmin" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="LowLevel setDeviceAdmin" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.app.action.ADD_DEVICE_ADMIN&quot;)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.app.extra.DEVICE_ADMIN&quot;, $r2)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.app.extra.ADD_EXPLANATION&quot;, &quot;To continue, you must activate the application. Click to activate / enable&quot;)"/>
+        <node method="LowLevel setDeviceAdmin" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;force-locked&quot;, 3)"/>
+        <node method="LowLevel setDeviceAdmin" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.LowLevel: void startActivityForResult(android.content.Intent,int)&gt;($r1, 228)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.DELETE, "/>
+      <sendICCInfo action="android.intent.action.DELETE" data="package:com.google.scc">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;com.google.scc.DataService: void deleteAPP()&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;,&lt;com.google.scc.DataService: void access$1(com.google.scc.DataService)&gt;,&lt;com.google.scc.DataService: void deleteAPP()&gt;,void deleteAPP()"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void access$1(com.google.scc.DataService)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void deleteAPP()&gt;"/>
+        <node method="DataService deleteAPP" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="DataService deleteAPP" type="InitIntent" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.DELETE&quot;, $r6)"/>
+        <node method="DataService deleteAPP" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;,&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;,&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;,void callforward(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;"/>
+        <node method="DataService callforward" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="DataService callforward" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CALL&quot;)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="DataService callforward" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.google.scc.DataService">
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.DELETE, "/>
+      <sendICCInfo action="android.intent.action.DELETE" data="package:com.google.scc">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r3)" methodSig="&lt;com.google.scc.DataService: void deleteAPP()&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService$1: void run()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService$1: void run()&gt;,&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;,&lt;com.google.scc.DataService: void access$1(com.google.scc.DataService)&gt;,&lt;com.google.scc.DataService: void deleteAPP()&gt;,void deleteAPP()"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService$1: void run()&gt;"/>
+        <node method="&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void access$1(com.google.scc.DataService)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void deleteAPP()&gt;"/>
+        <node method="DataService deleteAPP" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="DataService deleteAPP" type="InitIntent" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.DELETE&quot;, $r6)"/>
+        <node method="DataService deleteAPP" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.google.scc.DataService"/>
+      <destination name="interICC_android.intent.action.CALL, "/>
+      <sendICCInfo action="android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)" methodSig="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;" instructionId="12"/>
+      </sendICCInfo>
+      <method value="&lt;com.google.scc.DataService$1: void run()&gt;"/>
+      <methodtrace value="&lt;com.google.scc.DataService$1: void run()&gt;,&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;,&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;,&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;,void callforward(java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.google.scc.DataService$1: void run()&gt;"/>
+        <node method="&lt;com.google.scc.DataService$1$1: void onFinish(java.lang.Boolean,java.lang.String)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void access$0(com.google.scc.DataService,java.lang.String)&gt;"/>
+        <node method="&lt;com.google.scc.DataService: void callforward(java.lang.String)&gt;"/>
+        <node method="DataService callforward" type="CreateMethod" unit="$r5 = new android.content.Intent"/>
+        <node method="DataService callforward" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CALL&quot;)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="DataService callforward" type="SetAttribute" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="DataService callforward" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.google.scc.DataService: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

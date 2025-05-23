@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;ssxodv.jdipue.wltter.ActivityCard: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="ActivityCard onCreate" unit="virtualinvoke r0.&lt;ssxodv.jdipue.wltter.ActivityCard: void setContentView(int)&gt;(2130968576)">
+        <nodeInfo nodeId="1081489803" predsStr="1773634538" succsStr="" context=""/>
+        <baseNodePointTo value="1081489803" context=""/>
+        <nodeSetPointToMe value="1081489803," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;ssxodv.jdipue.wltter.Activity1: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="Activity1 onCreate" unit="virtualinvoke r0.&lt;ssxodv.jdipue.wltter.Activity1: void setContentView(int)&gt;(2130968577)">
+        <nodeInfo nodeId="532974358" predsStr="1613327633" succsStr="1673896541" context=""/>
+        <baseNodePointTo value="532974358" context=""/>
+        <nodeSetPointToMe value="532974358," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;ssxodv.jdipue.wltter.ActivityWeb: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="ActivityWeb onCreate" unit="virtualinvoke r0.&lt;ssxodv.jdipue.wltter.ActivityWeb: void setContentView(int)&gt;(2130968579)">
+        <nodeInfo nodeId="1008127340" predsStr="377050201" succsStr="1526868121" context=""/>
+        <baseNodePointTo value="1008127340" context=""/>
+        <nodeSetPointToMe value="1008127340," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;ssxodv.jdipue.wltter.ActivityMMS: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="ActivityMMS onCreate" unit="virtualinvoke r0.&lt;ssxodv.jdipue.wltter.ActivityMMS: void setContentView(int)&gt;(2130968578)">
+        <nodeInfo nodeId="1728131769" predsStr="313477108" succsStr="" context=""/>
+        <baseNodePointTo value="1728131769" context=""/>
+        <nodeSetPointToMe value="1728131769," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+</root>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="roijf.sdfqlkj.sfakjdfa.DialogActivity" type="Activity" exported="true">
+    <sender destination="roijf.sdfqlkj.sfakjdfa.DialogActivity, roijf.sdfqlkj.sfakjdfa.LogService, interICC_android.intent.action.MAIN, android.intent.category.HOME" action="android.intent.action.MAIN, new java.lang.String" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <receive extras="String-new java.lang.String"/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.WebActivity" type="Activity">
+    <sender destination="interICC_android.intent.action.MAIN, android.intent.category.HOME" action="android.intent.action.MAIN" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <receive action="notEmpty" extras="String-new java.lang.String,boolean-new java.lang.String"/>
+  </component>
+  <component name="com.orangeery.babbleharbor.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="roijf.sdfqlkj.sfakjdfa.LogService, roijf.sdfqlkj.sfakjdfa.MainService, interICC_android.intent.action.VIEW, , antivirus.pro.MainReceiver, roijf.sdfqlkj.sfakjdfa.MainReceiver, interICC_android.intent.action.DELETE, " action="android.intent.action.DELETE, android.intent.action.VIEW, new java.lang.String, update" data="" flags="FLAG_ACTIVITY_NEW_TASK " extras="String-new java.lang.String"/>
+  </component>
+  <component name="com.orangeery.babbleharbor.USSDService" type="Service" exported="true">
+    <manifest>
+      <intent_filter action="com.android.ussd.IExtendedNetworkService"/>
+    </manifest>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.LogcatService" type="Service">
+    <sender destination="roijf.sdfqlkj.sfakjdfa.FakeActivity" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.MainReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.SCREEN_OFF, android.intent.action.SCREEN_ON"/>
+    </manifest>
+    <sender destination="roijf.sdfqlkj.sfakjdfa.LogService, roijf.sdfqlkj.sfakjdfa.MainService, roijf.sdfqlkj.sfakjdfa.MainReceiver, roijf.sdfqlkj.sfakjdfa.FakeActivity" action="new java.lang.String" flags="FLAG_ACTIVITY_NEW_TASK " extras="String-new java.lang.String,boolean-new java.lang.String"/>
+    <receive action="android.intent.action.PACKAGE_REMOVED, android.intent.action.NEW_OUTGOING_CALL, android.intent.action.PACKAGE_ADDED, android.intent.action.USER_PRESENT, android.intent.action.SCREEN_OFF, android.intent.action.BOOT_COMPLETED, new java.lang.String, android.intent.action.SCREEN_ON" data="notEmpty:mAuthority/mPath, notEmpty, notEmpty://mHost:mPort/mPath" extras="String-new java.lang.String"/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.AdminService" type="Service">
+    <sender destination="interICC_android.intent.action.MAIN, android.intent.category.HOME, roijf.sdfqlkj.sfakjdfa.FakeActivity" action="android.intent.action.MAIN" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.GCMReceiver" type="Receiver" permission="com.google.android.c2dm.permission.SEND">
+    <manifest>
+      <intent_filter action="com.google.android.c2dm.intent.RECEIVE" category="com.orangeery.babbleharbor"/>
+    </manifest>
+    <sender destination="roijf.sdfqlkj.sfakjdfa.MainService" action="new java.lang.String" extras="String-new java.lang.String"/>
+    <receive action="new java.lang.String" extras="String-new java.lang.String"/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.LogService" type="Service">
+    <sender destination="roijf.sdfqlkj.sfakjdfa.MainService" action="new java.lang.String" extras="String-new java.lang.String"/>
+    <receive action="new java.lang.String"/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.MainService" type="Service">
+    <sender destination="roijf.sdfqlkj.sfakjdfa.LogService, roijf.sdfqlkj.sfakjdfa.MainService, interICC_com.google.android.c2dm.intent.REGISTER, , interICC_android.intent.action.VIEW, , roijf.sdfqlkj.sfakjdfa.MainReceiver, interICC_android.intent.action.MAIN, android.intent.category.HOME" action=", android.intent.action.MAIN, android.intent.action.VIEW, new java.lang.String, com.google.android.c2dm.intent.REGISTER" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_NEW_TASK " extras="String-new java.lang.String,int-new java.lang.String,Parcelable-app,String-sender,long-new java.lang.String,Parcelable-google.messenger"/>
+    <receive action="new java.lang.String" extras="String-new java.lang.String"/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.AdminReceiver" type="Receiver" permission="android.permission.BIND_DEVICE_ADMIN">
+    <manifest>
+      <intent_filter action="android.app.action.DEVICE_ADMIN_DISABLED, android.app.action.DEVICE_ADMIN_ENABLED, android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"/>
+    </manifest>
+    <sender destination="roijf.sdfqlkj.sfakjdfa.LogService, roijf.sdfqlkj.sfakjdfa.MainReceiver" action="new java.lang.String" extras="String-new java.lang.String"/>
+    <receive action="new java.lang.String"/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.HttpService" type="Service">
+    <sender destination="roijf.sdfqlkj.sfakjdfa.LogService" action="new java.lang.String"/>
+    <receive extras="String-new java.lang.String"/>
+  </component>
+  <component name="antivirus.pro.MainActivity" type="Activity">
+    <sender destination="antivirus.pro.MainReceiver, interICC_android.intent.action.DELETE, " action="android.intent.action.DELETE, update" data="package:" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <receive extras="String-new"/>
+  </component>
+  <component name="antivirus.pro.MainReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.PACKAGE_REMOVED, android.intent.action.PACKAGE_ADDED" scheme="package"/>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED"/>
+    </manifest>
+    <sender destination="antivirus.pro.MainActivity, antivirus.pro.MainReceiver" action="update" flags="FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_SINGLE_TOP " extras="String-new"/>
+    <receive action="android.intent.action.PACKAGE_REMOVED, android.intent.action.PACKAGE_ADDED, update" data="new java.util.ArrayList://mHost:mPort/mPath, new java.util.ArrayList:mAuthority/mPath, notEmpty:mAuthority/mPath, notEmpty, notEmpty://mHost:mPort/mPath"/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.LongService" type="Service">
+    <sender destination="roijf.sdfqlkj.sfakjdfa.LogService, roijf.sdfqlkj.sfakjdfa.LongService" action="new java.lang.String" extras="String-new java.lang.String"/>
+    <receive action="new java.lang.String" extras="String-new java.lang.String"/>
+  </component>
+  <component name="roijf.sdfqlkj.sfakjdfa.FakeActivity" type="Activity">
+    <sender destination="roijf.sdfqlkj.sfakjdfa.LogcatService, interICC_android.intent.action.MAIN, android.intent.category.HOME" action="android.intent.action.MAIN" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_CLEAR_TOP , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+</root>

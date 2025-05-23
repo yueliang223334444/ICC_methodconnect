@@ -1,0 +1,114 @@
+
+com.note.donote.activities.MainActivity -> com.note.donote.receivers.AlarmReceiver
+com.note.donote.activities.MainActivity -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+com.note.donote.activities.MainActivity -> o.\ufb5d
+com.note.donote.activities.MainActivity -> o.\u217d
+com.note.donote.activities.MainActivity -> o.\ufb86
+
+com.note.donote.receivers.BootReceiver -> o.\u012a
+com.note.donote.receivers.BootReceiver -> o.\u217d
+com.note.donote.receivers.BootReceiver -> o.\ufb86
+com.note.donote.receivers.BootReceiver -> o.\ufb27
+com.note.donote.receivers.BootReceiver -> o.\ufb5d
+com.note.donote.receivers.BootReceiver -> com.note.donote.receivers.AlarmReceiver
+
+o.ᔿ -> o.\u012a
+
+o.ﺀ -> o.ﺀ$if
+o.ﺀ -> o.\ufe80
+
+o.ﺀ$if -> o.ﺀ$if
+
+o.ﮆ -> o.\ufb86
+
+o.ỉ -> interICC_android.provider.Telephony.ACTION_CHANGE_DEFAULT, 
+
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+o.ڌ -> interICC_new o.ŗ, 
+
+o.ڏ -> o.\ufb27
+
+o.ῑ -> o.\u2054
+
+o.ŗ -> interICC_android.speech.action.WEB_SEARCH, android.speech.action.RECOGNIZE_SPEECH, 
+o.ŗ -> interICC_android.speech.action.WEB_SEARCH, android.speech.action.RECOGNIZE_SPEECH, 
+
+o.ﭝ -> o.\u1fd1
+o.ﭝ -> o.\u1ec9
+o.ﭝ -> o.\u1fd1
+o.ﭝ -> o.\u1ec9
+o.ﭝ -> o.\u1ec9
+o.ﭝ -> o.\u1fd1
+o.ﭝ -> o.\u1ec9
+o.ﭝ -> o.\ufb5d
+o.ﭝ -> o.\u1ec9
+o.ﭝ -> o.\u1fd1
+o.ﭝ -> o.\u1fd1
+
+o.ṛ -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+o.ṛ -> interICC_android.app.action.ADD_DEVICE_ADMIN, 
+
+o.ײַ -> o.\u1e5b
+
+o.ﭥ -> o.\u1ec9
+o.ﭥ -> o.\u1fd1
+o.ﭥ -> o.\u1ec9
+o.ﭥ -> o.\u1fd1
+o.ﭥ -> o.\u1ec9
+o.ﭥ -> o.\u1ec9
+o.ﭥ -> o.\u1fd1
+o.ﭥ -> o.\u1fd1
+o.ﭥ -> o.\u1ec9
+o.ﭥ -> o.\u1fd1
+
+com.note.donote.receivers.ServiceDestroyReceiver -> o.\ufb86
+com.note.donote.receivers.ServiceDestroyReceiver -> o.\ufb5d
+
+o.Ī -> o.\u012a
+
+o.ﬧ -> o.\ufb27
+
+o.ﺭ -> o.ﺀ$if
+
+o.ｭ -> interICC_android.intent.action.GET_CONTENT, 
+
+com.note.donote.receivers.AdminReceiver -> interICC_android.intent.action.MAIN, android.intent.category.HOME
+
+o.ر -> interICC_android.intent.action.CALL, 
+
+o.ὶ -> o.\u2054
+
+o.ᓵ -> o.\u012a
+
+o.ⅽ -> o.\u1e5b
+o.ⅽ -> o.\u217d
+

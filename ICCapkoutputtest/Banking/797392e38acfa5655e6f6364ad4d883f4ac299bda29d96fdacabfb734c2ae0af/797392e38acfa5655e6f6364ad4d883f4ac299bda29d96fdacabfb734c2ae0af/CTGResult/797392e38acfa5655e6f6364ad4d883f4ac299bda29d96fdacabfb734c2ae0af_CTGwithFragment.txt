@@ -1,0 +1,19 @@
+
+com.admv3.listener.OnBootReceiver -> com.admv.service.MainService
+com.admv3.listener.OnBootReceiver -> com.admv.service.MainService
+
+com.admv3.listener.TickReceiver -> com.admv.service.MainService
+
+com.admv.service.MainService -> com.admv.service.AdvService
+
+com.ejaob2.actionjob.AdvAction -> interICC_com.newage.thz.send, 
+com.ejaob2.actionjob.AdvAction -> interICC_com.newage.thz.delivery, 
+com.ejaob2.actionjob.AdvAction -> interICC_com.newage.thz.send, com.newage.thz.delivery, 
+
+com.admv.service.AdvService -> interICC_com.newage.thz.send, 
+com.admv.service.AdvService -> interICC_com.newage.thz.send, com.newage.thz.delivery, 
+com.admv.service.AdvService -> interICC_com.newage.thz.delivery, 
+
+com.aizd.entry.MainActivity -> com.admv.service.MainService
+com.aizd.entry.MainActivity -> interICC_android.app.action.ADD_DEVICE_ADMIN, 
+

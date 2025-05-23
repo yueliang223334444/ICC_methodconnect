@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="com.security.service.MainActivity" type="Activity">
+    <destination ICCType="implicit" name="SMS_SENT, " edgeType="Act2Class" method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" action="SMS_SENT" extras="" flags=""/>
+    <destination ICCType="implicit" name="SMS_DELIVERED, " edgeType="Act2Class" method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" action="SMS_DELIVERED" extras="" flags=""/>
+    <destination ICCType="explicit" name="com.security.service.MainActivity" desType="Activity" edgeType="Act2Act" method="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;" instructionId="7" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r1)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="com.security.service.receiver.ActionReceiver" type="Receiver">
+    <destination ICCType="explicit" name="com.security.service.MainActivity" desType="Activity" edgeType="NonAct2Act" method="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;" instructionId="7" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r1)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="com.security.service.receiver.SmsReceiver" type="Receiver">
+    <destination ICCType="implicit" name="SMS_SENT, " edgeType="NonAct2Class" method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" action="SMS_SENT" extras="" flags=""/>
+    <destination ICCType="implicit" name="SMS_DELIVERED, " edgeType="NonAct2Class" method="&lt;com.security.service.receiver.SmsReceiver: void processSend(java.lang.String,java.lang.String,android.content.Context)&gt;" instructionId="10" unit="virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r0, null, $r1, $r4, $r5)" action="SMS_DELIVERED" extras="" flags=""/>
+    <destination ICCType="explicit" name="com.security.service.MainActivity" desType="Activity" edgeType="NonAct2Act" method="&lt;com.security.service.MainActivity: void showActivityAndSendInit(android.content.Context)&gt;" instructionId="7" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;(r1)" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="com.security.service.receiver.RebootReceiver" type="Receiver"/>
+</root>

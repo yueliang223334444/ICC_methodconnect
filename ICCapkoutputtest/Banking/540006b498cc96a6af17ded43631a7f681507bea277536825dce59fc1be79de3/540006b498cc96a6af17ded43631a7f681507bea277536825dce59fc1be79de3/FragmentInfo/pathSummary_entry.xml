@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;com.google.game.store.site.BKMain: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="BKMain onCreate" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903046)">
+        <nodeInfo nodeId="2003758509" predsStr="569616796" succsStr="" context=""/>
+        <baseNodePointTo value="2003758509" context=""/>
+        <nodeSetPointToMe value="2003758509," context=""/>
+      </node>
+    </pathSummary>
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="BKMain onCreate" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903045)">
+        <nodeInfo nodeId="842680318" predsStr="569616796" succsStr="" context=""/>
+        <baseNodePointTo value="842680318" context=""/>
+        <nodeSetPointToMe value="842680318," context=""/>
+      </node>
+    </pathSummary>
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="BKMain onCreate" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903044)">
+        <nodeInfo nodeId="1992420835" predsStr="569616796" succsStr="" context=""/>
+        <baseNodePointTo value="1992420835" context=""/>
+        <nodeSetPointToMe value="1992420835," context=""/>
+      </node>
+    </pathSummary>
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="BKMain onCreate" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903042)">
+        <nodeInfo nodeId="1148527284" predsStr="569616796" succsStr="" context=""/>
+        <baseNodePointTo value="1148527284" context=""/>
+        <nodeSetPointToMe value="1148527284," context=""/>
+      </node>
+    </pathSummary>
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="BKMain onCreate" unit="virtualinvoke r0.&lt;com.google.game.store.site.BKMain: void setContentView(int)&gt;(2130903043)">
+        <nodeInfo nodeId="129460575" predsStr="569616796" succsStr="" context=""/>
+        <baseNodePointTo value="129460575" context=""/>
+        <nodeSetPointToMe value="129460575," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;com.google.game.store.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;com.google.game.store.MainActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1199653012" predsStr="1808154638" succsStr="1373967287" context=""/>
+        <baseNodePointTo value="1199653012" context=""/>
+        <nodeSetPointToMe value="1199653012," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+</root>

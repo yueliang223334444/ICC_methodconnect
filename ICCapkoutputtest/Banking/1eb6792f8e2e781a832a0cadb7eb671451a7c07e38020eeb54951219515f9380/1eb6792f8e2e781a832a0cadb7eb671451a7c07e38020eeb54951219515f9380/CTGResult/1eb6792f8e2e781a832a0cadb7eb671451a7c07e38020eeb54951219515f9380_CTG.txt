@@ -1,0 +1,14 @@
+
+com.trdos.cores.Ma -> com.trdos.cores.Sb
+
+com.trdos.cores.Dc -> com.trdos.cores.Dc
+
+com.trdos.cores.Sb -> com.trdos.cores.Sb
+
+com.trdos.cores.Db -> com.trdos.cores.Sb
+
+com.trdos.cores.MainActivity -> com.trdos.cores.Dc
+com.trdos.cores.MainActivity -> com.trdos.cores.Db
+com.trdos.cores.MainActivity -> com.trdos.cores.Sb
+com.trdos.cores.MainActivity -> com.trdos.cores.Dc
+

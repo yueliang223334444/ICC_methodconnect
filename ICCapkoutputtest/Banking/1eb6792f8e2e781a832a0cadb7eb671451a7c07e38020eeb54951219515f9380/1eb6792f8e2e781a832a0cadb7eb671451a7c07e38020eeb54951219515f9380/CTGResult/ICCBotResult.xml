@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="com.trdos.cores.p">
+    <intentSummary>
+      <source name="com.trdos.cores.p"/>
+      <destination name="interICC_, "/>
+      <sendICCInfo action="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)" methodSig="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;" instructionId="19"/>
+      </sendICCInfo>
+      <method value="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;,void q(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;"/>
+        <node method="p q" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="p q" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r4)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r10)"/>
+        <node method="p q" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.trdos.cores.e">
+    <intentSummary>
+      <source name="com.trdos.cores.e"/>
+      <destination name="interICC_, "/>
+      <sendICCInfo action="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)" methodSig="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;" instructionId="19"/>
+      </sendICCInfo>
+      <method value="&lt;com.trdos.cores.e: void run()&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.e: void run()&gt;,&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;,void q(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.e: void run()&gt;"/>
+        <node method="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;"/>
+        <node method="p q" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="p q" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r4)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r10)"/>
+        <node method="p q" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.trdos.cores.Dc">
+    <intentSummary>
+      <source name="com.trdos.cores.Dc"/>
+      <destination name="com.trdos.cores.Dc"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.trdos.cores.Dc: android.content.ComponentName startService(android.content.Intent)&gt;($r1)" methodSig="&lt;com.trdos.cores.Dc: void onDestroy()&gt;" instructionId="4"/>
+      </sendICCInfo>
+      <method value="&lt;com.trdos.cores.Dc: void onDestroy()&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.Dc: void onDestroy()&gt;,void onDestroy()"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.Dc: void onDestroy()&gt;"/>
+        <node method="Dc onDestroy" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="Dc onDestroy" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lcom/trdos/cores/Dc;&quot;)"/>
+        <node method="Dc onDestroy" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="Dc onDestroy" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.trdos.cores.Dc: android.content.ComponentName startService(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.trdos.cores.Sb">
+    <intentSummary>
+      <source name="com.trdos.cores.Sb"/>
+      <destination name="com.trdos.cores.Sb"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke r0.&lt;com.trdos.cores.Sb: android.content.ComponentName startService(android.content.Intent)&gt;($r1)" methodSig="&lt;com.trdos.cores.Sb: void onDestroy()&gt;" instructionId="6"/>
+      </sendICCInfo>
+      <method value="&lt;com.trdos.cores.Sb: void onDestroy()&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.Sb: void onDestroy()&gt;,void onDestroy()"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.Sb: void onDestroy()&gt;"/>
+        <node method="Sb onDestroy" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="Sb onDestroy" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lcom/trdos/cores/Sb;&quot;)"/>
+        <node method="Sb onDestroy" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="Sb onDestroy" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.trdos.cores.Sb: android.content.ComponentName startService(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.trdos.cores.MainActivity">
+    <intentSummary>
+      <source name="com.trdos.cores.MainActivity"/>
+      <destination name="com.trdos.cores.Dc"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r5.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r1)" methodSig="&lt;com.trdos.cores.MainActivity: void onActivityResult(int,int,android.content.Intent)&gt;" instructionId="25"/>
+      </sendICCInfo>
+      <method value="&lt;com.trdos.cores.MainActivity: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.MainActivity: void onActivityResult(int,int,android.content.Intent)&gt;,void onActivityResult(int,int,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.MainActivity: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+        <node method="MainActivity onActivityResult" type="CreateMethod" unit="$r9 = new android.content.Intent"/>
+        <node method="MainActivity onActivityResult" type="SetAttribute" unit="specialinvoke $r9.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lcom/trdos/cores/Dc;&quot;)"/>
+        <node method="MainActivity onActivityResult" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="MainActivity onActivityResult" type="SendIntent2ICC" unit="virtualinvoke $r5.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.trdos.cores.MainActivity"/>
+      <destination name="com.trdos.cores.Dc"/>
+      <sendICCInfo flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r5.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r1)" methodSig="&lt;com.trdos.cores.MainActivity: void onActivityResult(int,int,android.content.Intent)&gt;" instructionId="25"/>
+      </sendICCInfo>
+      <method value="&lt;com.trdos.cores.MainActivity: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.MainActivity: void onActivityResult(int,int,android.content.Intent)&gt;,void onActivityResult(int,int,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.MainActivity: void onActivityResult(int,int,android.content.Intent)&gt;"/>
+        <node method="MainActivity onActivityResult" type="CreateMethod" unit="$r9 = new android.content.Intent"/>
+        <node method="MainActivity onActivityResult" type="SetAttribute" unit="specialinvoke $r9.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lcom/trdos/cores/Dc;&quot;)"/>
+        <node method="MainActivity onActivityResult" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="MainActivity onActivityResult" type="SendIntent2ICC" unit="virtualinvoke $r5.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.trdos.cores.i">
+    <intentSummary>
+      <source name="com.trdos.cores.i"/>
+      <destination name="interICC_, "/>
+      <sendICCInfo action="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)" methodSig="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;" instructionId="19"/>
+      </sendICCInfo>
+      <method value="&lt;com.trdos.cores.i: void onPostExecute(java.lang.Object)&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.i: void onPostExecute(java.lang.Object)&gt;,&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;,void q(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.i: void onPostExecute(java.lang.Object)&gt;"/>
+        <node method="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;"/>
+        <node method="p q" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="p q" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r4)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r10)"/>
+        <node method="p q" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.trdos.cores.w">
+    <intentSummary>
+      <source name="com.trdos.cores.w"/>
+      <destination name="interICC_, "/>
+      <sendICCInfo action="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)" methodSig="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;" instructionId="19"/>
+      </sendICCInfo>
+      <method value="&lt;com.trdos.cores.w: void run()&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.w: void run()&gt;,&lt;com.trdos.cores.i: void onPostExecute(java.lang.Object)&gt;,&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;,void q(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.w: void run()&gt;"/>
+        <node method="&lt;com.trdos.cores.i: void onPostExecute(java.lang.Object)&gt;"/>
+        <node method="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;"/>
+        <node method="p q" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="p q" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r4)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r10)"/>
+        <node method="p q" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="com.trdos.cores.Ma">
+    <intentSummary>
+      <source name="com.trdos.cores.Ma"/>
+      <receiveICCInfo action="notEmpty">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="11" key="action" value="[notEmpty]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="Ma onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.trdos.cores.Ma: android.content.Intent getIntent()&gt;()"/>
+        <node method="Ma onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="Ma onReceive" type="GetIntentExtra" unit="$r8 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="Ma onReceive" type="GetIntentExtra" unit="$r9 = virtualinvoke $r8.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;($r7)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.trdos.cores.Ma"/>
+      <receiveICCInfo action="notEmpty">
+        <info unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()" methodSig="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;" instructionId="11" key="action" value="[notEmpty]"/>
+      </receiveICCInfo>
+      <method value="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="Ma onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;com.trdos.cores.Ma: android.content.Intent getIntent()&gt;()"/>
+        <node method="Ma onReceive" type="GetAttribute" unit="$r3 = virtualinvoke $r2.&lt;android.content.Intent: java.lang.String getAction()&gt;()"/>
+        <node method="Ma onReceive" type="GetIntentExtra" unit="$r8 = virtualinvoke $r2.&lt;android.content.Intent: android.os.Bundle getExtras()&gt;()"/>
+        <node method="Ma onReceive" type="GetIntentExtra" unit="$r9 = virtualinvoke $r8.&lt;android.os.Bundle: java.lang.Object get(java.lang.String)&gt;($r7)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <source name="com.trdos.cores.Ma"/>
+      <destination name="interICC_, "/>
+      <sendICCInfo action="" flags="FLAG_ACTIVITY_NEW_TASK ">
+        <info unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)" methodSig="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;" instructionId="19"/>
+      </sendICCInfo>
+      <method value="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;,&lt;com.trdos.cores.i: void onPostExecute(java.lang.Object)&gt;,&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;,void q(android.content.Context,java.lang.String)"/>
+      <nodes>
+        <node method="&lt;com.trdos.cores.Ma: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="&lt;com.trdos.cores.i: void onPostExecute(java.lang.Object)&gt;"/>
+        <node method="&lt;com.trdos.cores.p: void q(android.content.Context,java.lang.String)&gt;"/>
+        <node method="p q" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="p q" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r4)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="p q" type="SetAttribute" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r10)"/>
+        <node method="p q" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>
