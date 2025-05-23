@@ -87,4 +87,4 @@ else:
 print("\n所有 APK 处理完成！")
 print(f"处理失败或异常的个数：{mistakes_number}")
 print(f"错误APK记录：{ERROR_RECORD_FILE} ")
-# 的说法是非得失颠三倒四负担
+# 的说法是非得失颠三倒四负担ssdddd
