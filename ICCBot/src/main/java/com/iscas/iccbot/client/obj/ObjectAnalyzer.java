@@ -86,6 +86,9 @@ public abstract class ObjectAnalyzer extends Analyzer {
      * analyzeMethodSummary to get its summary
      *
      * @param methodUnderAnalysis
+     * @return
+     */
+    protected MethodSummaryModel analyzeMethodSummary(SootMethod methodUnderAnalysis) {
         appModel.addMethod(methodUnderAnalysis);
         if (!initMethodCheck(methodUnderAnalysis)) return null;
         analyzedMethodSet.add(methodUnderAnalysis);
@@ -116,7 +119,6 @@ public abstract class ObjectAnalyzer extends Analyzer {
         getSingleComponent(methodSummary);
         return methodSummary;
     }
-
 
     /**
      * getNodeTreeByCFGAnalysis
@@ -432,13 +434,11 @@ public abstract class ObjectAnalyzer extends Analyzer {
         if (helper.getUnitHandler(handleTarget.getMethod(),handleTarget.getUnit()) != null)
             return false;
         Set<Unit> targetHistory = new HashSet<>();
+        boolean findPs = false;
         while (helper.getUnitHandler(handleTarget.getMethod(),handleTarget.getUnit()) == null) {
             if (targetHistory.contains(handleTarget.getUnit()))
                 break;
-            targetHistory.add(handleTarget.getUnit());     */
-    protected MethodSummaryModel analyzeMethodSummary(SootMethod methodUnderAnalysis) {
-
-            boolean findPs = false;
+            targetHistory.add(handleTarget.getUnit());
             if (!handleTarget.getNodeSetPointToMeMap().containsKey((new ArrayList<String>())))
                 return false;
             List<UnitNode> nodeList = handleTarget.getNodeSetPointToMe(new ArrayList<String>());
@@ -1105,7 +1105,8 @@ public abstract class ObjectAnalyzer extends Analyzer {
                 if (n.getUnit() == null)
                     continue;
                 if (n.getInterFunNode() == null) {
-                    forNodeNotFunctionCall(n, initPath, pathSet);
+                    forNodeNotFunctionCall(n, initPath, pathSet);// path
+                    // insensitive
                 } else if (MyConfig.getInstance().getMySwitch().isFunctionExpandSwitch()) {
                     if (!needExpand(n)) {
                         String sig = n.getUnit().toString() + n.getMethod().getSignature();
